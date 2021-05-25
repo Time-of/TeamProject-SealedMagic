@@ -32,20 +32,26 @@ public class Monster : MonoBehaviour
 	[SerializeField] bool isColoredMonster;
 	[Tooltip("몬스터 공격 범위 설정 오브젝트")]
 	[SerializeField] GameObject monsterAttackArea;
+	[Tooltip("몬스터 일반공격 이펙트")]
+	[SerializeField] GameObject normalAtkFX;
+	[Tooltip("몬스터가 받은 데미지 이미지")]
+	public GameObject AttackDamageText;
+	[Tooltip("몬스터가 받은 데미지 위치")]
+	public Transform hudPos;
 
 	Animator monsterAnim;
 	Rigidbody2D rigid;
 	SpriteRenderer spRenderer;
 
-	[Tooltip("빈 칸으로 놔둘 것")]
-	public GameObject traceTarget;
-	
-	[Tooltip("체크하지 말 것")]
-	public bool isTracing = false;
+	[HideInInspector] public GameObject traceTarget;
+
+	[HideInInspector] public bool isTracing = false;
+
 	bool isPlayerInAttackRange = false;
 	bool isDead = false;
-	int moveDir = 1;
+	float moveDir = 1;
 	int whereToAtk = 1;
+	public float changedSpeed = 1;
 
 	bool canSkill = true; // 현재 스킬 사용 가능한지 여부
 	bool canAttack = true;
@@ -113,7 +119,7 @@ public class Monster : MonoBehaviour
 			if (rayPlayer.collider && !isPlayerInAttackRange)
 			{
 				isPlayerInAttackRange = true;
-				
+
 				StartCoroutine("SkillAttack");
 			}
 			else if (!rayPlayer.collider && !isAttacking)
@@ -122,7 +128,7 @@ public class Monster : MonoBehaviour
 			}
 		}
 	}
-	
+
 	void Move()
 	{
 		if (moveDir != 0 && !isDead)
@@ -136,11 +142,38 @@ public class Monster : MonoBehaviour
 
 		if (!isDead && !isAttacking && !isPlayerInAttackRange)
 		{
-			rigid.velocity = new Vector2(moveDir, rigid.velocity.y);
+			rigid.velocity = new Vector2(moveDir * moveSpeed * changedSpeed, rigid.velocity.y);
 		}
 		else if (isPlayerInAttackRange || isAttacking || isDead)
 		{
 			rigid.velocity = Vector2.zero;
+		}
+	}
+
+	
+	public void Slowspeed(float speed, float duration)
+    {
+		Debug.Log("0. Slowspeed실행");
+		StartCoroutine(changeSpeed(speed, duration));
+    }
+
+	// speed 매개변수는 1 = 100%
+	IEnumerator changeSpeed(float speed, float duration)
+	{
+		//Debug.Log("1. 코루틴실행");
+		int i = 0;
+		changedSpeed = speed;
+
+		while (duration >= i)
+		{
+			yield return new WaitForSeconds(1f);
+			i++;
+			//Debug.Log("2. i++, i: " + i);
+			if (duration < i)
+			{
+				changedSpeed = 1f;
+				//Debug.Log("3. 속도 원래대로, 기다린 시간: " + i);
+			}
 		}
 	}
 
@@ -153,6 +186,10 @@ public class Monster : MonoBehaviour
 
 	public void onAttack(float damage)
 	{
+		GameObject AttackText = Instantiate(AttackDamageText);// 데미지 이미지 출력
+		AttackText.transform.position = hudPos.position;// 데미지 위치
+		AttackText.GetComponent<DmgText>().damage = damage;// 데미지 값 받기
+
 		life -= damage;
 		StartCoroutine("onDamaged");
 		if (life <= 0 && !isDead)
@@ -170,12 +207,6 @@ public class Monster : MonoBehaviour
 		}
 	}
 
-	void OnTriggerEnter2D(Collider2D collision)
-	{
-		if (collision.gameObject.tag == "Bullet")
-			onAttack(1); // onAttack 사용 예시. 마법이나 일반 공격에서 monster의 onAttack을 불러올것,,
-	}
-
 	IEnumerator onDamaged()
 	{
 		spRenderer.color = new Color(1, 1, 1, 0.6f);
@@ -191,7 +222,7 @@ public class Monster : MonoBehaviour
 		if (canUseSkill && canSkill)
 		{
 			isAttacking = true;
-			
+
 			Debug.Log("스킬 사용!");
 			yield return new WaitForSeconds(1f);
 			isAttacking = false; // MonsterSkill.Skill(0);
@@ -203,7 +234,7 @@ public class Monster : MonoBehaviour
 			if (canAttack)
 			{
 				isAttacking = true;
-				
+
 				Debug.Log("일반공격 사용!");
 				yield return new WaitForSeconds(1f);
 				StartCoroutine("normalAttack");
@@ -234,11 +265,23 @@ public class Monster : MonoBehaviour
 		Vector2 front = new Vector2((spRenderer.flipX ? -1 : 1) * (normalAttackRange / 2) + rigid.position.x, rigid.position.y);
 
 		GameObject atkArea = Instantiate(monsterAttackArea, front, Quaternion.identity);
+		AttackArea area = atkArea.GetComponent<AttackArea>();
+		if (area != null)
+		{
+			area.isEnemyAttack = true;
+			area.damage = normalAttackDamage;
+		}
+
+		GameObject atkFX = Instantiate(normalAtkFX, front, Quaternion.identity);
 		monsterAnim.SetBool("isAttack", true);
 
-		yield return new WaitForSeconds(0.5f);
-
+		// 공격 판정은 0.1초만 존재
+		yield return new WaitForSeconds(0.1f);
 		Destroy(atkArea);
+
+		yield return new WaitForSeconds(0.5f);
+		Destroy(atkFX);
+
 		monsterAnim.SetBool("isAttack", false);
 		isAttacking = false;
 	}

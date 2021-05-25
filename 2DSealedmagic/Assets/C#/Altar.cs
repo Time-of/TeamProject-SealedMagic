@@ -10,7 +10,6 @@ using UnityEngine.SceneManagement;
 상호작용하면 정신집중 후 여러 버프 획득 후 스테이지 이동
 해당 스크립트를 추가할 때 태그를 Altar로 변경할 것
 */
-// 아래 //로 지워놓은것들 해제시킬것
 
 public class Altar : MonoBehaviour
 {
@@ -23,8 +22,10 @@ public class Altar : MonoBehaviour
 
 	[Tooltip("다음 씬으로 넘어가는 지연시간")]
 	[SerializeField] float sceneLoadTime = 2f;
-	[Tooltip("상호작용 중인가 여부")]
-	public bool isInteracting = false;
+	
+	// 상호작용 중인가 여부
+	[HideInInspector] public bool isInteracting = false;
+
 	[Tooltip("정신집중 시간")]
 	[SerializeField] float CompleteTime = 3f;
 	[Tooltip("다음 씬 이름을 적을 것")]
@@ -32,7 +33,6 @@ public class Altar : MonoBehaviour
 
 	float delay = 0f;
 
-	//public IEnumerator intract;
 
 	void Start()
 	{
@@ -40,7 +40,6 @@ public class Altar : MonoBehaviour
 		player = FindObjectOfType<PlayerObject>();
 		alteranim = GetComponent<Animator>();
 		gameManager = FindObjectOfType<GameManager>();
-		//intract = Interact();
 	}
 	void Update()
 	{

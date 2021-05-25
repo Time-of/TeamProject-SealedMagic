@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
     public float speed = 20f;
     public int damage = 20;
     public Rigidbody2D rigid;
-    public GameObject impactEffect;
+ 
 
 
 
@@ -20,13 +20,11 @@ public class Bullet : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        EnemyObject ememy = hitInfo.GetComponent<EnemyObject>();// Ememy 함수 호출
-        if(ememy != null)
+        Monster monster = hitInfo.GetComponent<Monster>();// Ememy 함수 호출
+        if(monster != null)
         {
-            ememy.EnemyDamaged(damage);// Damage
+            monster.onAttack(damage);// Damage
         }
-
-        Instantiate(impactEffect, transform.position, transform.rotation);// Impact Effect
 
         Destroy(gameObject);// destroy
 

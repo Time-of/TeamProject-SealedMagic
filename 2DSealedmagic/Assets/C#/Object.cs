@@ -94,6 +94,7 @@ public class Object : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D collision)
 	{
+		PlayerObject player = collision.GetComponent<PlayerObject>();
 		if (ObjectType == "Plate" && collision.gameObject.tag == "Player" && !onTrigger)
 		{
 			onTrigger = true;
@@ -104,7 +105,7 @@ public class Object : MonoBehaviour
 		{
 			if (collision.gameObject.tag == "Player")
 			{
-				//player.OnAttack(damage);
+				player.OnDamage(damage); // 트랙 데미지
 				Destroy(gameObject);
 			}
 			
