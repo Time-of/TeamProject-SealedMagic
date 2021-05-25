@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.Audio;
+using UnityEngine.UI;
+
 /*
 작성: 20181220 이성수(P)
 
@@ -10,11 +13,44 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-	[Tooltip("배경음악")]
-	[SerializeField] AudioSource musicSource;
-	
-	public void SetVolume(float volume)
+	[SerializeField] AudioMixer masterMixer;
+	[SerializeField] Slider bgmSlider;
+	[SerializeField] Slider sfxSlider;
+	[SerializeField] Slider masterSlider;
+
+	public void BGMControl()
 	{
-		musicSource.volume = volume;
+		float value = bgmSlider.value;
+
+		// -40일 경우 -80으로 만들어 음소거 효과
+		if (value == -40f) masterMixer.SetFloat("BGM", -80f);
+		else
+		{
+			masterMixer.SetFloat("BGM", value);
+		}
+	}
+
+	public void SFXControl()
+	{
+		float value = sfxSlider.value;
+
+		// -40일 경우 -80으로 만들어 음소거 효과
+		if (value == -40f) masterMixer.SetFloat("SFX", -80f);
+		else
+		{
+			masterMixer.SetFloat("SFX", value);
+		}
+	}
+
+	public void MasterControl()
+	{
+		float value = masterSlider.value;
+
+		// -40일 경우 -80으로 만들어 음소거 효과
+		if (value == -40f) masterMixer.SetFloat("Master", -80f);
+		else
+		{
+			masterMixer.SetFloat("Master", value);
+		}
 	}
 }

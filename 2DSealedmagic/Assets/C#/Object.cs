@@ -76,6 +76,9 @@ public class Object : MonoBehaviour
 		}
 	}
 
+	/*
+	 * 해당 부분은 HP가 3이고 1씩 감소하는 것으로 기획되어 제거됨
+	 * 대체 스크립트가 OnTriggerEnter2D에 작성됨
 	public void onAttack(float dmg)
 	{
 		HP -= dmg;
@@ -87,6 +90,7 @@ public class Object : MonoBehaviour
 			Destroy(gameObject);
 		}
 	}
+	*/
 
 	void OnTriggerEnter2D(Collider2D collision)
 	{
@@ -95,7 +99,8 @@ public class Object : MonoBehaviour
 			onTrigger = true;
 			gameObj.SetActive(false);
 		}
-		if(ObjectType == "Arrow")
+
+		if (ObjectType == "Arrow")
 		{
 			if (collision.gameObject.tag == "Player")
 			{
@@ -106,6 +111,21 @@ public class Object : MonoBehaviour
 			if (collision.gameObject.tag == "Platform" || collision.gameObject.tag == "Floor")
 			{
 				Destroy(gameObject);
+			}
+		}
+
+		if (ObjectType == "SealedStone")
+		{
+			if (collision.gameObject.tag == "Attack")
+			{
+				HP -= 1;
+				if (HP <= 0)
+				{
+					//player.CanUseMagic(index);
+					// (있다면)(파괴 이펙트 생성 스크립트)
+
+					Destroy(gameObject);
+				}
 			}
 		}
 	}
