@@ -133,9 +133,13 @@ public class PlayerLongAttack : MonoBehaviour
     {
         GameObject thunderAtk = Instantiate(impactEffect[3], firePoint.position, firePoint.rotation);
         AttackArea area = thunderAtk.GetComponent<AttackArea>();
-        area.damage = 40;
-        area.isEnemyAttack = false;
-        area.AttackType = "Stun";
-        area.duration = 2f;
+        
+        if (area != null)
+        {
+            area.damage = 40;
+            area.isEnemyAttack = false;
+            area.AttackType = "Stun";
+            area.duration = 2f;
+        }
     }
 }
