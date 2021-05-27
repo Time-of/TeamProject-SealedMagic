@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 2951433063785615921}
   - component: {fileID: 2324050012666855058}
   - component: {fileID: 4088541575897111955}
-  m_Layer: 0
+  - component: {fileID: 719763221181131092}
+  m_Layer: 13
   m_Name: Thunder Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +101,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -140,3 +141,17 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.2}
   m_Size: {x: 3, y: 6.5}
   m_Direction: 0
+--- !u!114 &719763221181131092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208383825542635354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a7ae1cc83c4cf4792d5b6e7ccd77eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  rigid: {fileID: 2951433063785615921}

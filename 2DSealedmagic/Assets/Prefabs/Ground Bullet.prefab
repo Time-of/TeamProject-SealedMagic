@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 4282569316825847869}
   - component: {fileID: 3221394354940185196}
   - component: {fileID: 4825992791384733168}
-  m_Layer: 0
+  - component: {fileID: 5250136674424520598}
+  m_Layer: 13
   m_Name: Ground Bullet
   m_TagString: GroundBullet
   m_Icon: {fileID: 0}
@@ -100,7 +101,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -150,3 +151,17 @@ MonoBehaviour:
   dotDamage: 0
   speedModify: 0
   duration: 0
+--- !u!114 &5250136674424520598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3725452781830134993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a7ae1cc83c4cf4792d5b6e7ccd77eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  rigid: {fileID: 4282569316825847869}

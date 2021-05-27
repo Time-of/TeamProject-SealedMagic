@@ -12,6 +12,7 @@ TagManager:
   - Floor
   - FireBullet
   - IceBullet
+  - GroundBullet
   layers:
   - Default
   - TransparentFX
@@ -28,8 +29,8 @@ TagManager:
   - PlayerCheckRange
   - Bullet
   - AttackRange
-  - 
-  - 
+  - EnemyAttack
+  - GroundRange
   - 
   - 
   - 

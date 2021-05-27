@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// 수정사항: PlayerObject에 Ondamage 부분에 Ondamaged 추가 및 양옆 돌아보는 방식을 flipX로 변경
 
 public class PlayerObject : MonoBehaviour
 {
@@ -27,10 +26,13 @@ public class PlayerObject : MonoBehaviour
     public GameObject AttackDamageText;
     [Tooltip("플레이어가 받은 데미지 위치")]
     public Transform hudPos;
+    [Tooltip("제단의 위치를 받아오는 곳")]
+    public static Vector3 Altarpos;
 
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     Animator anim;
+    Altar obj;
 
     void Awake()
     {
@@ -43,6 +45,7 @@ public class PlayerObject : MonoBehaviour
     {
         Jump();
         chage_Move();
+        KeyEnter();// 제단 집중
     }
 
     void FixedUpdate()
@@ -91,13 +94,13 @@ public class PlayerObject : MonoBehaviour
         //Direction image chage
         if (Input.GetAxis("Horizontal") < 0)
         {
-            //transform.eulerAngles = new Vector3(0, 180, 0);
-            spriteRenderer.flipX = true; // 21.05.26 추가
+            transform.eulerAngles = new Vector3(0, 180, 0);
+            //spriteRenderer.flipX = true; // 21.05.26 추가
         }
         else if (Input.GetAxis("Horizontal") != 0)
         {
-            //transform.eulerAngles = new Vector3(0, 0, 0);
-            spriteRenderer.flipX = false; // 21.05.26 추가
+            transform.eulerAngles = new Vector3(0, 0, 0);
+            //spriteRenderer.flipX = false; // 21.05.26 추가
         }
 
         // Animation(classic and run)
@@ -179,7 +182,7 @@ public class PlayerObject : MonoBehaviour
 
         //Damage
         curHealth -= damage;
-        OnDamaged(transform.position + new Vector3(spriteRenderer.flipX ? -30 : 30, 0, 0)); // 21.05.26 추가
+        OnDamaged(transform.position); // 21.05.26 추가
     }
 
     // 데미지를 입었을때 팅겨나는 힘
@@ -208,6 +211,34 @@ public class PlayerObject : MonoBehaviour
         spriteRenderer.color = new Color(1, 1, 1, 1);
     }
 
+    /*
+    작성: 20181220 이성수(P)
 
+    설명: 제단에 있는 Interact 함수에 접근하게 해주는 컴포넌트
+    기획서 상 상호작용 키 (제단 사용 키): F키 (default)
+    */
+
+    void KeyEnter()
+    {
+        GameManager gameManager = FindObjectOfType<GameManager>();
+        if (Input.GetKeyDown(KeyCode.F) && obj != null && gameManager.killedColoredMonster >= 3 && !obj.isInteracting)
+        {
+            obj.isInteracting = true;
+            Altarpos = transform.position;
+            Debug.Log("정신 집중!");
+        }
+    }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Altar")
+        {
+            obj = FindObjectOfType<Altar>();
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        obj = null;
+    }
 
 }

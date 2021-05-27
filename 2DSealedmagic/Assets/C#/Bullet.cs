@@ -4,31 +4,22 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-
+    [Tooltip("날라가는 속도")]
     public float speed = 20f;
-    public int damage = 20;
+
     public Rigidbody2D rigid;
  
-
-
 
     void Start()
     {
         rigid.velocity = transform.right * speed;// 날라가는 속도(힘)
     }
 
-    
-    void OnTriggerEnter2D(Collider2D hitInfo)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Monster monster = hitInfo.GetComponent<Monster>();// Ememy 함수 호출
-        if(monster != null)
-        {
-            monster.onAttack(damage);// Damage
-        }
-
-        Destroy(gameObject);// destroy
-
+        if (collision.gameObject.tag == "GroundBullet")
+            Destroy(gameObject, 0.01f);
+        else
+            Destroy(gameObject, 1);// 어딘가에 부디치면 파괴
     }
-
-
 }

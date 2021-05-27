@@ -115,17 +115,44 @@ public class PlayerLongAttack : MonoBehaviour
 
     void Shoot()
     {
-        Instantiate(impactEffect[0], firePoint.position, firePoint.rotation);
+        GameObject ShootAtk = Instantiate(impactEffect[0], firePoint.position, firePoint.rotation);
+        AttackArea area = ShootAtk.GetComponent<AttackArea>();
+
+        if (area != null)
+        {
+            area.damage = 20;
+            area.isEnemyAttack = false;
+        }
     }
 
     void FireShoot()
-    {
-        Instantiate(impactEffect[1], firePoint.position, firePoint.rotation);
+    {  
+        GameObject FireAtk = Instantiate(impactEffect[1], firePoint.position, firePoint.rotation);
+        AttackArea area = FireAtk.GetComponent<AttackArea>();
+
+        if (area != null)
+        {
+            area.damage = 50;
+            area.isEnemyAttack = false;
+            area.AttackType = "Fire";
+            area.dotDamage = 5;
+            area.duration = 5f;
+        }
     }
 
     void IceShoot()
     {
-        Instantiate(impactEffect[2], firePoint.position, firePoint.rotation);
+        GameObject IceAtk = Instantiate(impactEffect[2], firePoint.position, firePoint.rotation);
+        AttackArea area = IceAtk.GetComponent<AttackArea>();
+
+        if (area != null)
+        {
+            area.damage = 30;
+            area.isEnemyAttack = false;
+            area.AttackType = "Ice";
+            area.speedModify = 0.5f;
+            area.duration = 4f;
+        }
     }
 
     // Ãß°¡ 21.05.27

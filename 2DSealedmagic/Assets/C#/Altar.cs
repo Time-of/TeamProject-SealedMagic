@@ -52,7 +52,7 @@ public class Altar : MonoBehaviour
 		delay += Time.deltaTime;
 
 		// 플레이어 위치가 변하면 정신집중 해제
-		if (player.transform.position != PlayerInteract.pos)
+		if (player.transform.position != PlayerObject.Altarpos)
 		{
 			delay = 0f;
 			isInteracting = false;

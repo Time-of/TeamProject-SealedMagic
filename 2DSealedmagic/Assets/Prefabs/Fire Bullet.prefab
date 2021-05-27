@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 4451276859111598232}
   - component: {fileID: 6060751992544756006}
   - component: {fileID: 2813135415516177577}
-  - component: {fileID: 4697000208003625133}
+  - component: {fileID: 354337698997794913}
+  - component: {fileID: -6266671506370256206}
   m_Layer: 13
   m_Name: Fire Bullet
   m_TagString: FireBullet
@@ -122,7 +123,25 @@ CircleCollider2D:
   m_Offset: {x: 0.8965826, y: 0.44829082}
   serializedVersion: 2
   m_Radius: 0.6630156
---- !u!114 &4697000208003625133
+--- !u!114 &354337698997794913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3960833204763522607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b03e24cfccd1a408807b59e1c6a492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttackType: 
+  isEnemyAttack: 0
+  damage: 0
+  dotDamage: 0
+  speedModify: 0
+  duration: 0
+--- !u!114 &-6266671506370256206
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,5 +154,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  damage: 50
   rigid: {fileID: 6060751992544756006}

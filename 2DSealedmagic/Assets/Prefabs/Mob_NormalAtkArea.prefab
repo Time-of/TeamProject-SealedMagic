@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1454343650587498633}
   - component: {fileID: 1454343650587498632}
   - component: {fileID: 808530052514899284}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Mob_NormalAtkArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}

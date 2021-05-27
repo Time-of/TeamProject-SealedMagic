@@ -67,7 +67,7 @@ public class AttackArea : MonoBehaviour
 		// 적군의 공격일 경우
 		if (isEnemyAttack)
 		{
-			if (collision.gameObject.tag == "Player")
+			if (collision.gameObject.tag == "Player" )
 			{
 				PlayerObject pl = collision.GetComponent<PlayerObject>();
 
