@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5786660467047646824}
   - component: {fileID: 5786660467047646823}
-  - component: {fileID: 5786660467047646822}
+  - component: {fileID: 6203200754605322501}
   - component: {fileID: 4572535973070966408}
   m_Layer: 0
   m_Name: HealPotion
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5786660467047646822
+--- !u!114 &6203200754605322501
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,12 +93,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 5786660467047646820}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cffe4ef827b7154e9e3434ef2e725a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 47d0d043c36623343b3e37f1e1379662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  potionFx: {fileID: 0}
-  recoveryAmount: 100
-  potionKinds: HealPotion
+  ObjectType: PotionHP
+  Direction: 
+  gameObj: {fileID: 0}
+  amount: 100
+  speed: 0
+  HP: 0
+  index: 0
 --- !u!61 &4572535973070966408
 BoxCollider2D:
   m_ObjectHideFlags: 0

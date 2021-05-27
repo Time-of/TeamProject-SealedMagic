@@ -10,6 +10,8 @@ TagManager:
   - Altar
   - Platform
   - Floor
+  - FireBullet
+  - IceBullet
   layers:
   - Default
   - TransparentFX
@@ -25,7 +27,7 @@ TagManager:
   - Floor
   - PlayerCheckRange
   - Bullet
-  - 
+  - AttackRange
   - 
   - 
   - 

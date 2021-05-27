@@ -44,19 +44,21 @@ public class Monster : MonoBehaviour
 	SpriteRenderer spRenderer;
 
 	[HideInInspector] public GameObject traceTarget;
-
 	[HideInInspector] public bool isTracing = false;
 
 	bool isPlayerInAttackRange = false;
+
 	bool isDead = false;
 	float moveDir = 1;
-	int whereToAtk = 1;
-	public float changedSpeed = 1;
+	float changedSpeed = 1;
+	float atkDir;
+	float delay = 0f;
 
 	bool canSkill = true; // 현재 스킬 사용 가능한지 여부
 	bool canAttack = true;
 
 	bool isAttacking = false;
+	bool isStunned = false;
 
 	void Awake()
 	{
@@ -71,11 +73,13 @@ public class Monster : MonoBehaviour
 	{
 		CheckRaycast();
 		Move();
+		TryAttack();
 	}
 
+	// 레이캐스트 체크
 	void CheckRaycast()
 	{
-		if (!isDead)
+		if (!isDead || !isStunned)
 		{
 			LayerMask plform = new LayerMask();
 			plform = LayerMask.GetMask("Platform");
@@ -89,10 +93,14 @@ public class Monster : MonoBehaviour
 			RaycastHit2D raySpikes = Physics2D.Raycast(front, Vector2.down, 1f, spLayer.value);
 			Debug.DrawRay(front, Vector2.down, Color.red);
 
-			if (moveDir == 1) whereToAtk = 1;
-			else if (moveDir == -1) whereToAtk = -1;
-			RaycastHit2D rayPlayer = Physics2D.Raycast(transform.position, new Vector2(whereToAtk, 0), normalAttackRange, plLayer.value);
-			Debug.DrawRay(transform.position, new Vector2(whereToAtk, 0) * normalAttackRange, Color.green);
+			if (moveDir == 1) atkDir = 1;
+			else if (moveDir == -1) atkDir = -1;
+
+			RaycastHit2D rayPlayer = Physics2D.Raycast(transform.position, new Vector2(atkDir, 0), normalAttackRange, plLayer.value);
+			Debug.DrawRay(transform.position, new Vector2(atkDir, 0) * normalAttackRange, Color.green);
+
+			if (rayPlayer.collider) isPlayerInAttackRange = true;
+			else if (!rayPlayer.collider) isPlayerInAttackRange = false;
 
 			if (!rayPlatform.collider || raySpikes.collider)
 			{
@@ -115,56 +123,91 @@ public class Monster : MonoBehaviour
 			}
 			else if (isPlayerInAttackRange || isAttacking)
 				moveDir = 0;
-
-			if (rayPlayer.collider && !isPlayerInAttackRange)
-			{
-				isPlayerInAttackRange = true;
-
-				StartCoroutine("SkillAttack");
-			}
-			else if (!rayPlayer.collider && !isAttacking)
-			{
-				isPlayerInAttackRange = false;
-			}
 		}
 	}
 
+	// 이동
 	void Move()
 	{
-		if (moveDir != 0 && !isDead)
+		if (moveDir != 0 && !isDead && !isStunned)
 		{
 			spRenderer.flipX = moveDir == -1 ? true : false;
 			monsterAnim.SetBool("isWalk", true);
 		}
-		else if (moveDir == 0)
+		else if (moveDir == 0 || isStunned)
 			monsterAnim.SetBool("isWalk", false);
 
 
-		if (!isDead && !isAttacking && !isPlayerInAttackRange)
+		if (!isDead && !isAttacking && !isPlayerInAttackRange && !isStunned)
 		{
 			rigid.velocity = new Vector2(moveDir * moveSpeed * changedSpeed, rigid.velocity.y);
 		}
-		else if (isPlayerInAttackRange || isAttacking || isDead)
+		else if (isPlayerInAttackRange || isAttacking || isDead || isStunned)
 		{
 			rigid.velocity = Vector2.zero;
 		}
+
+		if (isDead)
+		{
+			gameObject.tag = default;
+		}
+	}
+	
+	// 공격을 시도
+	void TryAttack()
+	{
+		if(isPlayerInAttackRange && !isStunned && !isDead)
+		{
+			delay += Time.deltaTime;
+
+			if (delay >= 1f)
+			{
+				delay = 0f;
+				StartCoroutine("SkillAttack");
+			}
+		}
+		
 	}
 
+	// 이동속도 변경 상태 시작
+	public void modifySpeed(float speed, float duration)
+	{
+		if (changedSpeed != 1f)
+		{
+			StopCoroutine("changeSpeedState");
+			StartCoroutine(changeSpeedState(speed, duration));
+		}
+		else
+			StartCoroutine(changeSpeedState(speed, duration));
+	}
 	
-	public void Slowspeed(float speed, float duration)
-    {
-		Debug.Log("0. Slowspeed실행");
-		StartCoroutine(changeSpeed(speed, duration));
-    }
+	// 도트 피해 상태 시작
+	public void startDotDamage(float damage, float duration)
+	{
+		StartCoroutine(dotDamageState(damage, duration));
+	}
+
+	// 스턴 상태 시작
+	public void startStun(float duration)
+	{
+		if (isStunned)
+		{
+			StopCoroutine("StunState");
+			StartCoroutine(StunState(duration));
+		}
+		else
+			StartCoroutine(StunState(duration));
+	}
 
 	// speed 매개변수는 1 = 100%
-	IEnumerator changeSpeed(float speed, float duration)
+	// 이동속도가 변경된 상태
+	IEnumerator changeSpeedState(float speed, float duration)
 	{
 		//Debug.Log("1. 코루틴실행");
 		int i = 0;
 		changedSpeed = speed;
 
-		while (duration >= i)
+		while (i <= duration)
 		{
 			yield return new WaitForSeconds(1f);
 			i++;
@@ -177,13 +220,47 @@ public class Monster : MonoBehaviour
 		}
 	}
 
+	// 도트 피해를 입는 상태
+	IEnumerator dotDamageState(float damage, float duration)
+	{
+		int i = 0;
+		while (i <= duration)
+		{
+			yield return new WaitForSeconds(1f);
+			onAttack(damage);
+			i++;
+		}
+	}
+
+	// 기절 상태
+	IEnumerator StunState(float duration)
+	{
+		int i = 0;
+		isStunned = true;
+		isAttacking = false;
+		StopCoroutine("SkillAttack");
+		// GameObject stunFX = Instantiate(FX_Stun, trasform.position + vector3.up*2f, Quaternion.identity);
+		// Destroy(stunFX, 2f);
+		while (i <= duration)
+		{
+			yield return new WaitForSeconds(1f);
+			i++;
+			if (duration < i)
+			{
+				isStunned = false;
+			}
+		}
+	}
+
+	// 이동 방향을 생각
 	void Think()
 	{
 		moveDir = Random.Range(-1, 2);
-		float ThinkTime = Random.Range(2f, 5f);
+		float ThinkTime = Random.Range(1f, 3f);
 		Invoke("Think", ThinkTime);
 	}
 
+	// 공격을 받음
 	public void onAttack(float damage)
 	{
 		GameObject AttackText = Instantiate(AttackDamageText);// 데미지 이미지 출력
@@ -207,6 +284,7 @@ public class Monster : MonoBehaviour
 		}
 	}
 
+	// 피해를 입음 표시
 	IEnumerator onDamaged()
 	{
 		spRenderer.color = new Color(1, 1, 1, 0.6f);
@@ -216,6 +294,7 @@ public class Monster : MonoBehaviour
 		spRenderer.color = new Color(1, 1, 1, 1);
 	}
 
+	// 스킬 공격 (스킬이 쿨타임이라면 기본 공격)
 	IEnumerator SkillAttack()
 	{
 		moveDir = 0;
@@ -244,6 +323,7 @@ public class Monster : MonoBehaviour
 		}
 	}
 
+	// 스킬 재사용 대기시간 대기
 	IEnumerator CoolingSkill()
 	{
 		canSkill = false;
@@ -252,6 +332,7 @@ public class Monster : MonoBehaviour
 		Debug.Log("스킬 쿨 끝");
 	}
 
+	// 공격 재사용 대기시간 대기
 	IEnumerator CoolingAttack()
 	{
 		canAttack = false;
@@ -260,9 +341,10 @@ public class Monster : MonoBehaviour
 		Debug.Log("일반공격 쿨 끝");
 	}
 
+	// 일반 공격
 	IEnumerator normalAttack()
 	{
-		Vector2 front = new Vector2((spRenderer.flipX ? -1 : 1) * (normalAttackRange / 2) + rigid.position.x, rigid.position.y);
+		Vector2 front = new Vector2((spRenderer.flipX ? -1 : 1) * (normalAttackRange / 2 + 0.3f) + rigid.position.x, rigid.position.y);
 
 		GameObject atkArea = Instantiate(monsterAttackArea, front, Quaternion.identity);
 		AttackArea area = atkArea.GetComponent<AttackArea>();

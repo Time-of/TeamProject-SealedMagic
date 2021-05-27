@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9207481064057118662}
   - component: {fileID: 9207481064057118663}
-  - component: {fileID: 9207481064057118660}
+  - component: {fileID: 1509074953421397497}
   - component: {fileID: 8359575517651844651}
   m_Layer: 0
   m_Name: ManaPotion
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &9207481064057118660
+--- !u!114 &1509074953421397497
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,12 +93,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 9207481064057118658}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cffe4ef827b7154e9e3434ef2e725a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 47d0d043c36623343b3e37f1e1379662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  potionFx: {fileID: 0}
-  recoveryAmount: 50
-  potionKinds: ManaPotion
+  ObjectType: PotionMP
+  Direction: 
+  gameObj: {fileID: 0}
+  amount: 50
+  speed: 0
+  HP: 0
+  index: 0
 --- !u!61 &8359575517651844651
 BoxCollider2D:
   m_ObjectHideFlags: 0

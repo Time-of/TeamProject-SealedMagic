@@ -12,16 +12,26 @@ using UnityEngine;
 
 사용법:	공격판정 오브젝트에 AttackArea 삽입,
 		타 스크립트의 공격부분에서 GetComponent<AttackArea>
-		데미지랑 누구공격인지 넣을것
+		필수: damage, isEnemyAttack 넣을 것
+		상태이상인 경우: AttackType, dogDamage or speedModify, duration
 		isTrigger를 꼭 체크하기 바람
 */
 
 public class AttackArea : MonoBehaviour
 {
+	[Tooltip("공격이 상태이상 공격이라면 어떤 공격이 포함되는지 (Fire, Slow, Stun)")]
+	public string AttackType;
+
 	// true일 경우 적의 공격, false일 경우 플레이어의 공격
 	[HideInInspector] public bool isEnemyAttack;
 	// 생성 함수로부터 데미지를 받을것
 	[HideInInspector] public float damage;
+	// 도트 피해일 경우 도트 피해량
+	[HideInInspector] public float dotDamage;
+	// 상태이상이 속도를 수정할 경우 속도 조정값
+	[HideInInspector] public float speedModify;
+	// 상태이상의 지속 시간
+	[HideInInspector] public float duration;
 
 	void OnTriggerEnter2D(Collider2D collision)
 	{
@@ -35,6 +45,19 @@ public class AttackArea : MonoBehaviour
 				if (mob != null)
 				{
 					mob.onAttack(damage);
+
+					if (AttackType == "Slow")
+					{
+						mob.modifySpeed(speedModify, duration);
+					}
+					if (AttackType == "Fire")
+					{
+						mob.startDotDamage(dotDamage, duration);
+					}
+					if (AttackType == "Stun")
+					{
+						mob.startStun(duration);
+					}
 
 					Destroy(gameObject);
 				}
@@ -51,6 +74,19 @@ public class AttackArea : MonoBehaviour
 				if (pl != null)
 				{
 					pl.OnDamage(damage);
+
+					if (AttackType == "Slow")
+					{
+						//pl.modifySpeed(speedModify, duration);
+					}
+					if (AttackType == "Fire")
+					{
+						//pl.startDotDamage(dotDamage, duration);
+					}
+					if (AttackType == "Stun")
+					{
+						//pl.startStun(duration);
+					}
 
 					Destroy(gameObject);
 				}

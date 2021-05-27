@@ -10,7 +10,7 @@ using UnityEngine;
 범위 안에 들어왔다면 1초 후 플레이어를 쫓는다.
 ★ 이 스크립트를 넣는 오브젝트의 레이어를 반드시 PlayerCheckRange로 변경할 것 ★
 ★ plz change layer --> "PlayerCheckRange" when this script added ★
-(한글로 쓰면 미리보기 창에 ??로 보여서 씀)
+(한글로 쓰면 미리보기 창에 ??로 보여서 영어로 씀)
 */
 
 public class MonsterTracingCollider : MonoBehaviour

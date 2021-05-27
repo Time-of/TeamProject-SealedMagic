@@ -12,10 +12,11 @@ using UnityEngine;
 
 -- 필요한 정보 --
 ArrowDispenser: gameObj, Direction
-Arrow: damage
+Arrow: amount
 Plate: gameObj
 Door: null
 SealedStone: HP, index
+PotionHP/PotionMP: gameObj(FX), amount
 
 -- ObjectType에 오브젝트 종류를 기재 --
 화살발사기: ArrowDispenser
@@ -23,6 +24,7 @@ SealedStone: HP, index
 발판: Plate
 문: Door
 봉인석: SealedStone
+물약: PotionHP, PotionMP
 */
 
 public class Object : MonoBehaviour
@@ -33,8 +35,8 @@ public class Object : MonoBehaviour
 	[SerializeField] public string Direction;
 	[Tooltip("오브젝트 타입에 따른 오브젝트를 넣을 것")]
 	[SerializeField] GameObject gameObj;
-	[Tooltip("오브젝트 피해량")]
-	[SerializeField] float damage;
+	[Tooltip("오브젝트의 피해량, 회복량 등의 수치")]
+	[SerializeField] float amount;
 	[Tooltip("오브젝트 속도")]
 	[SerializeField] float speed;
 	[Tooltip("오브젝트 체력 (SealedStone)")]
@@ -43,6 +45,7 @@ public class Object : MonoBehaviour
 	[SerializeField] int index;
 
 	bool onTrigger = false;
+	float floatingDir = 0f;
 
 	void Start()
 	{
@@ -50,6 +53,10 @@ public class Object : MonoBehaviour
 			StartCoroutine(ArrowDispenser(Direction));
 		if (ObjectType == "Arrow")
 			StartCoroutine("Arrow");
+		if (ObjectType == "PotionHP" || ObjectType == "PotionMP")
+		{
+			StartCoroutine("SetFloatingDir");
+		}
 	}
 
 	IEnumerator ArrowDispenser(string Dir)
@@ -72,6 +79,34 @@ public class Object : MonoBehaviour
 		while (true)
 		{
 			transform.Translate(dir * speed * Time.deltaTime, 0, 0);
+			yield return null;
+		}
+	}
+	
+	IEnumerator SetFloatingDir()
+	{
+		yield return new WaitForSeconds(0.5f);
+		StartCoroutine(Floater(0.3f));
+		while (true)
+		{
+			floatingDir = 1f;
+			yield return new WaitForSeconds(1f);
+			floatingDir = -1f;
+			yield return new WaitForSeconds(1f);
+		}
+	}
+
+	IEnumerator Floater(float speed)
+	{
+		Vector3 pos = transform.position;
+		while (true)
+		{
+			if (floatingDir == 1f)
+				transform.position = Vector3.Lerp(transform.position, pos + Vector3.up * 1f, Time.deltaTime * speed);
+
+			if (floatingDir == -1f)
+				transform.position = Vector3.Lerp(transform.position, pos, Time.deltaTime * speed);
+
 			yield return null;
 		}
 	}
@@ -105,7 +140,7 @@ public class Object : MonoBehaviour
 		{
 			if (collision.gameObject.tag == "Player")
 			{
-				player.OnDamage(damage); // 트랙 데미지
+				player.OnDamage(amount); // 트랙 데미지
 				Destroy(gameObject);
 			}
 			
@@ -127,6 +162,32 @@ public class Object : MonoBehaviour
 
 					Destroy(gameObject);
 				}
+			}
+		}
+
+		if (ObjectType == "PotionHP" || ObjectType == "PotionMP")
+		{
+			if(collision.gameObject.tag == "Player")
+			{
+				PlayerObject pl = FindObjectOfType<PlayerObject>();
+				
+				if(ObjectType == "PotionHP")
+				{
+					pl.curHealth += amount;
+					if (pl.curHealth >= pl.maxHealth)
+						pl.curHealth = pl.maxHealth;
+				}
+				else if(ObjectType == "PotionMP")
+				{
+					pl.curMana += amount;
+					if (pl.curMana >= pl.maxMana)
+						pl.curMana = pl.maxMana;
+				}
+
+				//GameObject Pfx = Instantiate(gameObj, pl.transform);
+				//Destroy(Pfx, 1f);
+
+				Destroy(gameObject);
 			}
 		}
 	}

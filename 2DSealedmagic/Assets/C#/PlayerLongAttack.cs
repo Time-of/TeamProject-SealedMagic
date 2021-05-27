@@ -128,8 +128,14 @@ public class PlayerLongAttack : MonoBehaviour
         Instantiate(impactEffect[2], firePoint.position, firePoint.rotation);
     }
 
+    // Ãß°¡ 21.05.27
     void ThunderShoot()
     {
-        Instantiate(impactEffect[3], firePoint.position, firePoint.rotation);
+        GameObject thunderAtk = Instantiate(impactEffect[3], firePoint.position, firePoint.rotation);
+        AttackArea area = thunderAtk.GetComponent<AttackArea>();
+        area.damage = 40;
+        area.isEnemyAttack = false;
+        area.AttackType = "Stun";
+        area.duration = 2f;
     }
 }

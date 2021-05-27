@@ -914,7 +914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 328678516555902826, guid: 60b54b2ff1f1b3d45845eeab8cd01c2b, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 328678516555902826, guid: 60b54b2ff1f1b3d45845eeab8cd01c2b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16233,11 +16233,11 @@ RectTransform:
   m_Father: {fileID: 1821682096}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -826, y: 455}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 104, y: -70}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!1 &1111545912
 GameObject:
   m_ObjectHideFlags: 0
@@ -16445,7 +16445,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.85
+  m_Radius: 0.9
 --- !u!4 &1134916751
 Transform:
   m_ObjectHideFlags: 0
@@ -17657,7 +17657,7 @@ Transform:
   - {fileID: 1134916751}
   - {fileID: 1345307236}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1448735929
 Animator:
@@ -17694,10 +17694,10 @@ MonoBehaviour:
   life: 1000
   canUseSkill: 1
   skillIndex: 0
-  skillCooldown: 3
-  normalAttackDamage: 0
-  normalAttackCooldown: 3
-  normalAttackRange: 1.5
+  skillCooldown: 12
+  normalAttackDamage: 10
+  normalAttackCooldown: 1
+  normalAttackRange: 1.3
   isColoredMonster: 0
   monsterAttackArea: {fileID: 1454343650587498639, guid: 1fe6f5a559bb8824c819a2f42970254f, type: 3}
   normalAtkFX: {fileID: 1454343650587498639, guid: 0dcf51dc91c356c48858c8605cf02894, type: 3}
@@ -17705,7 +17705,6 @@ MonoBehaviour:
   hudPos: {fileID: 1345307236}
   traceTarget: {fileID: 0}
   isTracing: 0
-  changedSpeed: 1
 --- !u!114 &1448735931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18931,7 +18930,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1815710597
 GameObject:
@@ -19857,6 +19856,10 @@ PrefabInstance:
     - target: {fileID: 9207481064057118658, guid: bb7e7fece6d08494497d5f3b767907a3, type: 3}
       propertyPath: m_Name
       value: ManaPotion
+      objectReference: {fileID: 0}
+    - target: {fileID: 9207481064057118658, guid: bb7e7fece6d08494497d5f3b767907a3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9207481064057118662, guid: bb7e7fece6d08494497d5f3b767907a3, type: 3}
       propertyPath: m_RootOrder
@@ -21275,7 +21278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5011616711428548915, guid: f3575367ad294ac46a27ccaadd320ce5, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5011616711428548915, guid: f3575367ad294ac46a27ccaadd320ce5, type: 3}
       propertyPath: m_LocalPosition.x

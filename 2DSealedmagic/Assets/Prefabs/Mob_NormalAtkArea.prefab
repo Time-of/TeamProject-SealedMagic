@@ -70,5 +70,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6b03e24cfccd1a408807b59e1c6a492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AttackType: 
   isEnemyAttack: 0
   damage: 0
+  dotDamage: 0
+  speedModify: 0
+  duration: 0

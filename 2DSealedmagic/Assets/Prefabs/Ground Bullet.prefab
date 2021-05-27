@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4714515414999404898}
   - component: {fileID: 4282569316825847869}
   - component: {fileID: 3221394354940185196}
-  - component: {fileID: 3080557786078262636}
-  m_Layer: 12
+  - component: {fileID: 4825992791384733168}
+  m_Layer: 0
   m_Name: Ground Bullet
   m_TagString: GroundBullet
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3725452781830134993}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.29227254, y: 1.66, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -132,7 +132,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.7991204, y: 2.1540184}
   m_EdgeRadius: 0
---- !u!114 &3080557786078262636
+--- !u!114 &4825992791384733168
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,8 +141,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3725452781830134993}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 320471066660a7942bfa114f8d465823, type: 3}
+  m_Script: {fileID: 11500000, guid: c6b03e24cfccd1a408807b59e1c6a492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 70
-  rigid: {fileID: 4282569316825847869}
+  AttackType: 
+  isEnemyAttack: 0
+  damage: 0
+  dotDamage: 0
+  speedModify: 0
+  duration: 0

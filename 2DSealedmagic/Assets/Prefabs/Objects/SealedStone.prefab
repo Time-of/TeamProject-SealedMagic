@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7125846395123581067}
   - component: {fileID: 7125846395123581064}
-  - component: {fileID: 7125846395123581065}
+  - component: {fileID: 6851842116593783506}
   - component: {fileID: 2765286131305319513}
   m_Layer: 0
   m_Name: SealedStone
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7125846395123581065
+--- !u!114 &6851842116593783506
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,11 +93,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 7125846395123581070}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbba5c7ea12b04547b9cb8be046754d5, type: 3}
+  m_Script: {fileID: 11500000, guid: 47d0d043c36623343b3e37f1e1379662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 50
-  magicNum: 0
+  ObjectType: SealedStone
+  Direction: 
+  gameObj: {fileID: 0}
+  amount: 0
+  speed: 0
+  HP: 3
+  index: 0
 --- !u!61 &2765286131305319513
 BoxCollider2D:
   m_ObjectHideFlags: 0

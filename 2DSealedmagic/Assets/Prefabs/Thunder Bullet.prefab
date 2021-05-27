@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 882466386272437039}
   - component: {fileID: 3814472351782514348}
   - component: {fileID: 2951433063785615921}
+  - component: {fileID: 2324050012666855058}
   - component: {fileID: 4088541575897111955}
-  - component: {fileID: 4393044214428577413}
   m_Layer: 0
   m_Name: Thunder Bullet
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4208383825542635354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1, y: 1, z: -0.01}
-  m_LocalScale: {x: 0.722, y: 0.7006, z: 2}
+  m_LocalScale: {x: 0.722, y: 0.7006, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -106,6 +106,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2324050012666855058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208383825542635354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b03e24cfccd1a408807b59e1c6a492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttackType: Stun
+  isEnemyAttack: 0
+  damage: 0
+  dotDamage: 0
+  speedModify: 0
+  duration: 0
 --- !u!70 &4088541575897111955
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -119,21 +137,6 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.6088684, y: -2.5654294}
-  m_Size: {x: 0.99660325, y: 1.0270447}
+  m_Offset: {x: 0, y: 0.2}
+  m_Size: {x: 3, y: 6.5}
   m_Direction: 0
---- !u!114 &4393044214428577413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4208383825542635354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a7ae1cc83c4cf4792d5b6e7ccd77eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  damage: 40
-  rigid: {fileID: 2951433063785615921}
