@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerLongAttack : MonoBehaviour
 {
+
     [Tooltip("공격이 발사 되는 위치")]
     public Transform firePoint;
     [Tooltip("발사 할 Bullet")]
@@ -50,6 +51,8 @@ public class PlayerLongAttack : MonoBehaviour
             if (Input.GetButtonDown("Attack")) // "S" Attack (classic)
             {
                 anim.SetTrigger("isAttack");
+                PlayerObject playerMovement = GameObject.Find("Player").GetComponent<PlayerObject>();
+                playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
                 Shoot();
                 ccurTime = classicTime;
             }
@@ -62,11 +65,14 @@ public class PlayerLongAttack : MonoBehaviour
 
     void FireAttack()
     {
+
         if (FcurTime <= 0)// 불 공격
         {
             if (Input.GetButtonDown("FireAttack")) // "Z" Attack (fire)
             {
-                anim.SetTrigger("isAttack");
+                anim.SetTrigger("isSkill");
+                PlayerObject playerMovement = GameObject.Find("Player").GetComponent<PlayerObject>();
+                playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
                 FireShoot();
                 FcurTime = fireTime;
             }
@@ -75,15 +81,19 @@ public class PlayerLongAttack : MonoBehaviour
         {
             FcurTime -= Time.deltaTime;
         }
+
     }
 
     void IceAttack()
     {
+
         if (IcurTime <= 0) // 얼음 공격
         {
             if (Input.GetButtonDown("IceAttack")) // "X" Attack (ice)
             {
-                anim.SetTrigger("isAttack");
+                anim.SetTrigger("isSkill");
+                PlayerObject playerMovement = GameObject.Find("Player").GetComponent<PlayerObject>();
+                playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
                 IceShoot();
                 IcurTime = iceTime;
             }
@@ -92,15 +102,19 @@ public class PlayerLongAttack : MonoBehaviour
         {
             IcurTime -= Time.deltaTime;
         }
+
     }
 
     void ThunderAttack()
     {
+
         if (TcurTime <= 0) // 번개 공격
         {
             if (Input.GetButtonDown("ThunderAttack")) // "V" Attack (ice)
             {
-                anim.SetTrigger("isAttack");
+                anim.SetTrigger("isSkill");
+                PlayerObject playerMovement = GameObject.Find("Player").GetComponent<PlayerObject>();
+                playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
                 ThunderShoot();
                 TcurTime = ThunderTime;
             }
@@ -109,12 +123,14 @@ public class PlayerLongAttack : MonoBehaviour
         {
             TcurTime -= Time.deltaTime;
         }
+
     }
 
     // bullet 생성
 
     void Shoot()
     {
+        Bullet Pos = GetComponent<Bullet>();
         GameObject ShootAtk = Instantiate(impactEffect[0], firePoint.position, firePoint.rotation);
         AttackArea area = ShootAtk.GetComponent<AttackArea>();
 
@@ -126,7 +142,7 @@ public class PlayerLongAttack : MonoBehaviour
     }
 
     void FireShoot()
-    {  
+    {
         GameObject FireAtk = Instantiate(impactEffect[1], firePoint.position, firePoint.rotation);
         AttackArea area = FireAtk.GetComponent<AttackArea>();
 
@@ -160,7 +176,7 @@ public class PlayerLongAttack : MonoBehaviour
     {
         GameObject thunderAtk = Instantiate(impactEffect[3], firePoint.position, firePoint.rotation);
         AttackArea area = thunderAtk.GetComponent<AttackArea>();
-        
+
         if (area != null)
         {
             area.damage = 40;
@@ -168,5 +184,12 @@ public class PlayerLongAttack : MonoBehaviour
             area.AttackType = "Stun";
             area.duration = 2f;
         }
+    }
+
+    // isAttack 애니메이션이 끝난 후 이동 활성화
+    public void OnCanMonve()
+    {
+        PlayerObject playerMovement = GameObject.Find("Player").GetComponent<PlayerObject>();
+        playerMovement.bCanMove = true;
     }
 }

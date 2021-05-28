@@ -5,18 +5,18 @@ using UnityEngine;
 
 public class PlayerObject : MonoBehaviour
 {
-	[Tooltip("플레이어의 최대 체력 변수")]
-	public float maxHealth;
-	[Tooltip("플레이어의 현재 체력 변수")]
-	public float curHealth;
-	[Tooltip("플레이어의 최대 마나 변수")]
-	public float maxMana;
-	[Tooltip("플레이어의 현재 마나 변수")]
-	public float curMana;
+    [Tooltip("플레이어의 최대 체력 변수")]
+    public float maxHealth;
+    [Tooltip("플레이어의 현재 체력 변수")]
+    public float curHealth;
+    [Tooltip("플레이어의 최대 마나 변수")]
+    public float maxMana;
+    [Tooltip("플레이어의 현재 마나 변수")]
+    public float curMana;
 
     [Tooltip("플레이어의 최대 속도")]
-    [SerializeField] private float maxSpeed;
-    [Tooltip("Shift를 눌렀을때 달리는 속도")]
+    public float maxSpeed;
+    [Tooltip("플레이어 기본 속도")]
     [SerializeField] private float runSpeed = 4;
     [Tooltip("점프를 했을떄 위로 올라가는 속도")]
     [SerializeField] private float jumpPower;
@@ -28,6 +28,8 @@ public class PlayerObject : MonoBehaviour
     public Transform hudPos;
     [Tooltip("제단의 위치를 받아오는 곳")]
     public static Vector3 Altarpos;
+    [Tooltip("공격시 이동 활성화/비활성")]
+    public bool bCanMove = true;
 
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
@@ -57,10 +59,19 @@ public class PlayerObject : MonoBehaviour
     // 플레이어가 움직일때
     void Move()
     {
-        // Left and right Move
-        float h = Input.GetAxisRaw("Horizontal");
-        rigid.AddForce(Vector2.right * h, ForceMode2D.Impulse);
-
+        if (bCanMove)
+        {
+            if (!Input.GetButtonDown("Attack"))
+            {
+                // Left and right Move
+                float h = Input.GetAxisRaw("Horizontal");
+                rigid.AddForce(Vector2.right * h, ForceMode2D.Impulse);
+            }
+        }
+        else
+        {
+            rigid.velocity = new Vector2(rigid.velocity.normalized.x * 0.001f, rigid.velocity.y);
+        }
         // Max speed
         if (rigid.velocity.x > maxSpeed)// right max Speed
         {
@@ -71,16 +82,23 @@ public class PlayerObject : MonoBehaviour
             rigid.velocity = new Vector2(maxSpeed * (-1), rigid.velocity.y);
         }
 
-        //run
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetAxisRaw("Horizontal") != 0)
         {
-            maxSpeed = 7;
+            //run
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                anim.SetBool("isRun", true);
+                maxSpeed = 7;
+            }
+            else
+            {
+                anim.SetBool("isRun", false);
+                maxSpeed = runSpeed;
+            }
         }
-        else
-        {
-            maxSpeed = runSpeed;
-        }
+
     }
+
 
     // 멈출때 이미지 변경과 좌우반전 이미지 변경
     void chage_Move()
@@ -89,6 +107,7 @@ public class PlayerObject : MonoBehaviour
         if (Input.GetButtonUp("Horizontal"))
         {
             rigid.velocity = new Vector2(rigid.velocity.normalized.x * 0.001f, rigid.velocity.y);
+            anim.SetBool("isRun", false);
         }
 
         //Direction image chage
@@ -125,6 +144,7 @@ public class PlayerObject : MonoBehaviour
                 rigid.velocity = new Vector2(rigid.velocity.x, jumpPower * 1f);
             }
             rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
+            anim.SetBool("isRun", false);// 달리다가 점프 시 꺼짐.
             anim.SetBool("Jumpingdown", false);// 다시 점프를 했을떄, 내려가는 모션이 사라진다.
             anim.SetBool("Jumping", true);// jump image
             jumpcount--;
@@ -143,8 +163,8 @@ public class PlayerObject : MonoBehaviour
         // Jump image chage (Ground Contact)
         if (rigid.velocity.y <= 0)
         {
-            anim.SetBool("Jumping", false);// jump image
-            anim.SetBool("Jumpingdown", true);// jump image
+            anim.SetBool("Jumping", false);// jump UP image
+            anim.SetBool("Jumpingdown", true);// jump Down image
 
             Vector2 frontVec = new Vector2(rigid.position.x + rigid.velocity.x * 0.03f, rigid.position.y);
             Debug.DrawRay(frontVec, Vector3.down, new Color(1, 0, 0));

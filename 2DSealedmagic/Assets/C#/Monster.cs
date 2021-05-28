@@ -285,6 +285,7 @@ public class Monster : MonoBehaviour
                 gameManager.killedColoredMonster += 1;
             }
             Destroy(gameObject, 1f);
+            
         }
 
 

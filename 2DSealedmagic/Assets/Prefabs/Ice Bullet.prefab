@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4995070735495446697}
   - component: {fileID: 3208831455651932439}
   - component: {fileID: 6890033708868111512}
-  - component: {fileID: 2967608900537144611}
   - component: {fileID: 7703380486330179344}
+  - component: {fileID: -7331911874889699466}
   m_Layer: 13
   m_Name: Ice Bullet
   m_TagString: IceBullet
@@ -120,10 +120,27 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.9067378, y: 0.40753722}
+  m_Offset: {x: 0.87570894, y: 0.40753722}
   serializedVersion: 2
-  m_Radius: 0.46263194
---- !u!114 &2967608900537144611
+  m_Radius: 0.5143467
+--- !u!114 &7703380486330179344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5648541109482479134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a7ae1cc83c4cf4792d5b6e7ccd77eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  Impact: {fileID: 0}
+  ClassicCheck: 0
+  rigid: {fileID: 3208831455651932439}
+  pos: {fileID: 0}
+--- !u!114 &-7331911874889699466
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,17 +158,3 @@ MonoBehaviour:
   dotDamage: 0
   speedModify: 0
   duration: 0
---- !u!114 &7703380486330179344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5648541109482479134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a7ae1cc83c4cf4792d5b6e7ccd77eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  rigid: {fileID: 3208831455651932439}

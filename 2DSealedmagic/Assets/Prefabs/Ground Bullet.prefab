@@ -10,10 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8032279643531423629}
   - component: {fileID: 4714515414999404898}
-  - component: {fileID: 4282569316825847869}
-  - component: {fileID: 3221394354940185196}
-  - component: {fileID: 4825992791384733168}
-  - component: {fileID: 5250136674424520598}
+  - component: {fileID: -117012457047848463}
   m_Layer: 13
   m_Name: Ground Bullet
   m_TagString: GroundBullet
@@ -29,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3725452781830134993}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -86,54 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &4282569316825847869
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3725452781830134993}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!61 &3221394354940185196
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3725452781830134993}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.30012012, y: -0.27788877}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4, y: 4}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.7991204, y: 2.1540184}
-  m_EdgeRadius: 0
---- !u!114 &4825992791384733168
+--- !u!114 &-117012457047848463
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,26 +92,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 3725452781830134993}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6b03e24cfccd1a408807b59e1c6a492, type: 3}
+  m_Script: {fileID: 11500000, guid: b44ecb5a012feb346bbdc024032035ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttackType: 
-  isEnemyAttack: 0
-  damage: 0
-  dotDamage: 0
-  speedModify: 0
-  duration: 0
---- !u!114 &5250136674424520598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3725452781830134993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a7ae1cc83c4cf4792d5b6e7ccd77eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  rigid: {fileID: 4282569316825847869}
+  fadeOutTime: 0.65
+  fadeinout: 1
