@@ -14786,7 +14786,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &842595338
 Animator:
   serializedVersion: 3
@@ -21085,6 +21085,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6220943189152822971, guid: d5c6518140789644392fbc90a5294285, type: 3}
+      propertyPath: Skill.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220943189152822971, guid: d5c6518140789644392fbc90a5294285, type: 3}
+      propertyPath: Skill.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220943189152822971, guid: d5c6518140789644392fbc90a5294285, type: 3}
+      propertyPath: Skill.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220943189152822971, guid: d5c6518140789644392fbc90a5294285, type: 3}
+      propertyPath: Skill.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220943189152822971, guid: d5c6518140789644392fbc90a5294285, type: 3}
+      propertyPath: Skill.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220943189152822971, guid: d5c6518140789644392fbc90a5294285, type: 3}
+      propertyPath: Skill.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MonsterSkill, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220943189152822971, guid: d5c6518140789644392fbc90a5294285, type: 3}
+      propertyPath: Skill.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6562620986789669878, guid: d5c6518140789644392fbc90a5294285, type: 3}
+      propertyPath: range
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6562620986789669878, guid: d5c6518140789644392fbc90a5294285, type: 3}
+      propertyPath: FX_Sprite
+      value: 
+      objectReference: {fileID: 6464321272106875312, guid: f4682627cb6fd12478c2ac33d681b9a7, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5c6518140789644392fbc90a5294285, type: 3}
 --- !u!1001 &7140129739268634409

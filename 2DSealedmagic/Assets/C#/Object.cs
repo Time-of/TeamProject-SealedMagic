@@ -53,7 +53,7 @@ public class Object : MonoBehaviour
 			StartCoroutine(ArrowDispenser(Direction));
 		if (ObjectType == "Arrow")
 			StartCoroutine("Arrow");
-		if (ObjectType == "PotionHP" || ObjectType == "PotionMP")
+		if (ObjectType == "PotionHp" || ObjectType == "PotionMP")
 		{
 			StartCoroutine("SetFloatingDir");
 		}
@@ -165,13 +165,13 @@ public class Object : MonoBehaviour
 			}
 		}
 
-		if (ObjectType == "PotionHP" || ObjectType == "PotionMP")
+		if (ObjectType == "PotionHp" || ObjectType == "PotionMP")
 		{
 			if(collision.gameObject.tag == "Player")
 			{
 				PlayerObject pl = FindObjectOfType<PlayerObject>();
 				
-				if(ObjectType == "PotionHP")
+				if(ObjectType == "PotionHp")
 				{
 					pl.curHealth += amount;
 					if (pl.curHealth >= pl.maxHealth)

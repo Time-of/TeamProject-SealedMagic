@@ -17,11 +17,11 @@ public class Monster : MonoBehaviour
 	[Tooltip("적의 체력")]
 	public float life;
 	[Tooltip("몬스터가 스킬을 가지고 있는가?")]
-	[SerializeField] bool canUseSkill;
+	[SerializeField] bool hasSkill;
 	[Tooltip("사용하는 스킬의 인덱스 번호 (int)")]
 	[SerializeField] int skillIndex;
-	[Tooltip("사용하는 스킬의 재사용 대기시간 (float)")]
-	[SerializeField] float skillCooldown;
+	//[Tooltip("사용하는 스킬의 재사용 대기시간 (float)")]
+	//[SerializeField] float skillCooldown;
 	[Tooltip("일반 공격 피해량 (float)")]
 	[SerializeField] float normalAttackDamage;
 	[Tooltip("일반 공격 재사용 대기시간 (float)")]
@@ -30,10 +30,11 @@ public class Monster : MonoBehaviour
 	[SerializeField] float normalAttackRange;
 	[Tooltip("제단을 해제하기 위한 몬스터인지?")]
 	[SerializeField] bool isColoredMonster;
-	[Tooltip("몬스터 공격 범위 설정 오브젝트")]
+	[Tooltip("몬스터 일반 공격 범위 오브젝트")]
 	[SerializeField] GameObject monsterAttackArea;
 	[Tooltip("몬스터 일반공격 이펙트")]
 	[SerializeField] GameObject normalAtkFX;
+
 	[Tooltip("몬스터가 받은 데미지 이미지")]
 	public GameObject AttackDamageText;
 	[Tooltip("몬스터가 받은 데미지 위치")]
@@ -55,6 +56,17 @@ public class Monster : MonoBehaviour
 	float delay = 0f;
 
 	bool canSkill = true; // 현재 스킬 사용 가능한지 여부
+	public bool CanSkill
+	{
+		get
+		{
+			return canSkill;
+		}
+		set
+		{
+			canSkill = value;
+		}
+	}
 	bool canAttack = true;
 
 	bool isAttacking = false;
@@ -298,24 +310,23 @@ public class Monster : MonoBehaviour
 	IEnumerator SkillAttack()
 	{
 		moveDir = 0;
-		if (canUseSkill && canSkill)
+		if (hasSkill && canSkill)
 		{
 			isAttacking = true;
+			canSkill = false;
 
-			Debug.Log("스킬 사용!");
+			MonsterSkill sk = GetComponent<MonsterSkill>();
+			sk.UseSkill(skillIndex, (int)atkDir);
 			yield return new WaitForSeconds(1f);
-			isAttacking = false; // MonsterSkill.Skill(0);
-
-			StartCoroutine("CoolingSkill");
+			isAttacking = false;
 		}
-		else if (!canUseSkill || !canSkill)
+		else if (!hasSkill || !canSkill)
 		{
 			if (canAttack)
 			{
 				isAttacking = true;
 
-				Debug.Log("일반공격 사용!");
-				yield return new WaitForSeconds(1f);
+				yield return new WaitForSeconds(0.1f);
 				StartCoroutine("normalAttack");
 
 				StartCoroutine("CoolingAttack");
@@ -324,13 +335,13 @@ public class Monster : MonoBehaviour
 	}
 
 	// 스킬 재사용 대기시간 대기
+	/*
 	IEnumerator CoolingSkill()
 	{
 		canSkill = false;
 		yield return new WaitForSeconds(skillCooldown);
 		canSkill = true;
-		Debug.Log("스킬 쿨 끝");
-	}
+	}*/
 
 	// 공격 재사용 대기시간 대기
 	IEnumerator CoolingAttack()
@@ -338,16 +349,15 @@ public class Monster : MonoBehaviour
 		canAttack = false;
 		yield return new WaitForSeconds(normalAttackCooldown);
 		canAttack = true;
-		Debug.Log("일반공격 쿨 끝");
 	}
 
 	// 일반 공격
 	IEnumerator normalAttack()
 	{
-		Vector2 front = new Vector2((spRenderer.flipX ? -1 : 1) * (normalAttackRange / 2 + 0.3f) + rigid.position.x, rigid.position.y);
+		Vector2 front = new Vector2((spRenderer.flipX ? -1 : 1) * (normalAttackRange / 2 * 1.3f) + transform.position.x, transform.position.y);
 
 		GameObject atkArea = Instantiate(monsterAttackArea, front, Quaternion.identity);
-		AttackArea area = atkArea.GetComponent<AttackArea>();
+		var area = atkArea.GetComponent<AttackArea>();
 		if (area != null)
 		{
 			area.isEnemyAttack = true;
