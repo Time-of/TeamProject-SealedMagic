@@ -47,6 +47,8 @@ public class Object : MonoBehaviour
 	bool onTrigger = false;
 	float floatingDir = 0f;
 
+	Vector2 pos;
+
 	void Start()
 	{
 		if (ObjectType == "ArrowDispenser")
@@ -55,6 +57,7 @@ public class Object : MonoBehaviour
 			StartCoroutine("Arrow");
 		if (ObjectType == "PotionHp" || ObjectType == "PotionMP")
 		{
+			pos = transform.position;
 			StartCoroutine("SetFloatingDir");
 		}
 	}
@@ -98,14 +101,13 @@ public class Object : MonoBehaviour
 
 	IEnumerator Floater(float speed)
 	{
-		Vector3 pos = transform.position;
 		while (true)
 		{
 			if (floatingDir == 1f)
-				transform.position = Vector3.Lerp(transform.position, pos + Vector3.up * 1f, Time.deltaTime * speed);
+				transform.position = Vector2.Lerp(transform.position, pos + Vector2.up * 1f, Time.deltaTime * speed);
 
 			if (floatingDir == -1f)
-				transform.position = Vector3.Lerp(transform.position, pos, Time.deltaTime * speed);
+				transform.position = Vector2.Lerp(transform.position, pos, Time.deltaTime * speed);
 
 			yield return null;
 		}

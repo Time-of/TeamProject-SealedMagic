@@ -12,29 +12,39 @@ using UnityEngine;
 
 public class Monster : MonoBehaviour
 {
+	[Header("몬스터 변수")]
 	[Tooltip("적이 움직이는 속도")]
 	[SerializeField] float moveSpeed;
 	[Tooltip("적의 체력")]
 	public float life;
+	[Tooltip("제단을 해제하기 위한 몬스터인지?")]
+	[SerializeField] bool isColoredMonster;
+
+	[Header("스킬")]
 	[Tooltip("몬스터가 스킬을 가지고 있는가?")]
 	[SerializeField] bool hasSkill;
+	[Tooltip("두번째 스킬을 가지고 있는가?/hasSkill이 체크가 되있을 경우만")]
+	[SerializeField] bool has2ndSkill;
 	[Tooltip("사용하는 스킬의 인덱스 번호 (int)")]
 	[SerializeField] int skillIndex;
+	[Tooltip("사용하는 두 번째 스킬의 인덱스 번호 (int)")]
+	[SerializeField] int skill2Index;
 	//[Tooltip("사용하는 스킬의 재사용 대기시간 (float)")]
 	//[SerializeField] float skillCooldown;
+
+	[Header("공격")]
 	[Tooltip("일반 공격 피해량 (float)")]
 	[SerializeField] float normalAttackDamage;
 	[Tooltip("일반 공격 재사용 대기시간 (float)")]
 	[SerializeField] float normalAttackCooldown;
 	[Tooltip("일반 공격 사거리 (float)")]
 	[SerializeField] float normalAttackRange;
-	[Tooltip("제단을 해제하기 위한 몬스터인지?")]
-	[SerializeField] bool isColoredMonster;
 	[Tooltip("몬스터 일반 공격 범위 오브젝트")]
 	[SerializeField] GameObject monsterAttackArea;
 	[Tooltip("몬스터 일반공격 이펙트")]
 	[SerializeField] GameObject normalAtkFX;
 
+	[Header("몬스터 피해")]
 	[Tooltip("몬스터가 받은 데미지 이미지")]
 	public GameObject AttackDamageText;
 	[Tooltip("몬스터가 받은 데미지 위치")]
@@ -55,28 +65,25 @@ public class Monster : MonoBehaviour
 	float atkDir;
 	float delay = 0f;
 
-	bool canSkill = true; // 현재 스킬 사용 가능한지 여부
-	public bool CanSkill
-	{
-		get
-		{
-			return canSkill;
-		}
-		set
-		{
-			canSkill = value;
-		}
-	}
 	bool canAttack = true;
-
 	bool isAttacking = false;
-	bool isStunned = false;
+	public bool canSkill_1 = false; // 현재 스킬 사용 가능한지 여부
+	public bool canSkill_2 = false;
+
+	bool onStunned = false;
+	bool onProtected = false;
+	public bool OnProtected { get { return onProtected; } set { onProtected = value; } }
+	//bool onFired = false;
+	//bool onSpeedChanged = false;
 
 	void Awake()
 	{
 		monsterAnim = gameObject.GetComponentInChildren<Animator>();
 		rigid = GetComponent<Rigidbody2D>();
 		spRenderer = GetComponent<SpriteRenderer>();
+
+		if (hasSkill) canSkill_1 = true;
+		if (has2ndSkill) canSkill_2 = true;
 
 		Invoke("Think", Random.Range(3, 6));
 	}
@@ -91,7 +98,7 @@ public class Monster : MonoBehaviour
 	// 레이캐스트 체크
 	void CheckRaycast()
 	{
-		if (!isDead || !isStunned)
+		if (!isDead || !onStunned)
 		{
 			LayerMask plform = new LayerMask();
 			plform = LayerMask.GetMask("Platform");
@@ -141,34 +148,29 @@ public class Monster : MonoBehaviour
 	// 이동
 	void Move()
 	{
-		if (moveDir != 0 && !isDead && !isStunned)
+		if (moveDir != 0 && !isDead && !onStunned)
 		{
 			spRenderer.flipX = moveDir == -1 ? true : false;
 			monsterAnim.SetBool("isWalk", true);
 		}
-		else if (moveDir == 0 || isStunned)
+		else if (moveDir == 0 || onStunned)
 			monsterAnim.SetBool("isWalk", false);
 
 
-		if (!isDead && !isAttacking && !isPlayerInAttackRange && !isStunned)
+		if (!isDead && !isAttacking && !isPlayerInAttackRange && !onStunned)
 		{
 			rigid.velocity = new Vector2(moveDir * moveSpeed * changedSpeed, rigid.velocity.y);
 		}
-		else if (isPlayerInAttackRange || isAttacking || isDead || isStunned)
+		else if (isPlayerInAttackRange || isAttacking || isDead || onStunned)
 		{
 			rigid.velocity = Vector2.zero;
-		}
-
-		if (isDead)
-		{
-			gameObject.tag = default;
 		}
 	}
 	
 	// 공격을 시도
 	void TryAttack()
 	{
-		if(isPlayerInAttackRange && !isStunned && !isDead)
+		if(isPlayerInAttackRange && !onStunned && !isDead)
 		{
 			delay += Time.deltaTime;
 
@@ -202,7 +204,7 @@ public class Monster : MonoBehaviour
 	// 스턴 상태 시작
 	public void startStun(float duration)
 	{
-		if (isStunned)
+		if (onStunned)
 		{
 			StopCoroutine("StunState");
 			StartCoroutine(StunState(duration));
@@ -215,19 +217,19 @@ public class Monster : MonoBehaviour
 	// 이동속도가 변경된 상태
 	IEnumerator changeSpeedState(float speed, float duration)
 	{
-		//Debug.Log("1. 코루틴실행");
 		int i = 0;
 		changedSpeed = speed;
+		//onSpeedChanged = true;
 
 		while (i <= duration)
 		{
 			yield return new WaitForSeconds(1f);
 			i++;
-			//Debug.Log("2. i++, i: " + i);
+
 			if (duration < i)
 			{
 				changedSpeed = 1f;
-				//Debug.Log("3. 속도 원래대로, 기다린 시간: " + i);
+				//onSpeedChanged = false;
 			}
 		}
 	}
@@ -236,11 +238,14 @@ public class Monster : MonoBehaviour
 	IEnumerator dotDamageState(float damage, float duration)
 	{
 		int i = 0;
-		while (i <= duration)
+		//onFired = true;
+
+		while (i < duration)
 		{
 			yield return new WaitForSeconds(1f);
 			onAttack(damage);
 			i++;
+			//onFired = false;
 		}
 	}
 
@@ -248,7 +253,7 @@ public class Monster : MonoBehaviour
 	IEnumerator StunState(float duration)
 	{
 		int i = 0;
-		isStunned = true;
+		onStunned = true;
 		isAttacking = false;
 		StopCoroutine("SkillAttack");
 		// GameObject stunFX = Instantiate(FX_Stun, trasform.position + vector3.up*2f, Quaternion.identity);
@@ -259,7 +264,7 @@ public class Monster : MonoBehaviour
 			i++;
 			if (duration < i)
 			{
-				isStunned = false;
+				onStunned = false;
 			}
 		}
 	}
@@ -279,20 +284,45 @@ public class Monster : MonoBehaviour
 		AttackText.transform.position = hudPos.position;// 데미지 위치
 		AttackText.GetComponent<DmgText>().damage = damage;// 데미지 값 받기
 
-		life -= damage;
-		StartCoroutine("onDamaged");
+		if (!onProtected)
+		{
+			life -= damage;
+			StartCoroutine("onDamaged");
+		}
+		else
+		{
+			AttackText.GetComponent<DmgText>().damage = 0;
+			onProtected = false;
+		}
+		
 		if (life <= 0 && !isDead)
 		{
 			isDead = true;
 			monsterAnim.SetBool("isWalk", false);
 			monsterAnim.SetBool("isAttack", false);
-			monsterAnim.SetTrigger("isDeath");
+			//monsterAnim.SetTrigger("isDeath");
 			if (isColoredMonster)
 			{
 				GameManager gameManager = FindObjectOfType<GameManager>();
 				gameManager.killedColoredMonster += 1;
 			}
-			Destroy(gameObject, 1f);
+			//Destroy(gameObject, 1f);
+			StartCoroutine("Die");
+		}
+	}
+
+	IEnumerator Die()
+	{
+		float i = 1f;
+		while (i >= 0f)
+		{
+			spRenderer.color = new Color(1, 1, 1, i);
+			i -= 0.1f;
+			yield return new WaitForSeconds(0.1f);
+			if (i <= 0.1f)
+			{
+				Destroy(gameObject);
+			}
 		}
 	}
 
@@ -310,17 +340,46 @@ public class Monster : MonoBehaviour
 	IEnumerator SkillAttack()
 	{
 		moveDir = 0;
-		if (hasSkill && canSkill)
+		if (hasSkill &&  (canSkill_1 || canSkill_2))
 		{
 			isAttacking = true;
-			canSkill = false;
-
 			MonsterSkill sk = GetComponent<MonsterSkill>();
-			sk.UseSkill(skillIndex, (int)atkDir);
-			yield return new WaitForSeconds(1f);
+
+			// 1번 스킬 사용
+			if (canSkill_1 && !canSkill_2)
+			{
+				canSkill_1 = false;
+				//Debug.Log("sk1");
+				sk.UseSkill(skillIndex, (int)atkDir, 1);
+			}
+			// 2번 스킬 사용
+			else if (!canSkill_1 && canSkill_2)
+			{
+				canSkill_2 = false;
+				Debug.Log("sk2");
+				sk.UseSkill(skill2Index, (int)atkDir, 2);
+			}
+			else
+			{
+				//Debug.Log("rand");
+				int rand = Random.Range(1, 3); // 1~2
+				switch (rand)
+				{
+					case 1: canSkill_1 = false;
+							sk.UseSkill(skillIndex, (int)atkDir, 1);
+							break;
+					case 2: canSkill_2 = false;
+							sk.UseSkill(skill2Index, (int)atkDir, 2);
+							break;
+					default: Debug.Log("ERROR");
+							break;
+				}
+			}
+
+			yield return new WaitForSeconds(3f);
 			isAttacking = false;
 		}
-		else if (!hasSkill || !canSkill)
+		else if (!hasSkill || (!canSkill_1 && !canSkill_2))
 		{
 			if (canAttack)
 			{

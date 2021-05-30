@@ -13,6 +13,7 @@ using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
+	[Header("오디오믹서 및 슬라이더")]
 	[SerializeField] AudioMixer masterMixer;
 	[SerializeField] Slider bgmSlider;
 	[SerializeField] Slider sfxSlider;
