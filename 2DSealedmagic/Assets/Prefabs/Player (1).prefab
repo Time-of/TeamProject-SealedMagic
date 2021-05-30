@@ -1,81 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &177332985005816784
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 177332985005816791}
-  - component: {fileID: 177332985005816789}
-  - component: {fileID: 177332985005816790}
-  m_Layer: 16
-  m_Name: GroundRange
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &177332985005816791
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177332985005816784}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.86, y: -0.16, z: 0}
-  m_LocalScale: {x: 6.8551173, y: 0.45, z: 1}
-  m_Children: []
-  m_Father: {fileID: 177332986038848278}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &177332985005816789
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177332985005816784}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &177332985005816790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177332985005816784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2b880b746ccb7c4eaf23fc0cb2cb836, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pos: {x: 0, y: 0, z: 0}
-  GroundTime: 0
-  impactEffect:
-  - {fileID: 7982674371405401331, guid: 4ef2e341258bb154c976942df0de273f, type: 3}
-  - {fileID: 3725452781830134993, guid: f3061ed659265594faef7f76bd61f3d9, type: 3}
-  check: 0
 --- !u!1 &177332985104034462
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,6 +45,7 @@ GameObject:
   - component: {fileID: 177332986038848274}
   - component: {fileID: 177332986038848275}
   - component: {fileID: 177332986038848268}
+  - component: {fileID: 2003237550}
   m_Layer: 9
   m_Name: Player (1)
   m_TagString: Player
@@ -141,7 +66,6 @@ Transform:
   m_Children:
   - {fileID: 177332985104034461}
   - {fileID: 177332986515156776}
-  - {fileID: 177332985005816791}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -273,11 +197,9 @@ MonoBehaviour:
   - {fileID: 715074679971857772, guid: 72c202146a57fbc4c9e65ee4db1c4a5e, type: 3}
   - {fileID: 3960833204763522607, guid: 4aac6e34cf6a7034497c8a2c44c543d4, type: 3}
   - {fileID: 5648541109482479134, guid: 3373921c0c7295a4e9d12ac3ccf4d0e1, type: 3}
-  - {fileID: 4208383825542635354, guid: b400e71b9abcebc44ab966bda32db2f3, type: 3}
   classicTime: 0.3
   fireTime: 2
   iceTime: 2
-  ThunderTime: 2
 --- !u!95 &177332986038848268
 Animator:
   serializedVersion: 3
@@ -297,6 +219,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2003237550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177332986038848269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2b880b746ccb7c4eaf23fc0cb2cb836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GroundTime: 0
+  ThunderTime: 0
+  impactEffect:
+  - {fileID: 7982674371405401331, guid: 4ef2e341258bb154c976942df0de273f, type: 3}
+  - {fileID: 3725452781830134993, guid: f3061ed659265594faef7f76bd61f3d9, type: 3}
+  - {fileID: 5552659579132372351, guid: ca6f57a7ce4ad8547a35ea7267fcd82f, type: 3}
+  - {fileID: 4208383825542635354, guid: b400e71b9abcebc44ab966bda32db2f3, type: 3}
+  InLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  size: {x: 8, y: 0.5}
+  size2: {x: 8, y: 4.5}
+  moveDic: 1
 --- !u!1 &177332986515156777
 GameObject:
   m_ObjectHideFlags: 0

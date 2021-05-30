@@ -109,17 +109,19 @@ public class PlayerObject : MonoBehaviour
             rigid.velocity = new Vector2(rigid.velocity.normalized.x * 0.001f, rigid.velocity.y);
             anim.SetBool("isRun", false);
         }
-
-        //Direction image chage
-        if (Input.GetAxis("Horizontal") < 0)
+        if (bCanMove)
         {
-            transform.eulerAngles = new Vector3(0, 180, 0);
-            //spriteRenderer.flipX = true; // 21.05.26 추가
-        }
-        else if (Input.GetAxis("Horizontal") != 0)
-        {
-            transform.eulerAngles = new Vector3(0, 0, 0);
-            //spriteRenderer.flipX = false; // 21.05.26 추가
+            //Direction image chage
+            if (Input.GetAxis("Horizontal") < 0)
+            {
+                transform.eulerAngles = new Vector3(0, 180, 0);
+                //spriteRenderer.flipX = true; // 21.05.26 추가
+            }
+            else if (Input.GetAxis("Horizontal") != 0)
+            {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+                //spriteRenderer.flipX = false; // 21.05.26 추가
+            }
         }
 
         // Animation(classic and run)

@@ -15,8 +15,7 @@ public class PlayerLongAttack : MonoBehaviour
     private float FcurTime;
     [Tooltip("얼음 공격 쿨타임1")]
     private float IcurTime;
-    [Tooltip("번개 공격 쿨타임1")]
-    private float TcurTime;
+    
 
     [Tooltip("기본 공격 쿨타임2")]
     public float classicTime;
@@ -24,8 +23,7 @@ public class PlayerLongAttack : MonoBehaviour
     public float fireTime;
     [Tooltip("얼음 공격 쿨타임2")]
     public float iceTime;
-    [Tooltip("번개 공격 쿨타임2")]
-    public float ThunderTime;
+    
 
     Animator anim;
 
@@ -41,7 +39,6 @@ public class PlayerLongAttack : MonoBehaviour
         Attack();
         FireAttack();
         IceAttack();
-        ThunderAttack();
     }
 
     void Attack()
@@ -105,26 +102,7 @@ public class PlayerLongAttack : MonoBehaviour
 
     }
 
-    void ThunderAttack()
-    {
-
-        if (TcurTime <= 0) // 번개 공격
-        {
-            if (Input.GetButtonDown("ThunderAttack")) // "V" Attack (ice)
-            {
-                anim.SetTrigger("isSkill");
-                PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
-                playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
-                ThunderShoot();
-                TcurTime = ThunderTime;
-            }
-        }
-        else
-        {
-            TcurTime -= Time.deltaTime;
-        }
-
-    }
+    
 
     // bullet 생성
 
@@ -168,21 +146,6 @@ public class PlayerLongAttack : MonoBehaviour
             area.AttackType = "Ice";
             area.speedModify = 0.5f;
             area.duration = 4f;
-        }
-    }
-
-    // 추가 21.05.27
-    void ThunderShoot()
-    {
-        GameObject thunderAtk = Instantiate(impactEffect[3], firePoint.position, firePoint.rotation);
-        AttackArea area = thunderAtk.GetComponent<AttackArea>();
-
-        if (area != null)
-        {
-            area.damage = 40;
-            area.isEnemyAttack = false;
-            area.AttackType = "Stun";
-            area.duration = 2f;
         }
     }
 
