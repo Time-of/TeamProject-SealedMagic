@@ -11,6 +11,7 @@ using UnityEngine.UI;
 
 public class UserInterface : MonoBehaviour
 {
+	[Header("UI")]
 	[Tooltip("체력 바 UI")]
 	[SerializeField] Image healthBar;
 	[Tooltip("마나 바 UI")]

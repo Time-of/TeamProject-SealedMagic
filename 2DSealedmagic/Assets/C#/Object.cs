@@ -47,14 +47,17 @@ public class Object : MonoBehaviour
 	bool onTrigger = false;
 	float floatingDir = 0f;
 
+	Vector2 pos;
+
 	void Start()
 	{
 		if (ObjectType == "ArrowDispenser")
 			StartCoroutine(ArrowDispenser(Direction));
 		if (ObjectType == "Arrow")
 			StartCoroutine("Arrow");
-		if (ObjectType == "PotionHP" || ObjectType == "PotionMP")
+		if (ObjectType == "PotionHp" || ObjectType == "PotionMP")
 		{
+			pos = transform.position;
 			StartCoroutine("SetFloatingDir");
 		}
 	}
@@ -98,14 +101,13 @@ public class Object : MonoBehaviour
 
 	IEnumerator Floater(float speed)
 	{
-		Vector3 pos = transform.position;
 		while (true)
 		{
 			if (floatingDir == 1f)
-				transform.position = Vector3.Lerp(transform.position, pos + Vector3.up * 1f, Time.deltaTime * speed);
+				transform.position = Vector2.Lerp(transform.position, pos + Vector2.up * 1f, Time.deltaTime * speed);
 
 			if (floatingDir == -1f)
-				transform.position = Vector3.Lerp(transform.position, pos, Time.deltaTime * speed);
+				transform.position = Vector2.Lerp(transform.position, pos, Time.deltaTime * speed);
 
 			yield return null;
 		}
@@ -165,13 +167,13 @@ public class Object : MonoBehaviour
 			}
 		}
 
-		if (ObjectType == "PotionHP" || ObjectType == "PotionMP")
+		if (ObjectType == "PotionHp" || ObjectType == "PotionMP")
 		{
 			if(collision.gameObject.tag == "Player")
 			{
 				PlayerObject pl = FindObjectOfType<PlayerObject>();
 				
-				if(ObjectType == "PotionHP")
+				if(ObjectType == "PotionHp")
 				{
 					pl.curHealth += amount;
 					if (pl.curHealth >= pl.maxHealth)

@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 6220943189152822967}
   - component: {fileID: 6220943189152822968}
   - component: {fileID: 6220943189152822971}
+  - component: {fileID: 6562620986789669878}
   - component: {fileID: 6220943189152822964}
   - component: {fileID: 6220943189152822973}
   - component: {fileID: 6220943189152822970}
@@ -235,19 +236,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   life: 1000
-  canUseSkill: 1
+  isColoredMonster: 0
+  hasSkill: 1
+  has2ndSkill: 1
   skillIndex: 0
-  skillCooldown: 12
+  skill2Index: 1
   normalAttackDamage: 10
   normalAttackCooldown: 1
   normalAttackRange: 1.3
-  isColoredMonster: 0
   monsterAttackArea: {fileID: 1454343650587498639, guid: 1fe6f5a559bb8824c819a2f42970254f, type: 3}
   normalAtkFX: {fileID: 1454343650587498639, guid: 0dcf51dc91c356c48858c8605cf02894, type: 3}
   AttackDamageText: {fileID: 8695559562536868643, guid: ec90fe6e0a576254493bc12fd3624d34, type: 3}
   hudPos: {fileID: 6220943189115715685}
   traceTarget: {fileID: 0}
   isTracing: 0
+  canSkill_1: 1
+  canSkill_2: 1
+--- !u!114 &6562620986789669878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220943189152822965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b92e85cfa9e62f2448b562f0a25b9186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FX_Sprite:
+  - {fileID: 6464321272106875312, guid: f4682627cb6fd12478c2ac33d681b9a7, type: 3}
+  - {fileID: 0}
+  Skill_Area:
+  - {fileID: 1454343650587498639, guid: 1fe6f5a559bb8824c819a2f42970254f, type: 3}
+  - {fileID: 0}
+  FX_Particle:
+  - {fileID: 1454343650587498639, guid: 06797b2d078ba494d9b4e88840374f10, type: 3}
+  - {fileID: 1454343650587498639, guid: 25f58c7300295ad4ca456f4e29c636eb, type: 3}
+  cooldown:
+  - 40
+  - 30
+  range:
+  - 2
+  - 0
 --- !u!70 &6220943189152822964
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
