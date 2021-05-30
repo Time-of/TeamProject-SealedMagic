@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 249058303573f094cb2ad9e7ea925a61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,6 +98,7 @@ MonoBehaviour:
   ObjectType: ArrowDispenser
   Direction: Right
   gameObj: {fileID: 3244213330509593711, guid: ce8714b083873394b877e314dfe9ce7b, type: 3}
-  damage: 0
+  amount: 0
+  speed: 0
   HP: 0
   index: 0

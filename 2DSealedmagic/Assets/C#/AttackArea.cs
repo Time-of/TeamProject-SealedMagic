@@ -19,7 +19,7 @@ using UnityEngine;
 
 public class AttackArea : MonoBehaviour
 {
-	[Tooltip("공격이 상태이상 공격이라면 어떤 공격이 포함되는지 (Fire, Slow, Stun)")]
+	[Tooltip("공격이 상태이상 공격이라면 어떤 공격이 포함되는지 (Fire, Ice, Stun)")]
 	public string AttackType;
 
 	// true일 경우 적의 공격, false일 경우 플레이어의 공격
@@ -46,7 +46,7 @@ public class AttackArea : MonoBehaviour
 				{
 					mob.onAttack(damage);
 
-					if (AttackType == "Slow")
+					if (AttackType == "Ice")
 					{
 						mob.modifySpeed(speedModify, duration);
 					}
@@ -75,7 +75,7 @@ public class AttackArea : MonoBehaviour
 				{
 					pl.OnDamage(damage);
 
-					if (AttackType == "Slow")
+					if (AttackType == "Ice")
 					{
 						//pl.modifySpeed(speedModify, duration);
 					}
