@@ -8,6 +8,7 @@ using UnityEngine;
 설명: 몬스터 스킬 스크립트
 인덱스에 따라 스킬이 다르게 사용됨
 UseSkill(스킬 인덱스, 공격 방향, 스킬 번호(1,2));
+스킬 인덱스는 메모장에 따로 정리
 */
 
 public class MonsterSkill : MonoBehaviour
@@ -81,10 +82,18 @@ public class MonsterSkill : MonoBehaviour
 		else if (index == 1)
 		{
 			DeactiveSkill(skNum);
-			Debug.Log("skill_index_1");
+
 			GetComponent<Monster>().OnProtected = true;
 			GameObject atkFX = Instantiate(FX_Particle[ArrayNum], transform.position, Quaternion.identity);
 			Destroy(atkFX, 1f);
+			StartCoroutine(Cooldown(cooldown[ArrayNum], skNum));
+		}
+		else if (index == 2)
+		{
+			DeactiveSkill(skNum);
+
+			// 아직 미구현
+
 			StartCoroutine(Cooldown(cooldown[ArrayNum], skNum));
 		}
 	}

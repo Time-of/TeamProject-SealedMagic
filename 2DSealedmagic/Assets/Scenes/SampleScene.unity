@@ -587,6 +587,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap_ArrDispenser (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5011616711428548914, guid: f3575367ad294ac46a27ccaadd320ce5, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5011616711428548915, guid: f3575367ad294ac46a27ccaadd320ce5, type: 3}
       propertyPath: m_RootOrder
       value: 14
