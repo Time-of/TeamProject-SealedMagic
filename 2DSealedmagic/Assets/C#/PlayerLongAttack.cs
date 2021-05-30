@@ -51,7 +51,7 @@ public class PlayerLongAttack : MonoBehaviour
             if (Input.GetButtonDown("Attack")) // "S" Attack (classic)
             {
                 anim.SetTrigger("isAttack");
-                PlayerObject playerMovement = GameObject.Find("Player").GetComponent<PlayerObject>();
+                PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
                 playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
                 Shoot();
                 ccurTime = classicTime;
@@ -71,7 +71,7 @@ public class PlayerLongAttack : MonoBehaviour
             if (Input.GetButtonDown("FireAttack")) // "Z" Attack (fire)
             {
                 anim.SetTrigger("isSkill");
-                PlayerObject playerMovement = GameObject.Find("Player").GetComponent<PlayerObject>();
+                PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
                 playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
                 FireShoot();
                 FcurTime = fireTime;
@@ -92,7 +92,7 @@ public class PlayerLongAttack : MonoBehaviour
             if (Input.GetButtonDown("IceAttack")) // "X" Attack (ice)
             {
                 anim.SetTrigger("isSkill");
-                PlayerObject playerMovement = GameObject.Find("Player").GetComponent<PlayerObject>();
+                PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
                 playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
                 IceShoot();
                 IcurTime = iceTime;
@@ -113,7 +113,7 @@ public class PlayerLongAttack : MonoBehaviour
             if (Input.GetButtonDown("ThunderAttack")) // "V" Attack (ice)
             {
                 anim.SetTrigger("isSkill");
-                PlayerObject playerMovement = GameObject.Find("Player").GetComponent<PlayerObject>();
+                PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
                 playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
                 ThunderShoot();
                 TcurTime = ThunderTime;
@@ -189,7 +189,7 @@ public class PlayerLongAttack : MonoBehaviour
     // isAttack 애니메이션이 끝난 후 이동 활성화
     public void OnCanMonve()
     {
-        PlayerObject playerMovement = GameObject.Find("Player").GetComponent<PlayerObject>();
+        PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
         playerMovement.bCanMove = true;
     }
 }

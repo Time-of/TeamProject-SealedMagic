@@ -32,7 +32,7 @@ public class GroundRange : MonoBehaviour
             if (Input.GetButtonDown("GroundAttack") && check == true) // "X" Attack (ice)
             {
                 anim.SetTrigger("isSkill");
-                PlayerObject playerMovement = GameObject.Find("Player").GetComponent<PlayerObject>();
+                PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
                 playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
                 GroudAttackShoot();
                 GcurTime = GroundTime;

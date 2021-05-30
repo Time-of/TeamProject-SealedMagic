@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FadeOut : MonoBehaviour
 {
+    /*여기다가 Det() 넣어서, 공격 마지막에 터지는 이펙트 처리 해줌*/
+
     [Tooltip("투명도 시간")]
     public float fadeOutTime = 1.0f;
     [Tooltip("투명해질지 여부")]

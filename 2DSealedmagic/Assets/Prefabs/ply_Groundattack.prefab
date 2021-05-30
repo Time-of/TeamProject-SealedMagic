@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2294078327866774480}
   - component: {fileID: 309691495096989416}
   - component: {fileID: 968229973652373289}
-  m_Layer: 16
+  m_Layer: 13
   m_Name: ply_Groundattack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
