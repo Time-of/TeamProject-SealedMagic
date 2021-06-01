@@ -61,6 +61,30 @@ public class AttackArea : MonoBehaviour
 
 					Destroy(gameObject);
 				}
+				else
+				{
+					BossMonster boss = collision.GetComponent<BossMonster>();
+
+					if (boss != null)
+					{
+						boss.onAttack(damage);
+
+						if (AttackType == "Ice")
+						{
+							//mob.modifySpeed(speedModify, duration);
+						}
+						if (AttackType == "Fire")
+						{
+							//mob.startDotDamage(dotDamage, duration);
+						}
+						if (AttackType == "Stun")
+						{
+							//mob.startStun(duration);
+						}
+
+						Destroy(gameObject);
+					}
+				}
 			}
 		}
 
