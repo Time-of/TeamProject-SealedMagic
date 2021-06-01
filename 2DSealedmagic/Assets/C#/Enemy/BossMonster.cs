@@ -12,17 +12,19 @@ using UnityEngine;
 설명:
 	보스 몬스터 기본 행동 스크립트
 	공격은 자식 오브젝트에서 넣자........
+	자식오브젝트에서 적당한 공간에 isPlayerInAtkRange = false를 해줘야한다...
+	atkZone은 콜라이더 말고 Scale로 범위를 설정하기 바란다....
 */
 
 public class BossMonster : MonoBehaviour
 {
 	[Header("능력치")]
 	[Tooltip("공격 피해량")]
-	[SerializeField] float atkDamage;
-	[Tooltip("공격속도")]
-	[SerializeField] float atkSpeed;
-	[Tooltip("공격 재사용 대기시간")]
-	[SerializeField] float atkDelay;
+	[SerializeField] protected float atkDamage;
+	//[Tooltip("공격속도")]
+	//[SerializeField] float atkSpeed;
+	[Tooltip("공격 재사용 대기시간 (0.5초 단위)")]
+	[SerializeField] protected float atkDelay;
 	[Tooltip("이동속도")]
 	[SerializeField] float moveSpeed;
 	[Tooltip("최대 생명력")]
@@ -34,13 +36,13 @@ public class BossMonster : MonoBehaviour
 	[Tooltip("플레이어 인식 범위 설정")]
 	[SerializeField] Vector2 recognizePlayerZone;
 	[Tooltip("공격 범위 설정")]
-	[SerializeField] Vector2 atkZone;
+	[SerializeField] protected GameObject atkZone;
 	[Tooltip("공격 범위가 생길 지점")]
-	[SerializeField] Vector2 atkPos;
+	[SerializeField] protected Vector2 atkPos;
 	[Tooltip("공격 이펙트: 스프라이트")]
-	[SerializeField] GameObject atkFX_Sprite;
+	[SerializeField] protected GameObject atkFX_Sprite;
 	[Tooltip("공격 이펙트: 파티클")]
-	[SerializeField] GameObject atkFX_Particle;
+	[SerializeField] protected GameObject atkFX_Particle;
 
 	[Header("플레이어를 선택할 것")]
 	public LayerMask plCheck;
@@ -60,8 +62,10 @@ public class BossMonster : MonoBehaviour
 	protected Rigidbody2D rigid;
 	protected SpriteRenderer spRenderer;
 	PlayerObject traceTarget;
+	Vector3 atkZoneVec;
 
 	protected bool isAtk = false;
+	//protected bool isAtkCooldown = false;
 	bool isTracing = false;
 	protected bool isDead = false;
 	protected bool isPlayerInAtkRange = false;
@@ -69,12 +73,15 @@ public class BossMonster : MonoBehaviour
 	protected bool onStunned = false;
 
 	int moveDirection = 0;
+	protected int atkDirection = 0;
+	protected float additionalRange = 0f;
 
 	void Awake()
 	{
 		anim = gameObject.GetComponentInChildren<Animator>();
 		rigid = GetComponent<Rigidbody2D>();
 		spRenderer = GetComponent<SpriteRenderer>();
+		atkZoneVec = new Vector3(atkZone.transform.localScale.x, atkZone.transform.localScale.y, 0f);
 
 		StartCoroutine(SearchPlayer());
 	}
@@ -104,6 +111,9 @@ public class BossMonster : MonoBehaviour
 			RaycastHit2D rayPlatform = Physics2D.Raycast(front, Vector2.down, 1f, plfLayer.value);
 			RaycastHit2D raySpikes = Physics2D.Raycast(front, Vector2.down, 1f, spLayer.value);
 			Debug.DrawRay(front, Vector2.down, Color.red);
+
+			if (moveDirection == 1) atkDirection = 1;
+			else if (moveDirection == -1) atkDirection = -1;
 
 			if (!rayPlatform.collider || raySpikes.collider)
 			{
@@ -173,10 +183,10 @@ public class BossMonster : MonoBehaviour
 		}
 	}
 
-	void CheckInAtkRange()
+	protected void CheckInAtkRange()
 	{
-		Vector3 newAtkPos = new Vector3(moveDirection * atkPos.x + transform.position.x, atkPos.y + transform.position.y, transform.position.z);
-		Collider2D[] PlayerChk = Physics2D.OverlapBoxAll(newAtkPos, atkZone, 0, plCheck);
+		Vector3 newAtkPos = new Vector3(atkDirection * (atkPos.x + additionalRange) + transform.position.x, atkPos.y + transform.position.y, transform.position.z);
+		Collider2D[] PlayerChk = Physics2D.OverlapBoxAll(newAtkPos, atkZoneVec, 0, plCheck);
 		if (PlayerChk.Length == 1)
 		{
 			isPlayerInAtkRange = true;
@@ -241,8 +251,8 @@ public class BossMonster : MonoBehaviour
 		Gizmos.color = new Color(1f, 1f, 0f);
 		Gizmos.DrawWireCube(transform.position, recognizePlayerZone);
 
-		Vector3 newAtkPos = new Vector3(moveDirection * atkPos.x + transform.position.x, atkPos.y + transform.position.y, transform.position.z);
+		Vector3 newAtkPos = new Vector3(atkDirection * (atkPos.x + additionalRange) + transform.position.x, atkPos.y + transform.position.y, transform.position.z);
 		Gizmos.color = new Color(0f, 1f, 1f);
-		Gizmos.DrawWireCube(newAtkPos, atkZone);
+		Gizmos.DrawWireCube(newAtkPos, atkZoneVec);
 	}
 }
