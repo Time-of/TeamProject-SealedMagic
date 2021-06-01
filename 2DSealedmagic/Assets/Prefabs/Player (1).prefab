@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 177332986038848274}
   - component: {fileID: 177332986038848275}
   - component: {fileID: 177332986038848268}
-  - component: {fileID: 2003237550}
   m_Layer: 9
   m_Name: Player (1)
   m_TagString: Player
@@ -169,12 +168,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 570f3b6a724757943b71c27112bbb349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 400
-  curHealth: 400
-  maxMana: 400
-  curMana: 400
+  maxHealth: 1000
+  curHealth: 1000
+  maxMana: 500
+  curMana: 500
   maxSpeed: 4
-  runSpeed: 4
   jumpPower: 11
   jumpcount: 2
   AttackDamageText: {fileID: 8695559562536868643, guid: ec90fe6e0a576254493bc12fd3624d34, type: 3}
@@ -197,9 +195,22 @@ MonoBehaviour:
   - {fileID: 715074679971857772, guid: 72c202146a57fbc4c9e65ee4db1c4a5e, type: 3}
   - {fileID: 3960833204763522607, guid: 4aac6e34cf6a7034497c8a2c44c543d4, type: 3}
   - {fileID: 5648541109482479134, guid: 3373921c0c7295a4e9d12ac3ccf4d0e1, type: 3}
+  - {fileID: 7982674371405401331, guid: 4ef2e341258bb154c976942df0de273f, type: 3}
+  - {fileID: 3725452781830134993, guid: f3061ed659265594faef7f76bd61f3d9, type: 3}
+  - {fileID: 5552659579132372351, guid: ca6f57a7ce4ad8547a35ea7267fcd82f, type: 3}
+  - {fileID: 4208383825542635354, guid: b400e71b9abcebc44ab966bda32db2f3, type: 3}
   classicTime: 0.3
   fireTime: 2
   iceTime: 2
+  GroundTime: 2
+  ThunderTime: 2
+  InLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  size: {x: 8, y: 0.5}
+  size2: {x: 8, y: 4.5}
+  moveDic: 1
+  SkillCheck: 0
 --- !u!95 &177332986038848268
 Animator:
   serializedVersion: 3
@@ -219,31 +230,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2003237550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177332986038848269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2b880b746ccb7c4eaf23fc0cb2cb836, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GroundTime: 0
-  ThunderTime: 0
-  impactEffect:
-  - {fileID: 7982674371405401331, guid: 4ef2e341258bb154c976942df0de273f, type: 3}
-  - {fileID: 3725452781830134993, guid: f3061ed659265594faef7f76bd61f3d9, type: 3}
-  - {fileID: 5552659579132372351, guid: ca6f57a7ce4ad8547a35ea7267fcd82f, type: 3}
-  - {fileID: 4208383825542635354, guid: b400e71b9abcebc44ab966bda32db2f3, type: 3}
-  InLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  size: {x: 8, y: 0.5}
-  size2: {x: 8, y: 4.5}
-  moveDic: 1
 --- !u!1 &177332986515156777
 GameObject:
   m_ObjectHideFlags: 0

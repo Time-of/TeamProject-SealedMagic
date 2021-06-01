@@ -15,9 +15,9 @@ public class PlayerObject : MonoBehaviour
     public float curMana;
 
     [Tooltip("플레이어의 최대 속도")]
-    public float maxSpeed;
+    [SerializeField] private float maxSpeed;
     [Tooltip("플레이어 기본 속도")]
-    [SerializeField] private float runSpeed = 4;
+    private float runSpeed = 4;
     [Tooltip("점프를 했을떄 위로 올라가는 속도")]
     [SerializeField] private float jumpPower;
     [Tooltip("점프 카운트(더블 점프)")]
@@ -36,6 +36,10 @@ public class PlayerObject : MonoBehaviour
     Animator anim;
     Altar obj;
 
+    private void Start()
+    {
+        InvokeRepeating("NatureMana", 1, 1);// 자연 마나 재생
+    }
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -48,12 +52,14 @@ public class PlayerObject : MonoBehaviour
         Jump();
         chage_Move();
         KeyEnter();// 제단 집중
+        
     }
 
     void FixedUpdate()
     {
         Move();
         Jump_Check();
+        
     }
 
     // 플레이어가 움직일때
@@ -188,7 +194,6 @@ public class PlayerObject : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-
         if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Spikes")
         {
             OnDamage(10);// 데미지 받아와야 하는데 아직 못함
@@ -233,6 +238,15 @@ public class PlayerObject : MonoBehaviour
         spriteRenderer.color = new Color(1, 1, 1, 1);
     }
 
+    // 자연 마나 생성
+    void NatureMana()
+    {
+        if (curMana < maxMana)
+        {
+            curMana += 5;
+        }
+    }
+   
     /*
     작성: 20181220 이성수(P)
 

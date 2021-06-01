@@ -15,11 +15,11 @@ D:/Unity game/TeamProject-SealedMagic/2DSealedmagic
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-8751
+6243
 Successfully changed project path to: D:/Unity game/TeamProject-SealedMagic/2DSealedmagic
 D:/Unity game/TeamProject-SealedMagic/2DSealedmagic
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 47.19 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 57.30 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.2f1 (068178b99f32)
 [Subsystems] Discovering subsystems at path D:/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
@@ -39,107 +39,61 @@ Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,susp
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002147 seconds.
+Registered in 0.001537 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 42.40 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 46.44 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.000 seconds
+- Completed reload, in  2.367 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001264 seconds.
+Registered in 0.001329 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 47.22 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 40.23 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.106 seconds
+- Completed reload, in  1.047 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 0.70 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 1.37 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1970 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 94.6 MB.
-System memory in use after: 94.7 MB.
+System memory in use before: 94.7 MB.
+System memory in use after: 94.8 MB.
 
 Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2420.
-Total: 3.134800 ms (FindLiveObjects: 0.725000 ms CreateObjectMapping: 0.208200 ms MarkObjects: 2.104800 ms  DeleteObjects: 0.093100 ms)
+Total: 3.623100 ms (FindLiveObjects: 0.616900 ms CreateObjectMapping: 0.249100 ms MarkObjects: 2.677200 ms  DeleteObjects: 0.077700 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/bgmtest.mp3
-  artifactKey: Guid(24fd7164da4c30742a12a8cdc5ab823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/bgmtest.mp3 using Guid(24fd7164da4c30742a12a8cdc5ab823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ff87903916b106e92ecd07332dff965') in 0.187845 seconds
-  Import took 0.192936 seconds .
+  path: Assets/Prefabs/Ground Bullet.prefab
+  artifactKey: Guid(f3061ed659265594faef7f76bd61f3d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Ground Bullet.prefab using Guid(f3061ed659265594faef7f76bd61f3d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ceec802cc2e4d64882099072af43b48') in 0.200481 seconds
+  Import took 0.204926 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000668 seconds.
-  path: Assets/SoundManage.mixer
-  artifactKey: Guid(fc76cd66cf3bd4a4b8508521e1252431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SoundManage.mixer using Guid(fc76cd66cf3bd4a4b8508521e1252431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d99786b890a53b8ec190a4a9f0108ad') in 0.019475 seconds
-  Import took 0.023537 seconds .
+  Time since last request: 17.864615 seconds.
+  path: Assets/C#/PlayerLongAttack.cs
+  artifactKey: Guid(09be9c0685223f94d8d194361cedbfc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/C#/PlayerLongAttack.cs using Guid(09be9c0685223f94d8d194361cedbfc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d7d4fb032edd033543351e664a48090') in 0.018562 seconds
+  Import took 0.022468 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/New Physics Material 2D.physicsMaterial2D
-  artifactKey: Guid(84f96e2839d81f74d886f3187d69601d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Physics Material 2D.physicsMaterial2D using Guid(84f96e2839d81f74d886f3187d69601d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '713bb14234d85aaf958e4d8d52337e9e') in 0.016023 seconds
-  Import took 0.020773 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001212 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.908 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1945 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.5 MB.
-System memory in use after: 96.6 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2432.
-Total: 3.464600 ms (FindLiveObjects: 0.861000 ms CreateObjectMapping: 0.167500 ms MarkObjects: 2.417300 ms  DeleteObjects: 0.016700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001560 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.011 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1945 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.8 MB.
-System memory in use after: 96.9 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2435.
-Total: 6.322300 ms (FindLiveObjects: 0.378900 ms CreateObjectMapping: 0.137500 ms MarkObjects: 5.770700 ms  DeleteObjects: 0.032200 ms)
+  Time since last request: 0.002961 seconds.
+  path: Assets/C#/PlayerLongAttack.cs
+  artifactKey: Guid(09be9c0685223f94d8d194361cedbfc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/C#/PlayerLongAttack.cs using Guid(09be9c0685223f94d8d194361cedbfc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d7d4fb032edd033543351e664a48090') in 0.003376 seconds
+  Import took 0.007980 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
