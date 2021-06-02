@@ -199,18 +199,22 @@ MonoBehaviour:
   - {fileID: 3725452781830134993, guid: f3061ed659265594faef7f76bd61f3d9, type: 3}
   - {fileID: 5552659579132372351, guid: ca6f57a7ce4ad8547a35ea7267fcd82f, type: 3}
   - {fileID: 4208383825542635354, guid: b400e71b9abcebc44ab966bda32db2f3, type: 3}
+  FireIcon: 0
+  IceIcon: 0
+  GroundIcon: 0
+  ThunderIcon: 0
   classicTime: 0.3
-  fireTime: 2
-  iceTime: 2
-  GroundTime: 2
-  ThunderTime: 2
+  fireTime: 20
+  iceTime: 10
+  GroundTime: 30
+  ThunderTime: 50
+  UpAtk: 0
   InLayer:
     serializedVersion: 2
     m_Bits: 128
-  size: {x: 8, y: 0.5}
+  size: {x: 8, y: 1}
   size2: {x: 8, y: 4.5}
   moveDic: 1
-  SkillCheck: 0
 --- !u!95 &177332986038848268
 Animator:
   serializedVersion: 3

@@ -1,4 +1,4 @@
-Base path: 'F:/Unity 3D/unnn/2020.2.2f1/Editor/Data', plugins path 'F:/Unity 3D/unnn/2020.2.2f1/Editor/Data/PlaybackEngines'
+Base path: 'D:/2020.2.2f1/Editor/Data', plugins path 'D:/2020.2.2f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 Unhandled exception: Read from shader compiler process failed: error -2147483644, 0/4 bytes read
 

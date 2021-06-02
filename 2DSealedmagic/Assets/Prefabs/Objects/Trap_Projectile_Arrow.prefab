@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7117668211067154101}
   - component: {fileID: 2698562865851166713}
   - component: {fileID: 2688581517488933503}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trap_Projectile_Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

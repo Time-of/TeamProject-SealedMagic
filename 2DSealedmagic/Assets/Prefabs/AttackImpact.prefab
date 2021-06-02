@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2288286547697175865}
   - component: {fileID: 438101574195394994}
   - component: {fileID: 1379266596989159089}
-  - component: {fileID: 5463804941600737507}
+  - component: {fileID: 7250627118723751792}
   m_Layer: 13
   m_Name: AttackImpact
   m_TagString: Untagged
@@ -26,9 +26,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4485414477772995922}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.111944, y: 0.64, z: 0}
-  m_LocalScale: {x: 0.44873497, y: 0.48416278, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -103,17 +103,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5463804941600737507
+--- !u!114 &7250627118723751792
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4485414477772995922}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b44ecb5a012feb346bbdc024032035ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeOutTime: 1
+  fadeOutTime: 0
   fadeinout: 0

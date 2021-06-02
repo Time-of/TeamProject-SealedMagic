@@ -13,23 +13,29 @@ public class FadeOut : MonoBehaviour
 
     void Start()
     {
-        if(fadeinout == true)
-            StartCoroutine(aktfadeOut(GetComponent<SpriteRenderer>()));
+        FaOut();
+    }
 
-        IEnumerator aktfadeOut(SpriteRenderer _sprite)
+
+    void FaOut()
+    {
+        if (fadeinout == true)
+            StartCoroutine(aktfadeOut(GetComponent<SpriteRenderer>()));
+    }
+
+    IEnumerator aktfadeOut(SpriteRenderer _sprite)
+    {
+        Color tmpColor = _sprite.color;
+        while (tmpColor.a > 0f)
         {
-            Color tmpColor = _sprite.color;
-            while(tmpColor.a > 0f)
-            {
-                tmpColor.a -= 1f * Time.deltaTime / fadeOutTime;
-                _sprite.color = tmpColor;
-                if (tmpColor.a <= 0f)
-                    tmpColor.a = 0f;
-                yield return null;
-            }
-            Destroy(this.gameObject);
+            tmpColor.a -= 1f * Time.deltaTime / fadeOutTime;
             _sprite.color = tmpColor;
+            if (tmpColor.a <= 0f)
+                tmpColor.a = 0f;
+            yield return null;
         }
+        Destroy(this.gameObject);
+        _sprite.color = tmpColor;
     }
 
     void Det()

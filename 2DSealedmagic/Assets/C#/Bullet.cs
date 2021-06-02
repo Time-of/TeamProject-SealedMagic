@@ -26,4 +26,5 @@ public class Bullet : MonoBehaviour
         }
         Destroy(gameObject);// 어딘가에 부디치면 파괴
     }
+
 }
