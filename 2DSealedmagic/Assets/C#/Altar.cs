@@ -15,8 +15,6 @@ public class Altar : MonoBehaviour
 {
 	PlayerObject player;
 	Animator alteranim;
-	GameManager gameManager;
-	PlayerLongAttack playerlonAtk;
 
 	//[Tooltip("정신집중 완료시 등장할 이펙트 프리팹")]
 	//public GameObject EndEffect;
@@ -37,11 +35,8 @@ public class Altar : MonoBehaviour
 
 	void Start()
 	{
-		//player = GetComponent<PlayerObject>();
 		player = FindObjectOfType<PlayerObject>();
 		alteranim = GetComponent<Animator>();
-		gameManager = FindObjectOfType<GameManager>();
-		playerlonAtk = FindObjectOfType<PlayerLongAttack>();
 	}
 	void Update()
 	{
@@ -69,9 +64,10 @@ public class Altar : MonoBehaviour
 			Debug.Log("정신 집중 성공!");
 			//GameObject Eff = Instantiate(EndEffect, transform);
 			//Destroy(Eff, 2f);
-			gameManager.killedColoredMonster = 0;
 
-			playerlonAtk.UpAtk += 50f;
+			GameManager.instance.killedColoredMonster = 0;
+
+			PlayerLongAttack.instance.UpAtk += 50f;
 			player.maxHealth += 200f;
 			player.maxMana += 200f;
 			player.curHealth += 300f;

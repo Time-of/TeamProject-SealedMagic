@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 /*
 작성: 20181220 이성수(P)
 
 설명: 게임플레이 UI
+다른 오브젝트에서 UserInterface.instance.GameOver();를 호출해주면 즉시 게임오버가 된다.
 */
 
 public class UserInterface : MonoBehaviour
@@ -20,29 +22,29 @@ public class UserInterface : MonoBehaviour
 	[SerializeField] GameObject MenuUI;
 	[Tooltip("메뉴 후경 이미지 오브젝트")]
 	[SerializeField] GameObject backImage;
-	[Tooltip("체력바 수치")]
+	[Tooltip("게임오버 UI")]
+	[SerializeField] GameObject gameOverUI;
+	[Tooltip("UI Canvas")]
+	[SerializeField] GameObject UICanvas;
 	public Text message;
-	[Tooltip("마나바 수치")]
 	public Text message2;
-	[Tooltip("받아오는 체력")]
 	public float Hp;
-	[Tooltip("받아오는 마나")]
 	public float Mana;
 
-
-
+	Animator anim;
 	PlayerObject player;
+
+	public static UserInterface instance;
 
 	void Start()
 	{
 		player = FindObjectOfType<PlayerObject>();
-		
+		anim = UICanvas.GetComponent<Animator>();
+		instance = this;
 	}
 
 	void Update()
 	{
-		//healthBar.value = player.curHealth / player.maxHealth;
-		//manaBar.value = player.curMana / player.maxMana;
 		healthBar.fillAmount = player.curHealth / player.maxHealth;
 		manaBar.fillAmount = player.curMana / player.maxMana;
 		if (Input.GetButtonDown("Cancel"))
@@ -58,11 +60,29 @@ public class UserInterface : MonoBehaviour
 				backImage.SetActive(true);
 			}
 		}
+		if (GameManager.instance.isGameover)
+		{
+			if (Input.GetKeyDown(KeyCode.R))
+			{
+				SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+			}
+		}
+
 		Init_HP();
 		Init_MANA();
 		message.text = (Hp).ToString();
 		message2.text = (Mana).ToString();
 	}
+
+	public void GameOver()
+	{
+		GameManager.instance.isGameover = true;
+		MenuUI.SetActive(false);
+		gameOverUI.SetActive(true);
+		backImage.SetActive(true);
+		anim.SetBool("isGameover", true);
+	}
+
 	private void Init_HP()
 	{
 		Hp = player.curHealth;
@@ -79,8 +99,10 @@ public class UserInterface : MonoBehaviour
 		Application.Quit();
 	}
 
+
 	private void Set_HP()
 	{
+
 		if (Hp <= 0)
 		{
 			Hp = 0;

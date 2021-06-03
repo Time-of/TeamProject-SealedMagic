@@ -14,6 +14,11 @@ using UnityEngine;
 
 public class MobSkillsInfo : MonoBehaviour
 {
+	[Header("이펙트")]
+	[Tooltip("몬스터 스턴 이펙트 프리팹")]
+	public GameObject FX_Stun;
+
+	[Header("몬스터 스킬 인덱스에 관한 정보")]
 	[Tooltip("공격의 스프라이트")]
 	public GameObject[] FX_Sprite = new GameObject[3];
 	[Tooltip("공격 범위 오브젝트 프리팹")]
@@ -25,4 +30,11 @@ public class MobSkillsInfo : MonoBehaviour
 	public float[] cooldown = new float[3];
 	[Tooltip("사거리")]
 	public float[] range = new float[3];
+
+	public static MobSkillsInfo instance;
+
+	private void Start()
+	{
+		instance = this;
+	}
 }

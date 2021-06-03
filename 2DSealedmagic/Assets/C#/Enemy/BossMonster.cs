@@ -75,6 +75,7 @@ public class BossMonster : MonoBehaviour
 	int moveDirection = 0;
 	protected int atkDirection = 0;
 	protected float additionalRange = 0f;
+	protected float changedSpeed = 1f;
 
 	void Awake()
 	{
@@ -150,7 +151,7 @@ public class BossMonster : MonoBehaviour
 
 		if (!isDead && !isAtk && !isPlayerInAtkRange && !onStunned)
 		{
-			rigid.velocity = new Vector2(moveDirection * moveSpeed, rigid.velocity.y);
+			rigid.velocity = new Vector2(moveDirection * moveSpeed * changedSpeed, rigid.velocity.y);
 		}
 		else if (isPlayerInAtkRange || isAtk || isDead || onStunned)
 		{
@@ -169,7 +170,7 @@ public class BossMonster : MonoBehaviour
 
 	IEnumerator SearchInAtkRange()
 	{
-		while (!isDead)
+		while (!isDead && !onStunned)
 		{
 			if (!isPlayerInAtkRange)
 			{
@@ -242,6 +243,82 @@ public class BossMonster : MonoBehaviour
 			if (i <= 0.05f)
 			{
 				Destroy(gameObject);
+			}
+		}
+	}
+
+	public void modifySpeed(float speed, float duration)
+	{
+		if (changedSpeed != 1f)
+		{
+			StopCoroutine("changeSpeedState");
+			StartCoroutine(changeSpeedState(speed, duration));
+		}
+		else
+			StartCoroutine(changeSpeedState(speed, duration));
+	}
+
+	public void startDotDamage(float damage, float duration)
+	{
+		StartCoroutine(dotDamageState(damage, duration));
+	}
+
+	public void startStun(float duration)
+	{
+		if (onStunned)
+		{
+			StopCoroutine("StunState");
+			StartCoroutine(StunState(duration));
+		}
+		else
+			StartCoroutine(StunState(duration));
+	}
+
+	IEnumerator changeSpeedState(float speed, float duration)
+	{
+		int i = 0;
+		changedSpeed = speed;
+
+		while (i <= duration)
+		{
+			yield return new WaitForSeconds(1f);
+			i++;
+
+			if (duration < i)
+			{
+				changedSpeed = 1f;
+			}
+		}
+	}
+
+	IEnumerator dotDamageState(float damage, float duration)
+	{
+		int i = 0;
+
+		while (i < duration)
+		{
+			yield return new WaitForSeconds(1f);
+			onAttack(damage);
+			i++;
+		}
+	}
+
+	IEnumerator StunState(float duration)
+	{
+		int i = 0;
+		onStunned = true;
+		isAtk = false;
+
+		GameObject stunFX = Instantiate(MobSkillsInfo.instance.FX_Stun, transform.position + Vector3.up * 0.75f, Quaternion.identity);
+		Destroy(stunFX, duration);
+
+		while (i <= duration)
+		{
+			yield return new WaitForSeconds(1f);
+			i++;
+			if (duration <= i)
+			{
+				onStunned = false;
 			}
 		}
 	}

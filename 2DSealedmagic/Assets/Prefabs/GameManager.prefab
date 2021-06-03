@@ -49,6 +49,8 @@ MonoBehaviour:
   manaBar: {fileID: 0}
   MenuUI: {fileID: 0}
   backImage: {fileID: 0}
+  gameOverUI: {fileID: 0}
+  UICanvas: {fileID: 0}
   message: {fileID: 0}
   message2: {fileID: 0}
   Hp: 0
@@ -65,7 +67,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51b097df3a570de418efcf6bcd860224, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killedColoredMonster: 3
+  killedColoredMonster: 0
+  isGameover: 0
 --- !u!114 &7431351086390328219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,58 +81,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdfa01e13daa2cd4ebe06f3e1ddab31e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FX_Stun: {fileID: 4834885678300956499, guid: 7b6c161f24f051446b1d006531d2294e, type: 3}
   FX_Sprite:
   - {fileID: 6464321272106875312, guid: f4682627cb6fd12478c2ac33d681b9a7, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   Skill_Area:
   - {fileID: 1454343650587498639, guid: 1fe6f5a559bb8824c819a2f42970254f, type: 3}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   FX_Particle:
   - {fileID: 1454343650587498639, guid: 06797b2d078ba494d9b4e88840374f10, type: 3}
   - {fileID: 1454343650587498639, guid: 25f58c7300295ad4ca456f4e29c636eb, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   cooldown:
   - 40
   - 30
   - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
   range:
   - 2
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
   - 0
   - 0
