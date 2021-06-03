@@ -19,9 +19,8 @@ using UnityEngine;
 
 public class AttackArea : MonoBehaviour
 {
-	[Tooltip("공격이 상태이상 공격이라면 어떤 공격이 포함되는지 (Fire, Ice, Stun)")]
-	public string AttackType;
-
+	//공격이 상태이상 공격이라면 어떤 공격이 포함되는지 (Fire, Ice, Stun)
+	[HideInInspector]public string AttackType;
 	// true일 경우 적의 공격, false일 경우 플레이어의 공격
 	[HideInInspector] public bool isEnemyAttack;
 	// 생성 함수로부터 데미지를 받을것
@@ -71,15 +70,15 @@ public class AttackArea : MonoBehaviour
 
 						if (AttackType == "Ice")
 						{
-							//mob.modifySpeed(speedModify, duration);
+							boss.modifySpeed(speedModify, duration);
 						}
 						if (AttackType == "Fire")
 						{
-							//mob.startDotDamage(dotDamage, duration);
+							boss.startDotDamage(dotDamage, duration);
 						}
 						if (AttackType == "Stun")
 						{
-							//mob.startStun(duration);
+							boss.startStun(duration);
 						}
 
 						Destroy(gameObject);

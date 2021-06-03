@@ -79,6 +79,9 @@ public class Object : MonoBehaviour
 	IEnumerator Arrow()
 	{
 		int dir = (int)transform.localScale.x;
+		AttackArea atkArea = GetComponent<AttackArea>();
+		atkArea.isEnemyAttack = true;
+		atkArea.damage = amount;
 		while (true)
 		{
 			transform.Translate(dir * speed * Time.deltaTime, 0, 0);

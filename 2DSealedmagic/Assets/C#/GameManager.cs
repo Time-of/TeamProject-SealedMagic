@@ -12,4 +12,12 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 	public int killedColoredMonster = 0;
+	public bool isGameover = false;
+
+	public static GameManager instance;
+
+	void Awake()
+	{
+		instance = this;
+	}
 }
