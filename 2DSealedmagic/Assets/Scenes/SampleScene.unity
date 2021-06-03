@@ -269,21 +269,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3798846932004642702, guid: f3575367ad294ac46a27ccaadd320ce5, type: 3}
-      propertyPath: damage
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798846932004642702, guid: f3575367ad294ac46a27ccaadd320ce5, type: 3}
-      propertyPath: Direction
-      value: Left
-      objectReference: {fileID: 0}
     - target: {fileID: 5011616711428548913, guid: f3575367ad294ac46a27ccaadd320ce5, type: 3}
       propertyPath: m_Name
       value: Trap_ArrDispenser (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5011616711428548914, guid: f3575367ad294ac46a27ccaadd320ce5, type: 3}
-      propertyPath: m_FlipX
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5011616711428548915, guid: f3575367ad294ac46a27ccaadd320ce5, type: 3}
       propertyPath: m_RootOrder
@@ -353,11 +341,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 328678516555902826, guid: 60b54b2ff1f1b3d45845eeab8cd01c2b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 81.71
+      value: 81.51
       objectReference: {fileID: 0}
     - target: {fileID: 328678516555902826, guid: 60b54b2ff1f1b3d45845eeab8cd01c2b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.11
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 328678516555902826, guid: 60b54b2ff1f1b3d45845eeab8cd01c2b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -395,10 +383,6 @@ PrefabInstance:
       propertyPath: gameObj
       value: 
       objectReference: {fileID: 2002250478}
-    - target: {fileID: 328678517165146478, guid: 60b54b2ff1f1b3d45845eeab8cd01c2b, type: 3}
-      propertyPath: m_Size.x
-      value: 0.7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60b54b2ff1f1b3d45845eeab8cd01c2b, type: 3}
 --- !u!4 &389323324 stripped
@@ -12506,21 +12490,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6220943188805973644, guid: d5c6518140789644392fbc90a5294285, type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6220943189115715682, guid: d5c6518140789644392fbc90a5294285, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 6220943189152822965, guid: d5c6518140789644392fbc90a5294285, type: 3}
       propertyPath: m_Name
       value: TestEnemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 6220943189152822965, guid: d5c6518140789644392fbc90a5294285, type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6220943189152822969, guid: d5c6518140789644392fbc90a5294285, type: 3}
       propertyPath: m_RootOrder
@@ -12632,25 +12604,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6220943188805973644, guid: d5c6518140789644392fbc90a5294285, type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6220943189115715682, guid: d5c6518140789644392fbc90a5294285, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 6220943189152822965, guid: d5c6518140789644392fbc90a5294285, type: 3}
       propertyPath: m_Name
       value: TestEnemy (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6220943189152822965, guid: d5c6518140789644392fbc90a5294285, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6220943189152822965, guid: d5c6518140789644392fbc90a5294285, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6220943189152822969, guid: d5c6518140789644392fbc90a5294285, type: 3}
       propertyPath: m_RootOrder
@@ -14247,16 +14203,12 @@ PrefabInstance:
       value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1514436325392010373, guid: bc97318a0c950df4eba924029914d592, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 6.8872
-      objectReference: {fileID: 0}
-    - target: {fileID: 1514436325392010373, guid: bc97318a0c950df4eba924029914d592, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 75.1
+      value: 74.54
       objectReference: {fileID: 0}
     - target: {fileID: 1514436325392010373, guid: bc97318a0c950df4eba924029914d592, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.3536
+      value: 13.23
       objectReference: {fileID: 0}
     - target: {fileID: 1514436325392010373, guid: bc97318a0c950df4eba924029914d592, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14756,11 +14708,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 177332986038848278, guid: f561545267874f84aa2c98e72c506b1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.6
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 177332986038848278, guid: f561545267874f84aa2c98e72c506b1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 177332986038848278, guid: f561545267874f84aa2c98e72c506b1c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14973,14 +14925,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3798846932004642702, guid: f3575367ad294ac46a27ccaadd320ce5, type: 3}
-      propertyPath: damage
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798846932004642702, guid: f3575367ad294ac46a27ccaadd320ce5, type: 3}
-      propertyPath: Direction
-      value: Right
-      objectReference: {fileID: 0}
     - target: {fileID: 5011616711428548913, guid: f3575367ad294ac46a27ccaadd320ce5, type: 3}
       propertyPath: m_Name
       value: Trap_ArrDispenser

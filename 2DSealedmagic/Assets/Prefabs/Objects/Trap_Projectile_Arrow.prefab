@@ -99,7 +99,7 @@ MonoBehaviour:
   ObjectType: Arrow
   Direction: 
   gameObj: {fileID: 0}
-  amount: 0
+  amount: 20
   speed: 8
   HP: 0
   index: 0

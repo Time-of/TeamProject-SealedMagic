@@ -65,7 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51b097df3a570de418efcf6bcd860224, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killedColoredMonster: 0
+  killedColoredMonster: 3
 --- !u!114 &7431351086390328219
 MonoBehaviour:
   m_ObjectHideFlags: 0

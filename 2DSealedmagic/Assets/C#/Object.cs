@@ -47,9 +47,16 @@ public class Object : MonoBehaviour
 	bool onTrigger = false;
 	float floatingDir = 0f;
 
+	Animator anim;
+
 	Vector2 pos;
 
-	void Start()
+    private void Awake()
+    {
+		anim = GetComponentInParent<Animator>();
+    }
+
+    void Start()
 	{
 		if (ObjectType == "ArrowDispenser")
 			StartCoroutine(ArrowDispenser(Direction));
@@ -135,6 +142,7 @@ public class Object : MonoBehaviour
 		if (ObjectType == "Plate" && collision.gameObject.tag == "Player" && !onTrigger)
 		{
 			onTrigger = true;
+			anim.SetBool("isDoor", true);
 			gameObj.SetActive(false);
 		}
 

@@ -28,8 +28,9 @@ public class PlayerObject : MonoBehaviour
     public Transform hudPos;
     [Tooltip("제단의 위치를 받아오는 곳")]
     public static Vector3 Altarpos;
-    [Tooltip("공격시 이동 활성화/비활성")]
+    [Tooltip("공격시 이동 활성화/비활성/ 죽음을때도 활용")]
     public bool bCanMove = true;
+
 
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
@@ -39,6 +40,7 @@ public class PlayerObject : MonoBehaviour
     private void Start()
     {
         InvokeRepeating("NatureMana", 1, 1);// 자연 마나 재생
+                                            
     }
     void Awake()
     {
@@ -52,16 +54,13 @@ public class PlayerObject : MonoBehaviour
         Jump();
         chage_Move();
         KeyEnter();// 제단 집중
-        HPMana();
-
-
     }
 
     void FixedUpdate()
     {
         Move();
         Jump_Check();
-        
+        HPMana();
     }
 
     // 플레이어가 움직일때
@@ -196,10 +195,20 @@ public class PlayerObject : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Spikes")
+        if (collision.gameObject.tag == "Enemy")
         {
             OnDamage(10);// 데미지 받아와야 하는데 아직 못함
-            OnDamaged(collision.transform.position);
+            if (curHealth > 0)
+            {
+                OnDamaged(collision.transform.position);
+            }
+        }else if(collision.gameObject.tag == "Spikes")
+        {
+            OnDamage(100);
+            if (curHealth > 0)
+            {
+                OnDamaged(collision.transform.position);
+            }
         }
     }
 
@@ -211,7 +220,10 @@ public class PlayerObject : MonoBehaviour
 
         //Damage
         curHealth -= damage;
-        OnDamaged(transform.position); // 21.05.26 추가
+        if (curHealth >= 0)
+        {
+            OnDamaged(transform.position); // 21.05.26 추가
+        }
     }
 
     // 데미지를 입었을때 팅겨나는 힘
@@ -219,7 +231,7 @@ public class PlayerObject : MonoBehaviour
     {
         // Reaction Force
         int dirc = transform.position.x - targetPos.x > 0 ? 1 : -1;// Damaged Direction
-        rigid.AddForce(new Vector2(dirc, 1) * 3, ForceMode2D.Impulse);
+        rigid.AddForce(new Vector2(dirc, 1) * 3, ForceMode2D.Impulse); 
 
         //Change Layer (Immortal Active)
         gameObject.layer = 8;
@@ -231,6 +243,7 @@ public class PlayerObject : MonoBehaviour
         anim.SetTrigger("isDamaged");
 
         Invoke("OffDamaged", 2);// 무적 시간
+
     }
 
     IEnumerator Damotion()
@@ -263,16 +276,51 @@ public class PlayerObject : MonoBehaviour
         }
     }
 
+    // 피 관리
     void HPMana()
     {
-        if(curHealth >= maxHealth)
+        if (curHealth >= maxHealth)
         {
             curHealth = maxHealth;
+        }
+        else if (curHealth <= 0)
+        {
+            // 못 움직이게 고정
+            bCanMove = false;
+            // 체력 0
+            curHealth = 0;
+            // 죽으면 눕자!
+            transform.eulerAngles = new Vector3(0, 0, 90); // Die Impect
+            // 투명화
+            spriteRenderer.color = new Color(1, 1, 1, 0.4f);
+            // 2초뒤 시작지점으로 이동
+            Invoke("isDie", 2);
         }
         if (curMana >= maxMana)
         {
             curMana = maxMana;
         }
+        else if (curMana <= 0)
+        {
+            curMana = 0;
+        }
+    }
+    //죽었을떄
+    public void isDie()
+    {
+        // 원상 복귀
+        transform.eulerAngles = new Vector3(0, 0, 0); // Die Impect
+        // 시작지점으로
+        transform.position = new Vector3(-7.5f, 0.65f, 0);
+        // 다시 움직일수 있게
+        bCanMove = true;
+        // 피 풀피
+        curHealth = maxHealth;
+        // 마나 풀마나
+        curMana = maxMana;
+        // 투명화 초기화
+        spriteRenderer.color = new Color(1, 1, 1, 1);
+        
     }
    
     /*

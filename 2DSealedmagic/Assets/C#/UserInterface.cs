@@ -20,10 +20,15 @@ public class UserInterface : MonoBehaviour
 	[SerializeField] GameObject MenuUI;
 	[Tooltip("메뉴 후경 이미지 오브젝트")]
 	[SerializeField] GameObject backImage;
+	[Tooltip("체력바 수치")]
 	public Text message;
+	[Tooltip("마나바 수치")]
 	public Text message2;
+	[Tooltip("받아오는 체력")]
 	public float Hp;
+	[Tooltip("받아오는 마나")]
 	public float Mana;
+
 
 
 	PlayerObject player;
@@ -74,10 +79,8 @@ public class UserInterface : MonoBehaviour
 		Application.Quit();
 	}
 
-
 	private void Set_HP()
 	{
-
 		if (Hp <= 0)
 		{
 			Hp = 0;

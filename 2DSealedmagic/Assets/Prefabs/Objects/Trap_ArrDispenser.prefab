@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 249058303573f094cb2ad9e7ea925a61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectType: ArrowDispenser
-  Direction: Right
+  Direction: Left
   gameObj: {fileID: 3244213330509593711, guid: ce8714b083873394b877e314dfe9ce7b, type: 3}
   amount: 0
   speed: 0
