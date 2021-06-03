@@ -40,7 +40,7 @@ public class PlayerObject : MonoBehaviour
     private void Start()
     {
         InvokeRepeating("NatureMana", 1, 1);// 자연 마나 재생
-                                            
+
     }
     void Awake()
     {
@@ -145,18 +145,21 @@ public class PlayerObject : MonoBehaviour
     // 점프 할때와 속도
     void Jump()
     {
-        // Jump
-        if (Input.GetButtonDown("Jump") && jumpcount > 0) // spease
+        if (bCanMove)
         {
-            if (jumpcount == 1)// double Jump
+            // Jump
+            if (Input.GetButtonDown("Jump") && jumpcount > 0) // spease
             {
-                rigid.velocity = new Vector2(rigid.velocity.x, jumpPower * 1f);
+                if (jumpcount == 1)// double Jump
+                {
+                    rigid.velocity = new Vector2(rigid.velocity.x, jumpPower * 1f);
+                }
+                rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
+                anim.SetBool("isRun", false);// 달리다가 점프 시 꺼짐.
+                anim.SetBool("Jumpingdown", false);// 다시 점프를 했을떄, 내려가는 모션이 사라진다.
+                anim.SetBool("Jumping", true);// jump image
+                jumpcount--;
             }
-            rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
-            anim.SetBool("isRun", false);// 달리다가 점프 시 꺼짐.
-            anim.SetBool("Jumpingdown", false);// 다시 점프를 했을떄, 내려가는 모션이 사라진다.
-            anim.SetBool("Jumping", true);// jump image
-            jumpcount--;
         }
 
         // Jump Max speed
@@ -202,7 +205,8 @@ public class PlayerObject : MonoBehaviour
             {
                 OnDamaged(collision.transform.position);
             }
-        }else if(collision.gameObject.tag == "Spikes")
+        }
+        else if (collision.gameObject.tag == "Spikes")
         {
             OnDamage(100);
             if (curHealth > 0)
@@ -231,7 +235,7 @@ public class PlayerObject : MonoBehaviour
     {
         // Reaction Force
         int dirc = transform.position.x - targetPos.x > 0 ? 1 : -1;// Damaged Direction
-        rigid.AddForce(new Vector2(dirc, 1) * 3, ForceMode2D.Impulse); 
+        rigid.AddForce(new Vector2(dirc, 1) * 3, ForceMode2D.Impulse);
 
         //Change Layer (Immortal Active)
         gameObject.layer = 8;
@@ -293,8 +297,10 @@ public class PlayerObject : MonoBehaviour
             transform.eulerAngles = new Vector3(0, 0, 90); // Die Impect
             // 투명화
             spriteRenderer.color = new Color(1, 1, 1, 0.4f);
+            //  죽은뒤 이미지 생성
+            UserInterface.instance.GameOver();
             // 2초뒤 시작지점으로 이동
-            Invoke("isDie", 2);
+            //Invoke("isDie", 2);
         }
         if (curMana >= maxMana)
         {
@@ -305,6 +311,7 @@ public class PlayerObject : MonoBehaviour
             curMana = 0;
         }
     }
+    /*
     //죽었을떄
     public void isDie()
     {
@@ -320,9 +327,9 @@ public class PlayerObject : MonoBehaviour
         curMana = maxMana;
         // 투명화 초기화
         spriteRenderer.color = new Color(1, 1, 1, 1);
-        
-    }
-   
+
+    }*/
+
     /*
     작성: 20181220 이성수(P)
 
