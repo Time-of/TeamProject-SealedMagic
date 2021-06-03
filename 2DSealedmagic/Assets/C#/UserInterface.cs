@@ -20,11 +20,18 @@ public class UserInterface : MonoBehaviour
 	[SerializeField] GameObject MenuUI;
 	[Tooltip("메뉴 후경 이미지 오브젝트")]
 	[SerializeField] GameObject backImage;
+	public Text message;
+	public Text message2;
+	public float Hp;
+	public float Mana;
+
+
 	PlayerObject player;
 
 	void Start()
 	{
 		player = FindObjectOfType<PlayerObject>();
+		
 	}
 
 	void Update()
@@ -46,10 +53,57 @@ public class UserInterface : MonoBehaviour
 				backImage.SetActive(true);
 			}
 		}
+		Init_HP();
+		Init_MANA();
+		message.text = (Hp).ToString();
+		message2.text = (Mana).ToString();
+	}
+	private void Init_HP()
+	{
+		Hp = player.curHealth;
+		Set_HP();
+	}
+	private void Init_MANA()
+	{
+		Mana = player.curMana;
+		Set_MANA();
 	}
 
 	public void ExitGame()
 	{
 		Application.Quit();
+	}
+
+
+	private void Set_HP()
+	{
+
+		if (Hp <= 0)
+		{
+			Hp = 0;
+		}
+		else
+		{
+			if (player.curHealth > player.maxHealth)
+			{
+				Hp = player.maxHealth;
+			}
+		}
+	}
+
+	private void Set_MANA()
+	{
+
+		if (Mana <= 0)
+		{
+			Mana = 0;
+		}
+		else
+		{
+			if (player.curMana > player.maxMana)
+			{
+				Mana = player.maxMana;
+			}
+		}
 	}
 }

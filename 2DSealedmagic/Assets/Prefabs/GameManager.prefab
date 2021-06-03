@@ -49,6 +49,10 @@ MonoBehaviour:
   manaBar: {fileID: 0}
   MenuUI: {fileID: 0}
   backImage: {fileID: 0}
+  message: {fileID: 0}
+  message2: {fileID: 0}
+  Hp: 0
+  Mana: 0
 --- !u!114 &7431351086390328216
 MonoBehaviour:
   m_ObjectHideFlags: 0
