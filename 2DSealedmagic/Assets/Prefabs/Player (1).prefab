@@ -61,7 +61,7 @@ Transform:
   m_GameObject: {fileID: 177332986038848269}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.77, y: 0.64, z: 0}
-  m_LocalScale: {x: 0.89746994, y: 0.96832556, z: 1}
+  m_LocalScale: {x: 2.1331968, y: 2.5413978, z: 1}
   m_Children:
   - {fileID: 177332985104034461}
   - {fileID: 177332986515156776}
@@ -150,7 +150,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 1.5
   m_AngularDrag: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 2.6
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -172,8 +172,8 @@ MonoBehaviour:
   curHealth: 1000
   maxMana: 500
   curMana: 500
-  maxSpeed: 4
-  jumpPower: 11
+  maxSpeed: 8
+  jumpPower: 18
   jumpcount: 2
   AttackDamageText: {fileID: 8695559562536868643, guid: ec90fe6e0a576254493bc12fd3624d34, type: 3}
   hudPos: {fileID: 177332986515156776}
@@ -199,21 +199,26 @@ MonoBehaviour:
   - {fileID: 3725452781830134993, guid: f3061ed659265594faef7f76bd61f3d9, type: 3}
   - {fileID: 5552659579132372351, guid: ca6f57a7ce4ad8547a35ea7267fcd82f, type: 3}
   - {fileID: 4208383825542635354, guid: b400e71b9abcebc44ab966bda32db2f3, type: 3}
-  FireIcon: 0
-  IceIcon: 0
-  GroundIcon: 0
-  ThunderIcon: 0
-  classicTime: 0.3
-  fireTime: 20
-  iceTime: 10
-  GroundTime: 30
-  ThunderTime: 50
+  ccurTime:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  SillIcon: 00000000
+  StageCheck: 01010101
+  classicTime:
+  - 0.2
+  - 20
+  - 10
+  - 30
+  - 50
   UpAtk: 0
   InLayer:
     serializedVersion: 2
     m_Bits: 128
-  size: {x: 8, y: 1}
-  size2: {x: 8, y: 4.5}
+  size: {x: 13, y: 1}
+  size2: {x: 13, y: 10}
   moveDic: 1
 --- !u!95 &177332986038848268
 Animator:

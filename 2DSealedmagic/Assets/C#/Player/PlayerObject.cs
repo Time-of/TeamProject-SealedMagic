@@ -17,7 +17,7 @@ public class PlayerObject : MonoBehaviour
     [Tooltip("플레이어의 최대 속도")]
     [SerializeField] private float maxSpeed;
     [Tooltip("플레이어 기본 속도")]
-    private float runSpeed = 4;
+    private float runSpeed = 8;
     [Tooltip("점프를 했을떄 위로 올라가는 속도")]
     [SerializeField] private float jumpPower;
     [Tooltip("점프 카운트(더블 점프)")]
@@ -95,7 +95,7 @@ public class PlayerObject : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 anim.SetBool("isRun", true);
-                maxSpeed = 7;
+                maxSpeed = 13;
             }
             else
             {
@@ -152,7 +152,7 @@ public class PlayerObject : MonoBehaviour
             {
                 if (jumpcount == 1)// double Jump
                 {
-                    rigid.velocity = new Vector2(rigid.velocity.x, jumpPower * 1f);
+                    rigid.velocity = new Vector2(rigid.velocity.x, jumpPower * 1.2f);
                 }
                 rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
                 anim.SetBool("isRun", false);// 달리다가 점프 시 꺼짐.
@@ -181,12 +181,12 @@ public class PlayerObject : MonoBehaviour
             Vector2 frontVec = new Vector2(rigid.position.x + rigid.velocity.x * 0.03f, rigid.position.y);
             Debug.DrawRay(frontVec, Vector3.down, new Color(1, 0, 0));
 
-            RaycastHit2D rayHit = Physics2D.Raycast(frontVec, Vector3.down, 1f, LayerMask.GetMask("Platform"));
+            RaycastHit2D rayHit = Physics2D.Raycast(frontVec, Vector3.down, 2f, LayerMask.GetMask("Platform"));
 
 
             if (rayHit.collider != null)
             {
-                if (rayHit.distance < 0.8f)
+                if (rayHit.distance < 1.8f)
                 {
                     anim.SetBool("Jumpingdown", false);// jump image
                     jumpcount = 2;

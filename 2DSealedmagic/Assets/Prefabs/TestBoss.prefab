@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 8479973582311624599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.459, y: 3.1554, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   atkDamage: 250
   atkDelay: 3
-  moveSpeed: 1
+  moveSpeed: 3
   maxLife: 1000
   curLife: 1000
   recognizePlayerZone: {x: 15, y: 5}

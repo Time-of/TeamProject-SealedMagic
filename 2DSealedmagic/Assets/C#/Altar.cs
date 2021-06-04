@@ -28,7 +28,7 @@ public class Altar : MonoBehaviour
 	[Tooltip("정신집중 시간")]
 	[SerializeField] float CompleteTime = 3f;
 	[Tooltip("다음 씬 이름을 적을 것")]
-	[SerializeField] string nextScene;
+	[SerializeField] string nextScene = "";
 
 	float delay = 0f;
 

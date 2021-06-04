@@ -9,14 +9,10 @@ public class Icons : MonoBehaviour
     public Image[] skillFilter;
     public Text[] coolTimeCounter; //남은 쿨타임을 표시할 텍스트
 
-    public float FcoolTime;
-    private float FcurrentCoolTime; //남은 쿨타임을 추적 할 변수
-    public float IcoolTime;
-    private float IcurrentCoolTime; //남은 쿨타임을 추적 할 변수
-    public float GcoolTime;
-    private float GcurrentCoolTime; //남은 쿨타임을 추적 할 변수
-    public float TcoolTime;
-    private float TcurrentCoolTime; //남은 쿨타임을 추적 할 변수
+    [Tooltip("스킬 아이콘 쿨타임 초기값")]
+    [SerializeField] public float[] coolTime;
+    [Tooltip("스킬 아이콘 쿨타임 값")]
+    [SerializeField] private float[] currentCoolTime; //남은 쿨타임을 추적 할 변수
 
     private bool canUseSkill = true; //스킬을 사용할 수 있는지 확인하는 변수
     PlayerLongAttack player;
@@ -32,18 +28,18 @@ public class Icons : MonoBehaviour
 
     void Update()
     {
-        if(player.FireIcon == true)
+        if(player.SillIcon[0] == true)
         {
             FSkill();
-        }else if(player.IceIcon == true)
+        }else if(player.SillIcon[1] == true)
         {
             ISkill();
         }
-        else if (player.GroundIcon == true)
+        else if (player.SillIcon[2] == true)
         {
             GSkill();
         }
-        else if (player.ThunderIcon == true)
+        else if (player.SillIcon[3] == true)
         {
             TSkill();
         }
@@ -57,12 +53,12 @@ public class Icons : MonoBehaviour
             coolTimeCounter[0].gameObject.SetActive(true);
             skillFilter[0].fillAmount = 1; //스킬 버튼을 가림
             StartCoroutine("FCooltime");
-            FcurrentCoolTime = FcoolTime;
-            coolTimeCounter[0].text = "" + FcurrentCoolTime;
+            currentCoolTime[0] = coolTime[0];
+            coolTimeCounter[0].text = "" + currentCoolTime[0];
 
             StartCoroutine("FCoolTimeCounter");
 
-            player.FireIcon = false;
+            player.SillIcon[0] = false;
         }
         else
         {
@@ -78,12 +74,12 @@ public class Icons : MonoBehaviour
             coolTimeCounter[1].gameObject.SetActive(true);
             skillFilter[1].fillAmount = 1; //스킬 버튼을 가림
             StartCoroutine("ICooltime");
-            IcurrentCoolTime = IcoolTime;
-            coolTimeCounter[1].text = "" + IcurrentCoolTime;
+            currentCoolTime[1] = coolTime[1];
+            coolTimeCounter[1].text = "" + currentCoolTime[1];
 
             StartCoroutine("ICoolTimeCounter");
 
-            player.IceIcon = false;
+            player.SillIcon[1] = false;
             
         }
         else
@@ -100,12 +96,12 @@ public class Icons : MonoBehaviour
             coolTimeCounter[2].gameObject.SetActive(true);
             skillFilter[2].fillAmount = 1; //스킬 버튼을 가림
             StartCoroutine("GCooltime");
-            GcurrentCoolTime = GcoolTime;
-            coolTimeCounter[2].text = "" + GcurrentCoolTime;
+            currentCoolTime[2] = coolTime[2];
+            coolTimeCounter[2].text = "" + currentCoolTime[2];
 
             StartCoroutine("GCoolTimeCounter");
            
-            player.GroundIcon = false;
+            player.SillIcon[2] = false;
         }
         else
         {
@@ -121,12 +117,12 @@ public class Icons : MonoBehaviour
             coolTimeCounter[3].gameObject.SetActive(true);
             skillFilter[3].fillAmount = 1; //스킬 버튼을 가림
             StartCoroutine("TCooltime");
-            TcurrentCoolTime = TcoolTime;
-            coolTimeCounter[3].text = "" + TcurrentCoolTime;
+            currentCoolTime[3] = coolTime[3];
+            coolTimeCounter[3].text = "" + currentCoolTime[3];
 
             StartCoroutine("TCoolTimeCounter");
 
-            player.ThunderIcon = false;
+            player.SillIcon[3] = false;
         }
         else
         {
@@ -138,7 +134,7 @@ public class Icons : MonoBehaviour
     {
         while (skillFilter[0].fillAmount > 0)
         {
-            skillFilter[0].fillAmount -= 1 * Time.smoothDeltaTime / FcoolTime;
+            skillFilter[0].fillAmount -= 1 * Time.smoothDeltaTime / coolTime[0];
 
             yield return null;
         }
@@ -152,12 +148,12 @@ public class Icons : MonoBehaviour
     //남은 쿨타임을 계산할 코르틴을 만들어줍니다.
     IEnumerator FCoolTimeCounter()
     {
-        while (FcurrentCoolTime > 0)
+        while (currentCoolTime[0] > 0)
         {
             yield return new WaitForSeconds(1.0f);
 
-            FcurrentCoolTime -= 1.0f;
-            coolTimeCounter[0].text = "" + FcurrentCoolTime;
+            currentCoolTime[0] -= 1.0f;
+            coolTimeCounter[0].text = "" + currentCoolTime[0];
         }
         
         yield break;
@@ -167,7 +163,7 @@ public class Icons : MonoBehaviour
     {
         while (skillFilter[1].fillAmount > 0)
         {
-            skillFilter[1].fillAmount -= 1 * Time.smoothDeltaTime / IcoolTime;
+            skillFilter[1].fillAmount -= 1 * Time.smoothDeltaTime / coolTime[1];
 
             yield return null;
         }
@@ -181,12 +177,12 @@ public class Icons : MonoBehaviour
     //남은 쿨타임을 계산할 코르틴을 만들어줍니다.
     IEnumerator ICoolTimeCounter()
     {
-        while (IcurrentCoolTime > 0)
+        while (currentCoolTime[1] > 0)
         {
             yield return new WaitForSeconds(1.0f);
 
-            IcurrentCoolTime -= 1.0f;
-            coolTimeCounter[1].text = "" + IcurrentCoolTime;
+            currentCoolTime[1] -= 1.0f;
+            coolTimeCounter[1].text = "" + currentCoolTime[1];
         }
 
         yield break;
@@ -195,7 +191,7 @@ public class Icons : MonoBehaviour
     {
         while (skillFilter[2].fillAmount > 0)
         {
-            skillFilter[2].fillAmount -= 1 * Time.smoothDeltaTime / GcoolTime;
+            skillFilter[2].fillAmount -= 1 * Time.smoothDeltaTime / coolTime[2];
 
             yield return null;
         }
@@ -209,12 +205,12 @@ public class Icons : MonoBehaviour
     //남은 쿨타임을 계산할 코르틴을 만들어줍니다.
     IEnumerator GCoolTimeCounter()
     {
-        while (GcurrentCoolTime > 0)
+        while (currentCoolTime[2] > 0)
         {
             yield return new WaitForSeconds(1.0f);
 
-            GcurrentCoolTime -= 1.0f;
-            coolTimeCounter[2].text = "" + GcurrentCoolTime;
+            currentCoolTime[2] -= 1.0f;
+            coolTimeCounter[2].text = "" + currentCoolTime[2];
         }
         
         yield break;
@@ -223,7 +219,7 @@ public class Icons : MonoBehaviour
     {
         while (skillFilter[3].fillAmount > 0)
         {
-            skillFilter[3].fillAmount -= 1 * Time.smoothDeltaTime / TcoolTime;
+            skillFilter[3].fillAmount -= 1 * Time.smoothDeltaTime / coolTime[3];
 
             yield return null;
         }
@@ -237,12 +233,12 @@ public class Icons : MonoBehaviour
     //남은 쿨타임을 계산할 코르틴을 만들어줍니다.
     IEnumerator TCoolTimeCounter()
     {
-        while (TcurrentCoolTime > 0)
+        while (currentCoolTime[3] > 0)
         {
             yield return new WaitForSeconds(1.0f);
 
-            TcurrentCoolTime -= 1.0f;
-            coolTimeCounter[3].text = "" + TcurrentCoolTime;
+            currentCoolTime[3] -= 1.0f;
+            coolTimeCounter[3].text = "" + currentCoolTime[3];
         }
         
         yield break;

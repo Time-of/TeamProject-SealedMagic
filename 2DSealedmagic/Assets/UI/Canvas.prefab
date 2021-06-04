@@ -1100,10 +1100,16 @@ MonoBehaviour:
   - {fileID: 2581935084384892148}
   - {fileID: 2581935084249713500}
   - {fileID: 2581935085006997490}
-  FcoolTime: 20
-  IcoolTime: 10
-  GcoolTime: 30
-  TcoolTime: 50
+  coolTime:
+  - 20
+  - 10
+  - 30
+  - 50
+  currentCoolTime:
+  - 0
+  - 0
+  - 0
+  - 0
 --- !u!1 &2581935084383266412
 GameObject:
   m_ObjectHideFlags: 0

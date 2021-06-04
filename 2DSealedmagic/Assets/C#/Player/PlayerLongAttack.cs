@@ -9,35 +9,17 @@ public class PlayerLongAttack : MonoBehaviour
 	public Transform firePoint;
 	[Tooltip("발사 할 Bullet 와 이펙트 등")]
 	public GameObject[] impactEffect;
-	[Tooltip("기본 공격 쿨타임1")]
-	private float ccurTime;
-	[Tooltip("불 공격 쿨타임1")]
-	private float FcurTime;
-	[Tooltip("얼음 공격 쿨타임1")]
-	private float IcurTime;
-	[Tooltip("땅 공격 쿨타임1")]
-	private float GcurTime;
-	[Tooltip("번개 공격 쿨타임1")]
-	private float TcurTime;
-	[Tooltip("불 공격 확인")]
-	public bool FireIcon = false;
-	[Tooltip("얼음 공격 확인")]
-	public bool IceIcon = false;
-	[Tooltip("땅 공격 확인")]
-	public bool GroundIcon = false;
-	[Tooltip("번개 공격 확인")]
-	public bool ThunderIcon = false;
+	[Tooltip("기본 공격/스킬 쿨타임")]
+	[SerializeField]private float[] ccurTime;
+	
 
-	[Tooltip("기본 공격 쿨타임2")]
-	[SerializeField] private float classicTime;
-	[Tooltip("불 공격 쿨타임2")]
-	[SerializeField] private float fireTime;
-	[Tooltip("얼음 공격 쿨타임2")]
-	[SerializeField] private float iceTime;
-	[Tooltip("땅 공격 쿨타임2")]
-	[SerializeField] private float GroundTime;
-	[Tooltip("번개 공격 쿨타임2")]
-	[SerializeField] private float ThunderTime;
+	[Tooltip("스킬 확인")]
+	public bool[] SillIcon;
+	[Tooltip("스테이지별 스킬 확인")]
+	public bool[] StageCheck; 
+
+	[Tooltip("기본 공격/스킬 쿨타임 적용")]
+	[SerializeField] private float[] classicTime;
 	[Tooltip("공격을 했을때 작동을 안했을땐 이미지나 마나가 실행 안되게 만듬")]
 	private bool binCk = false;
 	[Tooltip("제단에서 올려준 공격력")]
@@ -66,8 +48,8 @@ public class PlayerLongAttack : MonoBehaviour
 		player = FindObjectOfType<PlayerObject>();
 		instance = this;
 	}
-
-	void Update()
+   
+    void Update()
 	{
 		MoveDic();
 		Attack();
@@ -89,7 +71,7 @@ public class PlayerLongAttack : MonoBehaviour
 	}
 	void Attack()
 	{
-		if (ccurTime <= 0)// 기본 공격
+		if (ccurTime[0] <= 0)// 기본 공격
 		{
 			if (Input.GetButtonDown("Attack")) // "S" Attack (classic)
 			{
@@ -97,117 +79,123 @@ public class PlayerLongAttack : MonoBehaviour
 				PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
 				playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
 				Shoot();
-				ccurTime = classicTime;
+				ccurTime[0] = classicTime[0];
 			}
 		}
 		else
 		{
-			ccurTime -= Time.deltaTime;
+			ccurTime[0] -= Time.deltaTime;
 		}
 	}
 	void FireAttack()
 	{
-
-		if (FcurTime <= 0)// 불 공격
+		if (StageCheck[0])
 		{
-			if (Input.GetButtonDown("FireAttack") && player.curMana > 0) // "Z" Attack (fire)
+			if (ccurTime[1] <= 0)// 불 공격
 			{
-				anim.SetTrigger("isSkill");
-				PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
-				playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
-				FireShoot();
-				FireIcon = true;
-				player.curMana -= 50;
-				FcurTime = fireTime;
+				if (Input.GetButtonDown("FireAttack") && player.curMana > 0) // "Z" Attack (fire)
+				{
+					anim.SetTrigger("isSkill");
+					PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
+					playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
+					FireShoot();
+					SillIcon[0] = true;
+					player.curMana -= 50;
+					ccurTime[1] = classicTime[1];
+				}
 			}
-		}
-		else
-		{
-			FcurTime -= Time.deltaTime;
+			else
+			{
+				ccurTime[1] -= Time.deltaTime;
+			}
 		}
 
 	}
 	void IceAttack()
 	{
-
-		if (IcurTime <= 0) // 얼음 공격
+		if (StageCheck[1])
 		{
-			if (Input.GetButtonDown("IceAttack") && player.curMana > 0) // "X" Attack (ice)
+			if (ccurTime[2] <= 0) // 얼음 공격
 			{
-				anim.SetTrigger("isSkill");
-				PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
-				playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
-				IceShoot();
-				IceIcon = true;
-				player.curMana -= 30;
-				IcurTime = iceTime;
-			}
-		}
-		else
-		{
-			IcurTime -= Time.deltaTime;
-		}
-
-	}
-	void GroundAttack()
-	{
-		if (GcurTime <= 0) // 땅 공격
-		{
-			if (Input.GetButtonDown("GroundAttack") && player.curMana > 0) // "X" Attack (ice)
-			{
-				GroudAttackShoot();
-				if (binCk == true)
+				if (Input.GetButtonDown("IceAttack") && player.curMana > 0) // "X" Attack (ice)
 				{
 					anim.SetTrigger("isSkill");
 					PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
 					playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
-					GroundIcon = true;
-					Monster monster = FindObjectOfType<Monster>();
-					monster.power = 2.5f;
-					player.curMana -= 50;
-					GcurTime = GroundTime;
-					binCk = false;
+					IceShoot();
+					SillIcon[1] = true;
+					player.curMana -= 30;
+					ccurTime[2] = classicTime[2];
 				}
-
+			}
+			else
+			{
+				ccurTime[2] -= Time.deltaTime;
 			}
 		}
-		else
+	}
+	void GroundAttack()
+	{
+		if (StageCheck[2])
 		{
-			GcurTime -= Time.deltaTime;
+			if (ccurTime[3] <= 0) // 땅 공격
+			{
+				if (Input.GetButtonDown("GroundAttack") && player.curMana > 0) // "X" Attack (ice)
+				{
+					GroudAttackShoot();
+					if (binCk == true)
+					{
+						anim.SetTrigger("isSkill");
+						PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
+						playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
+						SillIcon[2] = true;
+						Monster monster = FindObjectOfType<Monster>();
+						monster.power = 2.5f;
+						player.curMana -= 50;
+						ccurTime[3] = classicTime[3];
+						binCk = false;
+					}
+
+				}
+			}
+			else
+			{
+				ccurTime[3] -= Time.deltaTime;
+			}
 		}
 
 	}
 	void ThunderAttack()
 	{
-
-		if (TcurTime <= 0) // 번개 공격
+		if (StageCheck[3])
 		{
-			if (Input.GetButtonDown("ThunderAttack") && player.curMana > 0) // "V" Attack (ice)
+			if (ccurTime[4] <= 0) // 번개 공격
 			{
-				ThunderShoot();
-				if (binCk == true)
+				if (Input.GetButtonDown("ThunderAttack") && player.curMana > 0) // "V" Attack (ice)
 				{
-					anim.SetTrigger("isSkill");
-					PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
-					playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
-					ThunderIcon = true;
-					player.curMana -= 40;
-					TcurTime = ThunderTime;
-					binCk = false;
+					ThunderShoot();
+					if (binCk == true)
+					{
+						anim.SetTrigger("isSkill");
+						PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
+						playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
+						SillIcon[3] = true;
+						player.curMana -= 40;
+						ccurTime[4] = classicTime[4];
+						binCk = false;
+					}
 				}
 			}
-		}
-		else
-		{
-			TcurTime -= Time.deltaTime;
+			else
+			{
+				ccurTime[4] -= Time.deltaTime;
+			}
 		}
 
 	}
 
 
-
 	// bullet 생성
-
 	void Shoot()
 	{
 		Bullet Pos = GetComponent<Bullet>();
@@ -254,11 +242,11 @@ public class PlayerLongAttack : MonoBehaviour
 	// 범위 안에 들어오고 공격 키를 누르면 땅 공격
 	void GroudAttackShoot()
 	{
-		Collider2D[] hit = Physics2D.OverlapBoxAll(transform.position + new Vector3(4.5f * moveDic, 0, 0), new Vector2(8, 1f), 0, InLayer);
+		Collider2D[] hit = Physics2D.OverlapBoxAll(transform.position + new Vector3(7.5f * moveDic, 0, 0), new Vector2(13, 1f), 0, InLayer);
 		foreach (Collider2D i in hit)
 		{
 			GameObject GroundAtk = Instantiate(impactEffect[3], i.transform.position, Quaternion.identity);
-			Instantiate(impactEffect[4], Vector3.up * 1.3f + i.transform.position, Quaternion.identity);
+			Instantiate(impactEffect[4], Vector3.up * 1.6f + i.transform.position, Quaternion.identity);
 			binCk = true;
 			AttackArea area = GroundAtk.GetComponent<AttackArea>();
 
@@ -277,11 +265,11 @@ public class PlayerLongAttack : MonoBehaviour
 	// 범위 안에 들어오고 공격 키를 누르면 번개 공격
 	void ThunderShoot()
 	{
-		Collider2D[] Thit = Physics2D.OverlapBoxAll(transform.position + new Vector3(4.5f * moveDic, 1.4f, 0), new Vector2(8, 4.5f), 0, InLayer);
+		Collider2D[] Thit = Physics2D.OverlapBoxAll(transform.position + new Vector3(7.5f * moveDic, 3.5f, 0), new Vector2(13, 10f), 0, InLayer);
 		foreach (Collider2D i in Thit)
 		{
 			GameObject thunderAtk = Instantiate(impactEffect[5], i.transform.position, Quaternion.identity);
-			Instantiate(impactEffect[6], Vector3.up * 3.5f + i.transform.position, Quaternion.identity);
+			Instantiate(impactEffect[6], Vector3.up * 4.9f + i.transform.position, Quaternion.identity);
 			binCk = true;
 			AttackArea area = thunderAtk.GetComponent<AttackArea>();
 
@@ -305,8 +293,8 @@ public class PlayerLongAttack : MonoBehaviour
 	private void OnDrawGizmos()
 	{
 		Gizmos.color = Color.red;
-		Gizmos.DrawWireCube(transform.position + new Vector3(4.5f * moveDic, 0, 0), size);
+		Gizmos.DrawWireCube(transform.position + new Vector3(7.5f * moveDic, 0, 0), size);
 		Gizmos.color = Color.blue;
-		Gizmos.DrawWireCube(transform.position + new Vector3(4.5f * moveDic, 1.4f, 0), size2);
+		Gizmos.DrawWireCube(transform.position + new Vector3(7.5f * moveDic, 3.5f, 0), size2);
 	}
 }
