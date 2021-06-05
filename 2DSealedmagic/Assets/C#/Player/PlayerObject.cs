@@ -152,7 +152,7 @@ public class PlayerObject : MonoBehaviour
             {
                 if (jumpcount == 1)// double Jump
                 {
-                    rigid.velocity = new Vector2(rigid.velocity.x, jumpPower * 1.2f);
+                    rigid.velocity = new Vector2(rigid.velocity.x, jumpPower * 0.75f);
                 }
                 rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
                 anim.SetBool("isRun", false);// ´Þ¸®´Ù°¡ Á¡ÇÁ ½Ã ²¨Áü.
