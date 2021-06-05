@@ -11,6 +11,7 @@ public class FadeOut : MonoBehaviour
     [Tooltip("투명해질지 여부")]
     public bool fadeinout = true;
 
+
     void Start()
     {
         FaOut();

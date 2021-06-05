@@ -31,11 +31,16 @@ public class PlayerObject : MonoBehaviour
     [Tooltip("공격시 이동 활성화/비활성/ 죽음을때도 활용")]
     public bool bCanMove = true;
 
+    public AudioClip audioWalk;
+    public AudioClip audioJumpUp;
+    public AudioClip audioJumpDown;
+    public AudioClip audiofocus;
 
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     Animator anim;
     Altar obj;
+    AudioSource audioSource;
 
     private void Start()
     {
@@ -47,6 +52,7 @@ public class PlayerObject : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -73,6 +79,8 @@ public class PlayerObject : MonoBehaviour
                 // Left and right Move
                 float h = Input.GetAxisRaw("Horizontal");
                 rigid.AddForce(Vector2.right * h, ForceMode2D.Impulse);
+                //audioSource.clip = audioWalk;
+                //audioSource.Play();
             }
         }
         else
@@ -150,6 +158,8 @@ public class PlayerObject : MonoBehaviour
             // Jump
             if (Input.GetButtonDown("Jump") && jumpcount > 0) // spease
             {
+                audioSource.clip = audioJumpUp;
+                audioSource.Play();
                 if (jumpcount == 1)// double Jump
                 {
                     rigid.velocity = new Vector2(rigid.velocity.x, jumpPower * 0.75f);
@@ -177,6 +187,7 @@ public class PlayerObject : MonoBehaviour
         {
             anim.SetBool("Jumping", false);// jump UP image
             anim.SetBool("Jumpingdown", true);// jump Down image
+            
 
             Vector2 frontVec = new Vector2(rigid.position.x + rigid.velocity.x * 0.03f, rigid.position.y);
             Debug.DrawRay(frontVec, Vector3.down, new Color(1, 0, 0));
@@ -189,6 +200,8 @@ public class PlayerObject : MonoBehaviour
                 if (rayHit.distance < 1.8f)
                 {
                     anim.SetBool("Jumpingdown", false);// jump image
+                    audioSource.clip = audioJumpDown;
+                    audioSource.Play();
                     jumpcount = 2;
                 }
             }
@@ -287,14 +300,14 @@ public class PlayerObject : MonoBehaviour
         {
             curHealth = maxHealth;
         }
-        else if (curHealth <= 0)
+        else if (curHealth <= 0)// 죽었을때
         {
             // 못 움직이게 고정
             bCanMove = false;
             // 체력 0
             curHealth = 0;
             // 죽으면 눕자!
-            transform.eulerAngles = new Vector3(0, 0, 90); // Die Impect
+            anim.SetBool("isDie", true);
             // 투명화
             spriteRenderer.color = new Color(1, 1, 1, 0.4f);
             //  죽은뒤 이미지 생성
@@ -345,6 +358,8 @@ public class PlayerObject : MonoBehaviour
             obj.isInteracting = true;
             Altarpos = transform.position;
             Debug.Log("정신 집중!");
+            audioSource.clip = audiofocus;
+            audioSource.Play();
         }
     }
     void OnTriggerEnter2D(Collider2D collision)
@@ -359,5 +374,23 @@ public class PlayerObject : MonoBehaviour
     {
         obj = null;
     }
-
+    /*
+    void PlayerSound(string action)
+    {
+        switch (action)
+        {
+            case "Walk":
+                audioSource.clip = audioWalk;
+                break;
+            case "JumpUp":
+                audioSource.clip = audioJumpUp;
+                break;
+            case "JumpDown":
+                audioSource.clip = audioJumpDown;
+                break;
+            case "Focus":
+                audioSource.clip = audiofocus;
+                break;
+        }
+    }*/
 }

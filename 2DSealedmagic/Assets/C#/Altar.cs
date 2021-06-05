@@ -20,7 +20,7 @@ public class Altar : MonoBehaviour
 	//public GameObject EndEffect;
 
 	[Tooltip("다음 씬으로 넘어가는 지연시간")]
-	[SerializeField] float sceneLoadTime = 2f;
+	[SerializeField] float sceneLoadTime = 1f;
 	
 	// 상호작용 중인가 여부
 	[HideInInspector] public bool isInteracting = false;
@@ -32,6 +32,7 @@ public class Altar : MonoBehaviour
 
 	float delay = 0f;
 
+	FadeIn Out;
 
 	void Start()
 	{
