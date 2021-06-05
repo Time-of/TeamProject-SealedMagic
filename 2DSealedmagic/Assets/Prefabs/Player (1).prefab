@@ -206,7 +206,7 @@ MonoBehaviour:
   - 0
   - 0
   SillIcon: 00000000
-  StageCheck: 01010101
+  StageCheck: 00000000
   classicTime:
   - 0.2
   - 20

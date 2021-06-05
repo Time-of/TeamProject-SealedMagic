@@ -85,6 +85,12 @@ public class AttackArea : MonoBehaviour
 					}
 				}
 			}
+			else if (collision.gameObject.tag == "SealedStone")
+			{
+				Object obj = collision.GetComponent<Object>();
+				obj.SealedStoneOnAttack();
+				Destroy(gameObject);
+			}
 		}
 
 		// 적군의 공격일 경우

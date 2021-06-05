@@ -12,11 +12,11 @@ using UnityEngine;
 
 -- 필요한 정보 --
 ArrowDispenser: gameObj, Direction
-Arrow: amount
+Arrow: amount, speed
 Plate: gameObj
 Door: null
 SealedStone: HP, index
-PotionHP/PotionMP: gameObj(FX), amount
+PotionHP/PotionMP: gameObj(FX), amount, speed
 
 -- ObjectType에 오브젝트 종류를 기재 --
 화살발사기: ArrowDispenser
@@ -45,33 +45,48 @@ public class Object : MonoBehaviour
 	[SerializeField] int index;
 
 	bool onTrigger = false;
-	float floatingDir = 0f;
+	bool isFloating = false;
 
 	Animator anim;
+	SpriteRenderer spRenderer;
 
-	Vector2 pos;
+	Vector2 currentPos;
 
-    private void Awake()
-    {
+	float time = 0f;
+	float PosY = 0f;
+
+	void Awake()
+	{
 		anim = GetComponentInParent<Animator>();
-    }
+		spRenderer = GetComponent<SpriteRenderer>();
+	}
 
-    void Start()
+	void Start()
 	{
 		if (ObjectType == "ArrowDispenser")
 			StartCoroutine(ArrowDispenser(Direction));
 		if (ObjectType == "Arrow")
-			StartCoroutine("Arrow");
-		if (ObjectType == "PotionHp" || ObjectType == "PotionMP")
+			StartCoroutine(Arrow());
+		if (ObjectType == "PotionHP" || ObjectType == "PotionMP")
 		{
-			pos = transform.position;
-			StartCoroutine("SetFloatingDir");
+			currentPos = transform.position;
+			isFloating = true;
+		}
+	}
+
+	void Update()
+	{
+		if (isFloating)
+		{
+			time += Time.deltaTime * speed;
+			PosY = Mathf.Sin(time) * 0.3f; // (* 길이;)
+			transform.position = currentPos + new Vector2(0, PosY);
 		}
 	}
 
 	IEnumerator ArrowDispenser(string Dir)
 	{
-		while(true)
+		while (true)
 		{
 			yield return new WaitForSeconds(2f);
 			GameObject arrow = Instantiate(gameObj, transform.position, Quaternion.identity);
@@ -95,49 +110,30 @@ public class Object : MonoBehaviour
 			yield return null;
 		}
 	}
-	
-	IEnumerator SetFloatingDir()
+
+	public void SealedStoneOnAttack()
 	{
-		yield return new WaitForSeconds(0.5f);
-		StartCoroutine(Floater(0.3f));
-		while (true)
+		if (ObjectType == "SealedStone")
 		{
-			floatingDir = 1f;
-			yield return new WaitForSeconds(1f);
-			floatingDir = -1f;
-			yield return new WaitForSeconds(1f);
+			HP -= 1;
+			StartCoroutine(onDamaged());
+
+			if (HP <= 0)
+			{
+				PlayerLongAttack.instance.StageCheck[index] = true;
+
+				Destroy(gameObject);
+			}
 		}
 	}
 
-	IEnumerator Floater(float speed)
+	IEnumerator onDamaged()
 	{
-		while (true)
-		{
-			if (floatingDir == 1f)
-				transform.position = Vector2.Lerp(transform.position, pos + Vector2.up * 1f, Time.deltaTime * speed);
+		spRenderer.color = new Color(1, 1, 1, 0.6f);
 
-			if (floatingDir == -1f)
-				transform.position = Vector2.Lerp(transform.position, pos, Time.deltaTime * speed);
-
-			yield return null;
-		}
+		yield return new WaitForSeconds(0.3f);
+		spRenderer.color = new Color(1, 1, 1, 1);
 	}
-
-	/*
-	 * 해당 부분은 HP가 3이고 1씩 감소하는 것으로 기획되어 제거됨
-	 * 대체 스크립트가 OnTriggerEnter2D에 작성됨
-	public void onAttack(float dmg)
-	{
-		HP -= dmg;
-		if (HP <= 0)
-		{
-			//Player.CanUseMagic[index] = true;
-			//(파괴 이펙트 생성 스크립트 추가)
-
-			Destroy(gameObject);
-		}
-	}
-	*/
 
 	void OnTriggerEnter2D(Collider2D collision)
 	{
@@ -156,41 +152,26 @@ public class Object : MonoBehaviour
 				player.OnDamage(amount); // 트랙 데미지
 				Destroy(gameObject);
 			}
-			
+
 			if (collision.gameObject.tag == "Platform" || collision.gameObject.tag == "Floor")
 			{
 				Destroy(gameObject);
 			}
 		}
 
-		if (ObjectType == "SealedStone")
+		if (ObjectType == "PotionHP" || ObjectType == "PotionMP")
 		{
-			if (collision.gameObject.tag == "Attack")
-			{
-				HP -= 1;
-				if (HP <= 0)
-				{
-					//player.CanUseMagic(index);
-					// (있다면)(파괴 이펙트 생성 스크립트)
-
-					Destroy(gameObject);
-				}
-			}
-		}
-
-		if (ObjectType == "PotionHp" || ObjectType == "PotionMP")
-		{
-			if(collision.gameObject.tag == "Player")
+			if (collision.gameObject.tag == "Player")
 			{
 				PlayerObject pl = FindObjectOfType<PlayerObject>();
-				
-				if(ObjectType == "PotionHp")
+
+				if (ObjectType == "PotionHP")
 				{
 					pl.curHealth += amount;
 					if (pl.curHealth >= pl.maxHealth)
 						pl.curHealth = pl.maxHealth;
 				}
-				else if(ObjectType == "PotionMP")
+				else if (ObjectType == "PotionMP")
 				{
 					pl.curMana += amount;
 					if (pl.curMana >= pl.maxMana)
