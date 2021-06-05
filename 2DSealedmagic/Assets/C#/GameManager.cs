@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
 {
 	public int killedColoredMonster = 0;
 	public bool isGameover = false;
+	public GameObject ColoredMonsterFX;
 
 	public static GameManager instance;
 

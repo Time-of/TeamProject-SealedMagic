@@ -1,0 +1,1694 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.2f1 (068178b99f32) revision 426360'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19041.985; Version 2004; 64bit' Language: 'ko' Physical Memory: 32699 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+F:\Unity 3D\unnn\2020.2.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+F:/!github-desktop/TeamProject-SealedMagic/2DSealedmagic
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+56109
+Successfully changed project path to: F:/!github-desktop/TeamProject-SealedMagic/2DSealedmagic
+F:/!github-desktop/TeamProject-SealedMagic/2DSealedmagic
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 86.12 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.2f1 (068178b99f32)
+[Subsystems] Discovering subsystems at path F:/Unity 3D/unnn/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/!github-desktop/TeamProject-SealedMagic/2DSealedmagic/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 (ID=0x1f02)
+    Vendor:   
+    VRAM:     8031 MB
+    Driver:   27.21.14.6647
+Initialize mono
+Mono path[0] = 'F:/Unity 3D/unnn/2020.2.2f1/Editor/Data/Managed'
+Mono path[1] = 'F:/Unity 3D/unnn/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'F:/Unity 3D/unnn/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56832
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: F:/Unity 3D/unnn/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001558 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 66.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.125 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001381 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001B36E71F8F0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B1A32AB7B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36EC48C40 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36EB82280 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3742DE010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E303010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E303010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3735EF430 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3737DAC20 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E313620 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3740F5030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374122E40 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36EC48C40 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E313620 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36ECEF030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E6350A0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E441E20 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3733B5E30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3735EF430 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37302BA30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B372C4C010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B373748620 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37302BA30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B372FF1E30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37302BA30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37362B020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E3C1010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E90C010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B372F50A30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37455A030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36EA925F0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36ECEF030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B373748620 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B372F50A30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 64.25 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.443 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1973 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.8 MB.
+System memory in use after: 94.9 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2423.
+Total: 2.583500 ms (FindLiveObjects: 0.239500 ms CreateObjectMapping: 0.117700 ms MarkObjects: 2.141500 ms  DeleteObjects: 0.083500 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/C#/Object.cs
+  artifactKey: Guid(47d0d043c36623343b3e37f1e1379662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/C#/Object.cs using Guid(47d0d043c36623343b3e37f1e1379662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '377af077abd68608fc67fa7673460a49') in 0.031265 seconds
+  Import took 0.035421 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001403 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001B36E71F8F0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B1A32AC290 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E6F4FF0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E7086D0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E52CE70 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E9B3A20 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E52CE70 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36EC44030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3762F5C80 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374BC9030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37306B020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374BC9030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E637870 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B373098E30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3731907A0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E49E020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374BDA440 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3731907A0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3733B5E30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E9BD250 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B372C4C010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E637870 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E2DCE90 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B373098E30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B373513030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E5F7070 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E677A40 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36ED13D90 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E712450 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376342180 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36EA925F0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3731907A0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E637870 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375333010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.256 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1948 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.5 MB.
+System memory in use after: 93.6 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2426.
+Total: 2.939000 ms (FindLiveObjects: 0.349300 ms CreateObjectMapping: 0.134500 ms MarkObjects: 2.428000 ms  DeleteObjects: 0.025400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001369 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001B374794010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B1A32AB070 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375D95040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3738E6250 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374BC9030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C57730 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374BC9030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375D15E00 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37393B020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3732F2020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3756F5010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3732F2020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E352410 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3732F2020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374D25010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B373F53040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E441E20 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374D25010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375DA9EE0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375A62090 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C63230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375D95040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E2DCE90 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3735D5020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375B68DF0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375D8E020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E3C1010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37621E040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E712450 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E53E940 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36EA92250 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374D25010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E352410 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B373E8F0E0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.273 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1948 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.8 MB.
+System memory in use after: 93.9 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2429.
+Total: 2.364700 ms (FindLiveObjects: 0.231600 ms CreateObjectMapping: 0.103100 ms MarkObjects: 2.011700 ms  DeleteObjects: 0.016900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 132.510154 seconds.
+  path: Assets/C#/Object.cs
+  artifactKey: Guid(47d0d043c36623343b3e37f1e1379662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/C#/Object.cs using Guid(47d0d043c36623343b3e37f1e1379662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7a35398aba9c83f50e6e84a97fcbdae') in 0.006751 seconds
+  Import took 0.010983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043552 seconds.
+  path: Assets/C#/Object.cs
+  artifactKey: Guid(47d0d043c36623343b3e37f1e1379662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/C#/Object.cs using Guid(47d0d043c36623343b3e37f1e1379662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7a35398aba9c83f50e6e84a97fcbdae') in 0.003592 seconds
+  Import took 0.007776 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001399 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001B374794010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376195710 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375D95040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374A53050 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374CE2020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3734D0410 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E52F030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E5F7070 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37488C010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374CE2020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3756F5010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3732F2020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3769D1030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376507020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E8B69A0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37573E1D0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B1A5B373E0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E697620 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E3C4470 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E9BD250 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374967020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375D95040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C3C910 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E52F030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3744AE010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3769E42D0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E3CAF60 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376081B80 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375E13D60 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374A53050 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36EA92080 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37474B7A0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3769D1030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B373E8F0E0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.254 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1948 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.1 MB.
+System memory in use after: 94.2 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2432.
+Total: 2.697100 ms (FindLiveObjects: 0.251700 ms CreateObjectMapping: 0.115500 ms MarkObjects: 2.305200 ms  DeleteObjects: 0.023300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001454 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001B375ABCD30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E699370 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C1B230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B372BE4020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3760B5020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3734D0410 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E52F030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36EC44030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3751C0030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3760B5020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3756F5010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3732F2020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C1B230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376507020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E49E020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3769D3C00 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B372BE4020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E49E020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37474B7A0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3752D5010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374967020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B372FFC030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C3C910 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E52F030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3744AE010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E71A460 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B372BE4020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3762FFCB0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E79C010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B372BE4020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36EA92080 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E49E020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C1B230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375333010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.225 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1948 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.1 MB.
+System memory in use after: 94.2 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2435.
+Total: 2.730500 ms (FindLiveObjects: 0.223700 ms CreateObjectMapping: 0.102900 ms MarkObjects: 2.381800 ms  DeleteObjects: 0.020800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001309 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001B374794010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E697A10 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E69B630 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374B2B020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3760B5020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C57730 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B372FA1030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B373520870 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37393B020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3760B5020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3756F5010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37376D010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E69B630 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3755E1040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E3C4470 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C9D060 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E31FEA0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E8B69A0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E443990 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E61DC60 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376D72040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E69B630 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36ECDF020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B372FA1030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3769F1340 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3743D2F50 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E3C1010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36ED13D90 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3769C9020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3769DCF40 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36EA92080 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E3C4470 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E352410 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B373E8F0E0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.263 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1948 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.6 MB.
+System memory in use after: 94.7 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2438.
+Total: 17.110200 ms (FindLiveObjects: 0.248200 ms CreateObjectMapping: 14.340100 ms MarkObjects: 2.496200 ms  DeleteObjects: 0.023600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001564 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001B375ABC180 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E69B070 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E69B630 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37606F340 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3738D7450 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374D24010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E52F030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376182E80 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37488C010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3738D7450 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3756F5010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374BC9030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E69B630 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3738D7450 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374697020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3762F5C80 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3760C2370 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3760680A0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376182E80 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376449010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37690D020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E69B630 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37350F010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E52F030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3744AE010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E64F020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E3C1010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B397DD9030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3769DE170 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E7A6870 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36EA92080 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374697020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37379E980 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375333010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.223 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1948 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.8 MB.
+System memory in use after: 95.0 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2441.
+Total: 2.469100 ms (FindLiveObjects: 0.237300 ms CreateObjectMapping: 0.111100 ms MarkObjects: 2.099700 ms  DeleteObjects: 0.019400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001426 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001B375ABC180 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E69ACD0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36ECCAD80 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3762601D0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3738D7450 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C57730 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E52F030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E5F7070 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374F58020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3738D7450 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3756F5010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374BC9030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C1B230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3738D7450 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E9D1270 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375B2E010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3762601D0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E8B69A0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376182E80 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376449010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37690D020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C1B230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37350F010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E52F030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376449010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E64F020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375B80530 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376383020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E712450 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3762601D0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36EA925F0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E9D1270 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C1B230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B373E8F0E0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.239 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1948 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.1 MB.
+System memory in use after: 95.2 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2444.
+Total: 2.633800 ms (FindLiveObjects: 0.231000 ms CreateObjectMapping: 0.099600 ms MarkObjects: 2.281000 ms  DeleteObjects: 0.020800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001380 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001B374794010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E698890 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376513040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374B2B020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3755E1040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3769D3C00 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E8A6030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375D15E00 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3751C0040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3755E1040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3756F5010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3769A1010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375D92C70 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3755E1040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E49E020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37341C010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E441E20 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3760680A0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375DA9EE0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376449010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37690D020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375D92C70 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3744AE010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E8A6030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3769F1340 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B372FFE5B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374BB16A0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B397F433F0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C95050 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3769DCF40 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36EA92080 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E49E020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37379E980 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375333010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.223 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1948 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.1 MB.
+System memory in use after: 95.2 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2447.
+Total: 2.517100 ms (FindLiveObjects: 0.259200 ms CreateObjectMapping: 0.119700 ms MarkObjects: 2.117700 ms  DeleteObjects: 0.019400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001362 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001B374794010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E698890 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375D94C80 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3738E6250 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374CF2030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374D24010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E8A6030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375D15E00 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3751C0040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374CF2030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3756F5010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374740010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375D94C80 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3738D7450 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E49E020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374452020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375656420 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3760680A0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36ECEF030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376449010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37690D020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375D94C80 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E7B8020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3760B5020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376449010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B372FFE5B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37374A6D0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B397F433F0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B398443040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B397BAB040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36EA92080 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E49E020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375D94C80 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B373E8F0E0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.316 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1948 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.6 MB.
+System memory in use after: 94.7 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2450.
+Total: 2.403600 ms (FindLiveObjects: 0.218300 ms CreateObjectMapping: 0.095200 ms MarkObjects: 2.069100 ms  DeleteObjects: 0.019500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001407 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001B375ABC180 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E69A590 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C1B230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374924330 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374A83020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375DC8B90 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E8A6030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E9D5280 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37613E730 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374A83020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3756F5010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37668A7B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C1B230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3738D7450 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37625A1B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3730A0E40 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37469D040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E8B69A0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E33B0D0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376449010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37690D020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C1B230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375DB1280 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3760B5020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375627010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E64F020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E153970 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B39839F030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375479010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E71CAD0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36EA92080 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37625A1B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C1B230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375333010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.229 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1948 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.9 MB.
+System memory in use after: 95.0 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2453.
+Total: 2.883300 ms (FindLiveObjects: 0.268000 ms CreateObjectMapping: 0.126000 ms MarkObjects: 2.465100 ms  DeleteObjects: 0.022800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001340 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001B37592B010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E698FD0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376513040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374B2B020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374F54020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3769D3C00 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E8A6030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374F3F8D0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37488C010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374F54020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3756F5010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374740010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E398020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3738D7450 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37625A1B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376107010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E441E20 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37625A1B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E33B0D0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E778010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3983D1030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E398020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C3C910 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3760B5020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E778010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E5DCF20 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E3C1010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375D1F910 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375479010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3769DCF40 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36EA925F0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37625A1B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36ED6B790 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375333010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.209 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1948 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.1 MB.
+System memory in use after: 95.2 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2456.
+Total: 2.548500 ms (FindLiveObjects: 0.229100 ms CreateObjectMapping: 0.104500 ms MarkObjects: 2.195100 ms  DeleteObjects: 0.018500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 960.150310 seconds.
+  path: Assets/Image/Stage1/1_원경.png
+  artifactKey: Guid(422b4566fb6b4fb4cb71cb62b1b6abb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Stage1/1_원경.png using Guid(422b4566fb6b4fb4cb71cb62b1b6abb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54724e8d21389ce0cdc0bb86dff5dfad') in 0.146803 seconds
+  Import took 0.151342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.607591 seconds.
+  path: Assets/Image/Stage3/3_원경.png
+  artifactKey: Guid(6d37d9e21dc22294b88f98067d508373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Stage3/3_원경.png using Guid(6d37d9e21dc22294b88f98067d508373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5528aea8383323b07f0992c661778ab') in 0.040001 seconds
+  Import took 0.045504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.061042 seconds.
+  path: Assets/Image/Stage2/2_원경.png
+  artifactKey: Guid(ce4e6fafc8d93a34d8514403ad30721e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Stage2/2_원경.png using Guid(ce4e6fafc8d93a34d8514403ad30721e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b21f9fe6b7ab8d932782c8d5766cf11') in 0.017883 seconds
+  Import took 0.022414 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.784486 seconds.
+  path: Assets/Image/Run/[달리기]_01.png
+  artifactKey: Guid(b0804eee48a639240a3f6068549b43da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Run/[달리기]_01.png using Guid(b0804eee48a639240a3f6068549b43da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6756eb39f895af46d8a64249a13ac5e') in 0.038801 seconds
+  Import took 0.043582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Image/Run/[달리기]_04.png
+  artifactKey: Guid(5d3d49ac12435964e9952f689b264e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Run/[달리기]_04.png using Guid(5d3d49ac12435964e9952f689b264e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ae3c1d1548da612431f5e8058b9f1a9') in 0.057064 seconds
+  Import took 0.062409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Image/Run/[달리기]_06.png
+  artifactKey: Guid(766c976cee299db43bcc55327f22d781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Run/[달리기]_06.png using Guid(766c976cee299db43bcc55327f22d781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c44be77a17add4a0d5bbee8bab4f509') in 0.029044 seconds
+  Import took 0.033340 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Image/Run/[달리기]_03.png
+  artifactKey: Guid(a8e9439a8bf52e44d887192c30db8422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Run/[달리기]_03.png using Guid(a8e9439a8bf52e44d887192c30db8422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '491e2424c114c91cefcdbbb1a5bdbc41') in 0.040532 seconds
+  Import took 0.045813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Image/Run/[달리기]_05.png
+  artifactKey: Guid(928d983f617941941b79224231ca85bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Run/[달리기]_05.png using Guid(928d983f617941941b79224231ca85bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '947f7154378ead4c2c5d017e37317991') in 0.042794 seconds
+  Import took 0.047501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Image/Run/[달리기]_02.png
+  artifactKey: Guid(0b07dfe5e1a4c3e4198775522bfa063c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Run/[달리기]_02.png using Guid(0b07dfe5e1a4c3e4198775522bfa063c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecbcedfb94254789ee8b6b8ff66bad89') in 0.059312 seconds
+  Import took 0.063708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.926218 seconds.
+  path: Assets/Prefabs/AttackImpact.prefab
+  artifactKey: Guid(d9c5bd755867e9042a4ffbabc6f615d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AttackImpact.prefab using Guid(d9c5bd755867e9042a4ffbabc6f615d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94e19b60c64e47bdfde9bea0e40e4817') in 0.045685 seconds
+  Import took 0.050508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/Prefabs/ply_Groundattack.prefab
+  artifactKey: Guid(4ef2e341258bb154c976942df0de273f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ply_Groundattack.prefab using Guid(4ef2e341258bb154c976942df0de273f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c88af30a633b20daba3c0a0ed7813e67') in 0.005808 seconds
+  Import took 0.010089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/Prefabs/TestEnemy.prefab
+  artifactKey: Guid(d5c6518140789644392fbc90a5294285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TestEnemy.prefab using Guid(d5c6518140789644392fbc90a5294285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0255ff45a1ab607f59382e41f1b16a04') in 0.128245 seconds
+  Import took 0.133097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/Prefabs/Ice Bullet.prefab
+  artifactKey: Guid(3373921c0c7295a4e9d12ac3ccf4d0e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Ice Bullet.prefab using Guid(3373921c0c7295a4e9d12ac3ccf4d0e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea60283aca8ae1936846dbb379e135aa') in 0.014339 seconds
+  Import took 0.018915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/Prefabs/Fire Bullet.prefab
+  artifactKey: Guid(4aac6e34cf6a7034497c8a2c44c543d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fire Bullet.prefab using Guid(4aac6e34cf6a7034497c8a2c44c543d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9009cb79f513163d213fcc19c6ea802') in 0.014070 seconds
+  Import took 0.018291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/Prefabs/DmgText.prefab
+  artifactKey: Guid(ec90fe6e0a576254493bc12fd3624d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DmgText.prefab using Guid(ec90fe6e0a576254493bc12fd3624d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b73c16a676474e675876ab3527bb9a08') in 0.035812 seconds
+  Import took 0.040668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Prefabs/Player (1).prefab
+  artifactKey: Guid(f561545267874f84aa2c98e72c506b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player (1).prefab using Guid(f561545267874f84aa2c98e72c506b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5465b345bf04d03400e94bbbcd449e6c') in 0.064963 seconds
+  Import took 0.070428 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Prefabs/Ground Bullet.prefab
+  artifactKey: Guid(f3061ed659265594faef7f76bd61f3d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Ground Bullet.prefab using Guid(f3061ed659265594faef7f76bd61f3d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a24435a99d6859f2ee7c9eb419360953') in 0.195612 seconds
+  Import took 0.200115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Prefabs/Bullet.prefab
+  artifactKey: Guid(72c202146a57fbc4c9e65ee4db1c4a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Bullet.prefab using Guid(72c202146a57fbc4c9e65ee4db1c4a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dce30acabd6f184974e504d53ed1a802') in 0.015112 seconds
+  Import took 0.019560 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/Prefabs/TestBoss.prefab
+  artifactKey: Guid(921cc510d4de95e4fa43a7de6ef0b2af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TestBoss.prefab using Guid(921cc510d4de95e4fa43a7de6ef0b2af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51844c03f7012ac200ff3dc3cff24378') in 0.051517 seconds
+  Import took 0.056900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Prefabs/Thunder Bullet.prefab
+  artifactKey: Guid(b400e71b9abcebc44ab966bda32db2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Thunder Bullet.prefab using Guid(b400e71b9abcebc44ab966bda32db2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfb0a9cd07f00c5c84526218610c9915') in 0.013244 seconds
+  Import took 0.017834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 69.390027 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f3c1c0744862481fa5b406ab3fceb11') in 0.006966 seconds
+  Import took 0.011326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001201 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f3c1c0744862481fa5b406ab3fceb11') in 0.004416 seconds
+  Import took 0.008821 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.851045 seconds.
+  path: Assets/Prefabs/Objects/Altar.prefab
+  artifactKey: Guid(00711a8c6bb47184c9af956584ba85b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Objects/Altar.prefab using Guid(00711a8c6bb47184c9af956584ba85b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2f66d5371832a1b5706be4f412b4e35') in 0.013805 seconds
+  Import took 0.018451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/Prefabs/Objects/HealPotion.prefab
+  artifactKey: Guid(e00d2e697fad91c4096df0983ea959cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Objects/HealPotion.prefab using Guid(e00d2e697fad91c4096df0983ea959cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a305ee0e0d46e736080d93960bff3027') in 0.013685 seconds
+  Import took 0.018082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/Prefabs/Objects/Trap_Spear.prefab
+  artifactKey: Guid(61f99ed875c8be841ae9c3c4b985b038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Objects/Trap_Spear.prefab using Guid(61f99ed875c8be841ae9c3c4b985b038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b80c3ea651ba3ad4fa8b7a7913bdb51f') in 0.013588 seconds
+  Import took 0.018035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/Prefabs/Objects/PressurePlate.prefab
+  artifactKey: Guid(60b54b2ff1f1b3d45845eeab8cd01c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Objects/PressurePlate.prefab using Guid(60b54b2ff1f1b3d45845eeab8cd01c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37018c2dc6311741a13d7de6e42228ae') in 0.015355 seconds
+  Import took 0.044037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/Prefabs/Objects/Trap_Projectile_Arrow.prefab
+  artifactKey: Guid(ce8714b083873394b877e314dfe9ce7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Objects/Trap_Projectile_Arrow.prefab using Guid(ce8714b083873394b877e314dfe9ce7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b216aba8a8411a2c6d1b75fe17e5ead') in 0.012855 seconds
+  Import took 0.017299 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Prefabs/Objects/SealedStone.prefab
+  artifactKey: Guid(bd1c3ab3e836f0b44835a6ac22a58b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Objects/SealedStone.prefab using Guid(bd1c3ab3e836f0b44835a6ac22a58b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40eaf6f0d9c42e7bca9d15bafb3042f0') in 0.021671 seconds
+  Import took 0.025966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Prefabs/Objects/Trap_ArrDispenser (1) Variant.prefab
+  artifactKey: Guid(a5cb67b63a302ec48a1609a5f2f9271a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Objects/Trap_ArrDispenser (1) Variant.prefab using Guid(a5cb67b63a302ec48a1609a5f2f9271a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '041ddce69aaa278ad2c38e0f0ce6386c') in 0.018238 seconds
+  Import took 0.022592 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Prefabs/Objects/ManaPotion.prefab
+  artifactKey: Guid(bb7e7fece6d08494497d5f3b767907a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Objects/ManaPotion.prefab using Guid(bb7e7fece6d08494497d5f3b767907a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e861627c155faf6779b80b099744008') in 0.018210 seconds
+  Import took 0.022767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Prefabs/Objects/Trap_ArrDispenser.prefab
+  artifactKey: Guid(f3575367ad294ac46a27ccaadd320ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Objects/Trap_ArrDispenser.prefab using Guid(f3575367ad294ac46a27ccaadd320ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7c252246d77c65a0a8f06998c5cd2c0') in 0.013889 seconds
+  Import took 0.018272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Prefabs/Objects/Trap_Sword.prefab
+  artifactKey: Guid(5a3aaecc504101d43a527542ee9cf291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Objects/Trap_Sword.prefab using Guid(5a3aaecc504101d43a527542ee9cf291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ae2114f303bbce03475bd3e2c93f2b1') in 0.014691 seconds
+  Import took 0.018954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Prefabs/Objects/Trap_Thorn.prefab
+  artifactKey: Guid(bad5e6f0226dd854a8a648fff9d15fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Objects/Trap_Thorn.prefab using Guid(bad5e6f0226dd854a8a648fff9d15fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd5aeb04019a250a99ffb3581bb05074') in 0.011830 seconds
+  Import took 0.016175 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/Prefabs/Objects/Door.prefab
+  artifactKey: Guid(bc97318a0c950df4eba924029914d592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Objects/Door.prefab using Guid(bc97318a0c950df4eba924029914d592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd53dacd83bd1ca3a0880d64c539b56e9') in 0.012126 seconds
+  Import took 0.016445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.843849 seconds.
+  path: Assets/Prefabs/Objects/SealedStone.prefab
+  artifactKey: Guid(bd1c3ab3e836f0b44835a6ac22a58b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Objects/SealedStone.prefab using Guid(bd1c3ab3e836f0b44835a6ac22a58b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4d19fbfbed0129a21b79c5a766fa3d4') in 0.017885 seconds
+  Import took 0.026683 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001424 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001B375ABC180 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E69A590 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E790030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375AEBFA0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37309B080 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3734D0410 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E8A6030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3768B20C0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37488C010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37309B080 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3756F5010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3766BD890 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E790030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3738D7450 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375B7A030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376107010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375DDD2E0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E8B69A0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E33B0D0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375A62090 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3983D1030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E790030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C3C910 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3760B5020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375A62090 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376212030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37352B530 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375D1F910 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375333010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E71CAD0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36EA925F0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375B7A030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E790030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375333010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.217 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1948 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.7 MB.
+System memory in use after: 98.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2470.
+Total: 2.581500 ms (FindLiveObjects: 0.221600 ms CreateObjectMapping: 0.095700 ms MarkObjects: 2.242100 ms  DeleteObjects: 0.020800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 585.667195 seconds.
+  path: Assets/Prefabs/Player (1).prefab
+  artifactKey: Guid(f561545267874f84aa2c98e72c506b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player (1).prefab using Guid(f561545267874f84aa2c98e72c506b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76077f9de6f6ee2b3da29d024fac29bd') in 0.169251 seconds
+  Import took 0.191994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.199703 seconds.
+  path: Assets/Prefabs/Player (1).prefab
+  artifactKey: Guid(f561545267874f84aa2c98e72c506b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player (1).prefab using Guid(f561545267874f84aa2c98e72c506b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32f04eea780ff7cd6deb2933647e3004') in 0.057761 seconds
+  Import took 0.062719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.355046 seconds.
+  path: Assets/Prefabs/Player (1).prefab
+  artifactKey: Guid(f561545267874f84aa2c98e72c506b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player (1).prefab using Guid(f561545267874f84aa2c98e72c506b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '135cff8f295c4dc675cc5080b640889c') in 0.058375 seconds
+  Import took 0.063649 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.375402 seconds.
+  path: Assets/Prefabs/Player (1).prefab
+  artifactKey: Guid(f561545267874f84aa2c98e72c506b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player (1).prefab using Guid(f561545267874f84aa2c98e72c506b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6a26d96cdc9ac30667f3917cb0245a2') in 0.055359 seconds
+  Import took 0.060425 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001485 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001B37592B010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E699E50 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376513040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376E44A90 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37309B080 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3769D3C00 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E8A6030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36EC44030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37613E730 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37309B080 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3756F5010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B374740010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E69B630 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3755E1040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3738DF460 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37393B020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375DDD2E0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3738DF460 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B37625A1B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376449010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3983D1030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E69B630 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C3C910 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3760B5020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B376449010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36E5DCF20 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375BB83B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375D1F910 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3735E5030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3769DCF40 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B36EA925F0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3769CD020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B375C1B230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B373E8F0E0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.225 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1948 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.2 MB.
+System memory in use after: 98.3 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2474.
+Total: 2.600500 ms (FindLiveObjects: 0.222800 ms CreateObjectMapping: 0.096300 ms MarkObjects: 2.261100 ms  DeleteObjects: 0.019200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 192.146030 seconds.
+  path: Assets/Scenes/Stage1.unity
+  artifactKey: Guid(aaed13ac9f31f7145a318445e6af2e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Stage1.unity using Guid(aaed13ac9f31f7145a318445e6af2e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45c748aae067406a47d6ec5f2d621ca9') in 0.017792 seconds
+  Import took 0.022099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.591878 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfa8e1c9c47ccd13710a415f08559701') in 0.003649 seconds
+  Import took 0.007859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.475963 seconds.
+  path: Assets/Scenes/Stage3.unity
+  artifactKey: Guid(d2f3212acd496154bb1544e072d9862f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Stage3.unity using Guid(d2f3212acd496154bb1544e072d9862f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb25f83f9432c8e159ec683e4e4a5041') in 0.004403 seconds
+  Import took 0.008837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.292688 seconds.
+  path: Assets/Scenes/Stage2.unity
+  artifactKey: Guid(e07a8b766ac4ca441b15420cc215a6fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Stage2.unity using Guid(e07a8b766ac4ca441b15420cc215a6fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f01315a5b4bf2037a5bf43ca293bee14') in 0.003834 seconds
+  Import took 0.008028 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
