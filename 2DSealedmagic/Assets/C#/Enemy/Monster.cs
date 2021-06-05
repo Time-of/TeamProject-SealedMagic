@@ -90,6 +90,16 @@ public class Monster : MonoBehaviour
 		Invoke("Think", Random.Range(3, 6));
 	}
 
+	void Start()
+	{
+		if (isColoredMonster)
+		{
+			GameObject coloredFX = Instantiate(GameManager.instance.ColoredMonsterFX, transform.position, Quaternion.identity);
+			coloredFX.transform.SetParent(this.transform);
+			coloredFX.transform.localScale = new Vector3(1, 1, 1);
+		}
+	}
+
 	void FixedUpdate()
 	{
 		CheckRaycast();
