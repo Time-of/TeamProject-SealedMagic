@@ -15,11 +15,11 @@ F:/!github-desktop/TeamProject-SealedMagic/2DSealedmagic
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58754
+58858
 Successfully changed project path to: F:/!github-desktop/TeamProject-SealedMagic/2DSealedmagic
 F:/!github-desktop/TeamProject-SealedMagic/2DSealedmagic
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 62.23 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 62.10 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.2f1 (068178b99f32)
 [Subsystems] Discovering subsystems at path F:/Unity 3D/unnn/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
@@ -35,773 +35,523 @@ Initialize mono
 Mono path[0] = 'F:/Unity 3D/unnn/2020.2.2f1/Editor/Data/Managed'
 Mono path[1] = 'F:/Unity 3D/unnn/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'F:/Unity 3D/unnn/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56456
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56728
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: F:/Unity 3D/unnn/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001556 seconds.
+Registered in 0.001643 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 63.76 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 64.62 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.238 seconds
+- Completed reload, in  2.336 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001368 seconds.
+Registered in 0.001372 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-0000022180866380 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file data-000001ACF2241030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000221949CE100 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file data-000001AB4299ACE0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000221808D4620 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-000001ACF2AA4030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000221808DD010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file data-000001ACEE26B240 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000221859F8860 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file data-000001ACF3AB3060 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002218088AF90 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file data-000001ACF2FE5430 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002218080E390 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-000001ACF3AB3060 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000022185A0BA70 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-000001ACF2492E30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000221807FBE40 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-000001ACF2436230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000022180989380 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-000001ACF2436230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000022184F03030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-000001ACF281D020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000022184F30E40 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-000001ACF284AE30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000221808D4620 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file data-000001ACF2AA4030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000022184F30E40 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file data-000001ACF284AE30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000221847397B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file data-000001ACF24A2600 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000221807FBE40 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file data-000001ACF2436230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000022184293070 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file data-000001ACEDE48220 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000022184B7AE20 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-000001ACF24A2600 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000022185A0BA70 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file data-000001ACF2492E30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000022180675FB0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-000001ACF370C020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002218092B870 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file data-000001ACF2C26010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002218054F3F0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file data-000001ACF2AA4030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000022180675FB0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file data-000001ACF370C020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000022184993620 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file data-000001ACF2962620 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000022180675FB0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file data-000001ACF370C020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000022180EA7430 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file data-000001ACF3836030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000221805B1010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file data-000001ACEDE48220 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000022184752020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-000001ACF2775020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000022184883A30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-000001ACF238FA30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002218573DD50 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file data-000001ACEDD8B720 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000022184294120 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file data-000001ACEDD24A50 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000221847397B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file data-000001ACF24A2600 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000221809A0390 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file data-000001ACEDE7D2C0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000022184883A30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file data-000001ACF238FA30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 63.79 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 63.41 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.373 seconds
+- Completed reload, in  1.375 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1974 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 94.9 MB.
-System memory in use after: 94.9 MB.
+System memory in use after: 95.0 MB.
 
 Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2424.
-Total: 2.577800 ms (FindLiveObjects: 0.211900 ms CreateObjectMapping: 0.098300 ms MarkObjects: 2.185900 ms  DeleteObjects: 0.080400 ms)
+Total: 2.676900 ms (FindLiveObjects: 0.284700 ms CreateObjectMapping: 0.145200 ms MarkObjects: 2.161500 ms  DeleteObjects: 0.084200 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Image/Stage1
-  artifactKey: Guid(53ad2105b4c9a5d46b30a7046703ddc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Stage1 using Guid(53ad2105b4c9a5d46b30a7046703ddc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c837e7d9fac9bd94d095c34b6957020') in 0.006423 seconds
-  Import took 0.010334 seconds .
+  path: Assets/Animation/Enemy/King/Boss_King.controller
+  artifactKey: Guid(b912e234e5929aa42bfb66e54b232086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Enemy/King/Boss_King.controller using Guid(b912e234e5929aa42bfb66e54b232086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dcf639c2875db9f59624aedfff0c6dd') in 0.040298 seconds
+  Import took 0.045212 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001409 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001ACF2C93020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2EBA4B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDAACD20 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF4280020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2B35BD0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF5A9D010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDE702B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDE882D0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDBEE020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2B35BD0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2241030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEE3548A0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2CC7230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2B35BD0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDE882D0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF5A9D010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEE335710 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDE882D0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF4B6CC60 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF370C020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF3001010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2CC7230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDDC1010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDE702B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDDC1010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF3836030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDE00BD0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2775020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2211620 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF5AA5020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF3BB5070 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDE882D0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2CC7230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2B35BD0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.730 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1949 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.7 MB.
+System memory in use after: 93.8 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2427.
+Total: 2.405600 ms (FindLiveObjects: 0.210500 ms CreateObjectMapping: 0.097300 ms MarkObjects: 2.079000 ms  DeleteObjects: 0.017300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000444 seconds.
-  path: Assets/Image/Player
-  artifactKey: Guid(f94bf8b5fcc15894a9ae1283e2eeaf74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Player using Guid(f94bf8b5fcc15894a9ae1283e2eeaf74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e173933260c2c42cf803d9e4ebe61ac') in 0.003033 seconds
-  Import took 0.006673 seconds .
+  Time since last request: 19.961929 seconds.
+  path: Assets/Image/Enemy/The_first_general/[장군]_걷기_01.png
+  artifactKey: Guid(91e73ade0223b7a4cb01b6ecc9d0c25b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/The_first_general/[장군]_걷기_01.png using Guid(91e73ade0223b7a4cb01b6ecc9d0c25b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e46da14260b27ff7481af7897be41c1d') in 0.110238 seconds
+  Import took 0.114562 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000344 seconds.
-  path: Assets/Image/BackGrand 2.mat
-  artifactKey: Guid(27d3e7d27a3d39e46a380dc8f5c7bf12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/BackGrand 2.mat using Guid(27d3e7d27a3d39e46a380dc8f5c7bf12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '267b55dd76316d243b4b1124aa5e42e8') in 0.145871 seconds
-  Import took 0.149871 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000311 seconds.
-  path: Assets/Image/BackGrand 1.mat
-  artifactKey: Guid(d7ff98639ce43664cbbd884671ab8da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/BackGrand 1.mat using Guid(d7ff98639ce43664cbbd884671ab8da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb65c517ddd6707ea17e60cbd693b453') in 0.015937 seconds
-  Import took 0.019936 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000350 seconds.
-  path: Assets/Image/BackGrand.mat
-  artifactKey: Guid(a8a48f66baabe0047b190d9a72ccdcbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/BackGrand.mat using Guid(a8a48f66baabe0047b190d9a72ccdcbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cbfbfea96415ce534afee9b834fb8c4') in 0.020009 seconds
-  Import took 0.024222 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000336 seconds.
-  path: Assets/Image/Enemy
-  artifactKey: Guid(5b6fdafb8eae0f84b808a6be4f60461f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy using Guid(5b6fdafb8eae0f84b808a6be4f60461f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffe7b5c8003954a663ba641497f7a2ee') in 0.003165 seconds
-  Import took 0.007145 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.763502 seconds.
-  path: Assets/Prefabs/AttackImpact.prefab
-  artifactKey: Guid(d9c5bd755867e9042a4ffbabc6f615d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AttackImpact.prefab using Guid(d9c5bd755867e9042a4ffbabc6f615d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98cf2beb9cf3dd24b3587b172ed81530') in 0.030558 seconds
-  Import took 0.034797 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000357 seconds.
-  path: Assets/Prefabs/BackGround.prefab
-  artifactKey: Guid(2c8ae38560e53524eba686e20c44a10c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BackGround.prefab using Guid(2c8ae38560e53524eba686e20c44a10c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbda5062d3f3e7a2405499083ca26860') in 0.061002 seconds
-  Import took 0.066142 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000342 seconds.
-  path: Assets/Prefabs/ply_Groundattack.prefab
-  artifactKey: Guid(4ef2e341258bb154c976942df0de273f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ply_Groundattack.prefab using Guid(4ef2e341258bb154c976942df0de273f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29f2b7a43e65b75f28b42edb4e5434fc') in 0.005908 seconds
-  Import took 0.009895 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000344 seconds.
-  path: Assets/Prefabs/MainCamera.prefab
-  artifactKey: Guid(34a60b157c15a164db79b0c126e6f609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MainCamera.prefab using Guid(34a60b157c15a164db79b0c126e6f609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd2bd12270069164d83eb2bd45aa9b89') in 0.007309 seconds
-  Import took 0.011345 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000310 seconds.
-  path: Assets/Prefabs/TestEnemy.prefab
-  artifactKey: Guid(d5c6518140789644392fbc90a5294285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/TestEnemy.prefab using Guid(d5c6518140789644392fbc90a5294285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '899c54644f33689d5a4d0c11f9467ef6') in 0.093571 seconds
-  Import took 0.098051 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000316 seconds.
-  path: Assets/Prefabs/Ice Bullet.prefab
-  artifactKey: Guid(3373921c0c7295a4e9d12ac3ccf4d0e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Ice Bullet.prefab using Guid(3373921c0c7295a4e9d12ac3ccf4d0e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c38e093ac0975e947908be31c2067bda') in 0.011582 seconds
-  Import took 0.015590 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000352 seconds.
-  path: Assets/Prefabs/Fire Bullet.prefab
-  artifactKey: Guid(4aac6e34cf6a7034497c8a2c44c543d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Bullet.prefab using Guid(4aac6e34cf6a7034497c8a2c44c543d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f5a8874a075f1ceaf39450ea3f33a89') in 0.011692 seconds
-  Import took 0.015664 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000323 seconds.
-  path: Assets/Prefabs/DmgText.prefab
-  artifactKey: Guid(ec90fe6e0a576254493bc12fd3624d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DmgText.prefab using Guid(ec90fe6e0a576254493bc12fd3624d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bee230ab64af4af27f6f458c9d554e26') in 0.034088 seconds
-  Import took 0.038381 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000326 seconds.
-  path: Assets/Prefabs/Player (1).prefab
-  artifactKey: Guid(f561545267874f84aa2c98e72c506b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player (1).prefab using Guid(f561545267874f84aa2c98e72c506b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7419a4e6df42331dc27283744d4c34e2') in 0.059170 seconds
-  Import took 0.063917 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/Prefabs/Ground Bullet.prefab
-  artifactKey: Guid(f3061ed659265594faef7f76bd61f3d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Ground Bullet.prefab using Guid(f3061ed659265594faef7f76bd61f3d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adbbed199da7d8b5730acf25549131df') in 0.013245 seconds
-  Import took 0.017280 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000310 seconds.
-  path: Assets/Prefabs/Bullet.prefab
-  artifactKey: Guid(72c202146a57fbc4c9e65ee4db1c4a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Bullet.prefab using Guid(72c202146a57fbc4c9e65ee4db1c4a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f13ec11d28d3a59e573982066d985a7') in 0.012794 seconds
-  Import took 0.016993 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000295 seconds.
-  path: Assets/Prefabs/TestBoss.prefab
-  artifactKey: Guid(921cc510d4de95e4fa43a7de6ef0b2af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/TestBoss.prefab using Guid(921cc510d4de95e4fa43a7de6ef0b2af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d76f6396c56a72e09b3efbf5164a48a') in 0.048906 seconds
-  Import took 0.053691 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000360 seconds.
-  path: Assets/Prefabs/Thunder Bullet.prefab
-  artifactKey: Guid(b400e71b9abcebc44ab966bda32db2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Thunder Bullet.prefab using Guid(b400e71b9abcebc44ab966bda32db2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '012e427c9d4b9a060827093b4b1849ff') in 0.011604 seconds
-  Import took 0.015810 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000328 seconds.
-  path: Assets/Prefabs/GameManager.prefab
-  artifactKey: Guid(1a2644f36d916304e881be33bc44d13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameManager.prefab using Guid(1a2644f36d916304e881be33bc44d13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bd086a2fa8b033851a1de816f5c7e67') in 0.012562 seconds
-  Import took 0.017114 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.751312 seconds.
-  path: Assets/Prefabs/AtkArea/Boss_King_AtkArea.prefab
-  artifactKey: Guid(d62e58b0ee2bede4b9ec4af2290f9b80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AtkArea/Boss_King_AtkArea.prefab using Guid(d62e58b0ee2bede4b9ec4af2290f9b80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8da66022dac0a0b0fe31ecb369459fc7') in 0.005108 seconds
-  Import took 0.009253 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000346 seconds.
-  path: Assets/Prefabs/AtkArea/TestBoss_AtkArea.prefab
-  artifactKey: Guid(22ffc9ac530d77c47a08cb3e53c18b5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AtkArea/TestBoss_AtkArea.prefab using Guid(22ffc9ac530d77c47a08cb3e53c18b5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef4d660dde0d7c2d61f4a122ce81c815') in 0.005085 seconds
-  Import took 0.009021 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000352 seconds.
-  path: Assets/Prefabs/AtkArea/Sk_SwordFall_AtkArea.prefab
-  artifactKey: Guid(12d23a4f264c476468e33c10fcf63156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AtkArea/Sk_SwordFall_AtkArea.prefab using Guid(12d23a4f264c476468e33c10fcf63156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9914ba18973de4c850b166115411ac74') in 0.005779 seconds
-  Import took 0.009744 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000349 seconds.
-  path: Assets/Prefabs/AtkArea/Soldier_AtkArea.prefab
-  artifactKey: Guid(6fc1fe68ac649854b9c491f01ff3147a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AtkArea/Soldier_AtkArea.prefab using Guid(6fc1fe68ac649854b9c491f01ff3147a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3104dff7161ce5f50d739706b0c42c70') in 0.005059 seconds
-  Import took 0.009122 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000359 seconds.
-  path: Assets/Prefabs/AtkArea/Goblin_AtkArea.prefab
-  artifactKey: Guid(161e13b4cdd478440b1259cf66b854e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AtkArea/Goblin_AtkArea.prefab using Guid(161e13b4cdd478440b1259cf66b854e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15f9f709b28e7d1827e7d0b0f221d4fd') in 0.005138 seconds
-  Import took 0.009077 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000338 seconds.
-  path: Assets/Prefabs/AtkArea/TestEnemy_AtkArea.prefab
-  artifactKey: Guid(1fe6f5a559bb8824c819a2f42970254f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AtkArea/TestEnemy_AtkArea.prefab using Guid(1fe6f5a559bb8824c819a2f42970254f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e72a5b441ebfffce65032a6354dc7401') in 0.005121 seconds
-  Import took 0.009191 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000367 seconds.
-  path: Assets/Prefabs/AtkArea/FirstGeneral_AtkArea.prefab
-  artifactKey: Guid(691cb5f66ec4fe54a915bddf8027df7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AtkArea/FirstGeneral_AtkArea.prefab using Guid(691cb5f66ec4fe54a915bddf8027df7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8640d10922f0597771db2ddf9978dc2') in 0.005182 seconds
-  Import took 0.009192 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.290683 seconds.
-  path: Assets/Prefabs/Effects/FX_blueGathering.prefab
-  artifactKey: Guid(25f58c7300295ad4ca456f4e29c636eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Effects/FX_blueGathering.prefab using Guid(25f58c7300295ad4ca456f4e29c636eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ce692b104b7a62cbeaecebed574e981') in 0.005659 seconds
-  Import took 0.009890 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000335 seconds.
-  path: Assets/Prefabs/Effects/testSword.prefab
-  artifactKey: Guid(f4682627cb6fd12478c2ac33d681b9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Effects/testSword.prefab using Guid(f4682627cb6fd12478c2ac33d681b9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31006d348b6a6e9e718123754eb68ad2') in 0.011116 seconds
-  Import took 0.015157 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000362 seconds.
-  path: Assets/Prefabs/Effects/FX_StrongFlow.prefab
-  artifactKey: Guid(a3618db1e8742f64ebfcb740cf43fad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Effects/FX_StrongFlow.prefab using Guid(a3618db1e8742f64ebfcb740cf43fad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ec0b550786a9afa8e683980fc5fd6d5') in 0.005825 seconds
-  Import took 0.010015 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000355 seconds.
-  path: Assets/Prefabs/Effects/FX_Stun.prefab
-  artifactKey: Guid(7b6c161f24f051446b1d006531d2294e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Effects/FX_Stun.prefab using Guid(7b6c161f24f051446b1d006531d2294e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85159c2c0ecf5393a58184f1a5c309aa') in 0.005951 seconds
-  Import took 0.010056 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000378 seconds.
-  path: Assets/Prefabs/Effects/FX_NONE.prefab
-  artifactKey: Guid(2b62f8f39d2b56d45abb14e8a1f45ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Effects/FX_NONE.prefab using Guid(2b62f8f39d2b56d45abb14e8a1f45ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9e303c422281a1e4615b24deeb4f66a') in 0.005142 seconds
-  Import took 0.009147 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000332 seconds.
-  path: Assets/Prefabs/Effects/FX_Flow.prefab
-  artifactKey: Guid(82e33374d16012c4cb2b5acc23021381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Effects/FX_Flow.prefab using Guid(82e33374d16012c4cb2b5acc23021381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2da9cff268f1cc1a33a68cece0d2feda') in 0.006501 seconds
-  Import took 0.010454 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.010567 seconds.
-  path: Assets/Prefabs/Effects/FX_NONE.prefab
-  artifactKey: Guid(2b62f8f39d2b56d45abb14e8a1f45ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Effects/FX_NONE.prefab using Guid(2b62f8f39d2b56d45abb14e8a1f45ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9e303c422281a1e4615b24deeb4f66a') in 0.004738 seconds
-  Import took 0.008936 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.764852 seconds.
-  path: Assets/Prefabs/Enemy/Boss_King.prefab
-  artifactKey: Guid(1a70b8e265f77f543bfb4447b5ce859f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Boss_King.prefab using Guid(1a70b8e265f77f543bfb4447b5ce859f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '956a8b1d40f4084bafaee954d36b15f5') in 0.047057 seconds
-  Import took 0.051816 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000347 seconds.
-  path: Assets/Prefabs/Enemy/Enemy_Goblin.prefab
-  artifactKey: Guid(096ac0a3b6098c449b9df726a51e76ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Enemy_Goblin.prefab using Guid(096ac0a3b6098c449b9df726a51e76ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0792f3ce5744b58fecae616f8dfc1b5e') in 0.046968 seconds
-  Import took 0.051280 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000338 seconds.
-  path: Assets/Prefabs/Enemy/Enemy_Soldier.prefab
-  artifactKey: Guid(9e4855af297acf84db5e65bd66574bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Enemy_Soldier.prefab using Guid(9e4855af297acf84db5e65bd66574bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c860ce3f39c95c9f971cf9281a25bfbd') in 0.047108 seconds
-  Import took 0.051377 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000299 seconds.
-  path: Assets/Prefabs/Enemy/Enemy_First_General.prefab
-  artifactKey: Guid(f6e4f800e2179824c956e98d264f6cd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Enemy_First_General.prefab using Guid(f6e4f800e2179824c956e98d264f6cd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40f2907a41ae035a83efb6b5e1772942') in 0.048398 seconds
-  Import took 0.052829 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.525549 seconds.
-  path: Assets/Sprites/Materials
-  artifactKey: Guid(67001eeac0e872f4091fb2764e61ad7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Materials using Guid(67001eeac0e872f4091fb2764e61ad7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94db6eeb4f0812266eb3796c64f65e35') in 0.003301 seconds
-  Import took 0.007519 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.543865 seconds.
-  path: Assets/Sprites/Materials/thorn.mat
-  artifactKey: Guid(49fca7ec41307ee4a918d71941ffb7dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Materials/thorn.mat using Guid(49fca7ec41307ee4a918d71941ffb7dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b063344905980cec6f8ede5a118ba291') in 0.013841 seconds
-  Import took 0.018137 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 71.772701 seconds.
-  path: Assets/Prefabs/Objects/Altar.prefab
-  artifactKey: Guid(00711a8c6bb47184c9af956584ba85b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Objects/Altar.prefab using Guid(00711a8c6bb47184c9af956584ba85b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1da27f22d97216c6c37b26cefc3bf2c3') in 0.014993 seconds
-  Import took 0.019252 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000334 seconds.
-  path: Assets/Prefabs/Objects/HealPotion.prefab
-  artifactKey: Guid(e00d2e697fad91c4096df0983ea959cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Objects/HealPotion.prefab using Guid(e00d2e697fad91c4096df0983ea959cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f0d705854f5b9193589304232f16459') in 0.012064 seconds
-  Import took 0.016050 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000340 seconds.
-  path: Assets/Prefabs/Objects/Trap_Spear.prefab
-  artifactKey: Guid(61f99ed875c8be841ae9c3c4b985b038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Objects/Trap_Spear.prefab using Guid(61f99ed875c8be841ae9c3c4b985b038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4904ed04f1d787e86c5b911acc05fc7') in 0.011570 seconds
-  Import took 0.015644 seconds .
+  path: Assets/Image/Enemy/The_first_general/[장군]_걷기_03.png
+  artifactKey: Guid(4ea97cacaab1bf945b763ac86d6bb21c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/The_first_general/[장군]_걷기_03.png using Guid(4ea97cacaab1bf945b763ac86d6bb21c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb8df48068464b1324253ab241693f82') in 0.014589 seconds
+  Import took 0.018487 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000348 seconds.
-  path: Assets/Prefabs/Objects/PressurePlate.prefab
-  artifactKey: Guid(60b54b2ff1f1b3d45845eeab8cd01c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Objects/PressurePlate.prefab using Guid(60b54b2ff1f1b3d45845eeab8cd01c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e60e72963b77943ae25f402f76b4f4e3') in 0.013322 seconds
-  Import took 0.017369 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000351 seconds.
-  path: Assets/Prefabs/Objects/Trap_Projectile_Arrow.prefab
-  artifactKey: Guid(ce8714b083873394b877e314dfe9ce7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Objects/Trap_Projectile_Arrow.prefab using Guid(ce8714b083873394b877e314dfe9ce7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3287975d6bea92ea2faf24a214ff35b') in 0.010637 seconds
-  Import took 0.014665 seconds .
+  path: Assets/Image/Enemy/The_first_general/[장군]_걷기_04.png
+  artifactKey: Guid(1f6544738eb201240bb65df1e2fcae0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/The_first_general/[장군]_걷기_04.png using Guid(1f6544738eb201240bb65df1e2fcae0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eb51b0a5f7b9b68b20468e6e0052574') in 0.014733 seconds
+  Import took 0.018733 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000344 seconds.
-  path: Assets/Prefabs/Objects/SealedStone.prefab
-  artifactKey: Guid(bd1c3ab3e836f0b44835a6ac22a58b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Objects/SealedStone.prefab using Guid(bd1c3ab3e836f0b44835a6ac22a58b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25ac9acb62076205eab12164c52e6c12') in 0.015257 seconds
-  Import took 0.019468 seconds .
+  path: Assets/Image/Enemy/The_first_general/[장군]_공격_02.png
+  artifactKey: Guid(0297b57b7ad9422428c91447c72cd418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/The_first_general/[장군]_공격_02.png using Guid(0297b57b7ad9422428c91447c72cd418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e70eda1e3d847b149b773d1f0db74348') in 0.026043 seconds
+  Import took 0.030197 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000330 seconds.
-  path: Assets/Prefabs/Objects/Trap_ArrDispenser (1) Variant.prefab
-  artifactKey: Guid(a5cb67b63a302ec48a1609a5f2f9271a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Objects/Trap_ArrDispenser (1) Variant.prefab using Guid(a5cb67b63a302ec48a1609a5f2f9271a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa1b0c27848174355d8bdeb2f2364f6e') in 0.012916 seconds
-  Import took 0.017227 seconds .
+  Time since last request: 0.000362 seconds.
+  path: Assets/Image/Enemy/The_first_general/[장군]_공격_01.png
+  artifactKey: Guid(d7c334e723e8b6e46b42b4d204a3fdd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/The_first_general/[장군]_공격_01.png using Guid(d7c334e723e8b6e46b42b4d204a3fdd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '767589137a4d984bb94553e1cc825c2e') in 0.017145 seconds
+  Import took 0.021240 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/Prefabs/Objects/ManaPotion.prefab
-  artifactKey: Guid(bb7e7fece6d08494497d5f3b767907a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Objects/ManaPotion.prefab using Guid(bb7e7fece6d08494497d5f3b767907a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc03a8ff53cbaf0c41d6cd3238bb6984') in 0.011918 seconds
-  Import took 0.015966 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000344 seconds.
-  path: Assets/Prefabs/Objects/Trap_ArrDispenser.prefab
-  artifactKey: Guid(f3575367ad294ac46a27ccaadd320ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Objects/Trap_ArrDispenser.prefab using Guid(f3575367ad294ac46a27ccaadd320ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08f8e3c7249e6359e8501c3718af90f2') in 0.011876 seconds
-  Import took 0.016036 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/Prefabs/Objects/Trap_Sword.prefab
-  artifactKey: Guid(5a3aaecc504101d43a527542ee9cf291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Objects/Trap_Sword.prefab using Guid(5a3aaecc504101d43a527542ee9cf291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'accbbcdb829ff7745f36a834d863122f') in 0.012817 seconds
-  Import took 0.017150 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000326 seconds.
-  path: Assets/Prefabs/Objects/Trap_Thorn.prefab
-  artifactKey: Guid(bad5e6f0226dd854a8a648fff9d15fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Objects/Trap_Thorn.prefab using Guid(bad5e6f0226dd854a8a648fff9d15fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf3675c36994fb46655cbe221364e1af') in 0.011049 seconds
-  Import took 0.015121 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/Prefabs/Objects/Trap_Thorn_Up Variant.prefab
-  artifactKey: Guid(bb61636ebf1279c44aa60d717340ac6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Objects/Trap_Thorn_Up Variant.prefab using Guid(bb61636ebf1279c44aa60d717340ac6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f692fdd8f85cc40711876d0b8351abc2') in 0.014788 seconds
-  Import took 0.020195 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000270 seconds.
-  path: Assets/Prefabs/Objects/Door.prefab
-  artifactKey: Guid(bc97318a0c950df4eba924029914d592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Objects/Door.prefab using Guid(bc97318a0c950df4eba924029914d592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '515dcab9836a8d4dcf6083caf2917659') in 0.018886 seconds
-  Import took 0.023917 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 49.466995 seconds.
-  path: Assets/Image/Enemy/King
-  artifactKey: Guid(16f7912ed26a7ee48bed2815169cb083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King using Guid(16f7912ed26a7ee48bed2815169cb083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9aad89b2e51b9f3021253ea20d70b25') in 0.003334 seconds
-  Import took 0.007518 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.059454 seconds.
-  path: Assets/Image/Enemy/King/[왕]_걷기_01.png
-  artifactKey: Guid(7bc3608025c3ff748bc86242ce2306fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_걷기_01.png using Guid(7bc3608025c3ff748bc86242ce2306fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cad76f61247cbe0592fa3fe88e30460') in 0.041044 seconds
-  Import took 0.045246 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000340 seconds.
-  path: Assets/Image/Enemy/King/[왕]_걷기_04.png
-  artifactKey: Guid(39df467bfa647734ab3553c4df6d7421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_걷기_04.png using Guid(39df467bfa647734ab3553c4df6d7421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b741993f6e63ddcfc7d090e224f5f717') in 0.014950 seconds
-  Import took 0.018938 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000331 seconds.
-  path: Assets/Image/Enemy/King/[왕]_공격_08.png
-  artifactKey: Guid(2bf121089d9795f42bd08d7675db01fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_공격_08.png using Guid(2bf121089d9795f42bd08d7675db01fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0860cc06240309a047ef39cf4f085626') in 0.018478 seconds
-  Import took 0.022477 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000335 seconds.
-  path: Assets/Image/Enemy/King/[왕]_공격_09.png
-  artifactKey: Guid(78c8dfaeaf0a277448dc4460987a9bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_공격_09.png using Guid(78c8dfaeaf0a277448dc4460987a9bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd8ac2df9dfddf5f2c91656ba8be30e3') in 0.016690 seconds
-  Import took 0.020951 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000367 seconds.
-  path: Assets/Image/Enemy/King/[왕]_공격_01.png
-  artifactKey: Guid(cba7d927ff923bd47895abebae3cdaea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_공격_01.png using Guid(cba7d927ff923bd47895abebae3cdaea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '167bfe6f5fdd64f7f1bfefc099b59a0d') in 0.021788 seconds
-  Import took 0.026051 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000336 seconds.
-  path: Assets/Image/Enemy/King/[왕]_공격_07.png
-  artifactKey: Guid(ff3e3b93fd5239140a68ce8bd8843dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_공격_07.png using Guid(ff3e3b93fd5239140a68ce8bd8843dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fa51c0d4fecabfd3fd6ff4a7e5caa2e') in 0.017378 seconds
-  Import took 0.021594 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000329 seconds.
-  path: Assets/Image/Enemy/King/[왕]_공격_10.png
-  artifactKey: Guid(ed071b02f47f0a645a572961449f4178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_공격_10.png using Guid(ed071b02f47f0a645a572961449f4178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f581a430f7fe62aea64adc036908ce44') in 0.015943 seconds
-  Import took 0.020075 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000339 seconds.
-  path: Assets/Image/Enemy/King/[왕]_공격_02.png
-  artifactKey: Guid(544696eb4e4998c4fa1631da3e0c8ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_공격_02.png using Guid(544696eb4e4998c4fa1631da3e0c8ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '358e2cb45c4e95d328efc5d256444d8f') in 0.016102 seconds
-  Import took 0.020118 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000378 seconds.
-  path: Assets/Image/Enemy/King/[왕]_걷기_03.png
-  artifactKey: Guid(b12f6966791be7d4a8ae42f286e16956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_걷기_03.png using Guid(b12f6966791be7d4a8ae42f286e16956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1508b6c4d6892a6572bfa669fa2c4923') in 0.018839 seconds
-  Import took 0.022919 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000342 seconds.
-  path: Assets/Image/Enemy/King/[왕]_걷기_02.png
-  artifactKey: Guid(30b1484f268a14f4aa3158fd6ac4ad24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_걷기_02.png using Guid(30b1484f268a14f4aa3158fd6ac4ad24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fa00af33459bc35c8b42410fce128e0') in 0.020620 seconds
-  Import took 0.024828 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000337 seconds.
-  path: Assets/Image/Enemy/King/[왕]_공격_06.png
-  artifactKey: Guid(e7616f627efa3664f9c60cece798b3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_공격_06.png using Guid(e7616f627efa3664f9c60cece798b3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d97c0bcf6b26e0bb79584fb810b43c5') in 0.016335 seconds
-  Import took 0.020490 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000292 seconds.
-  path: Assets/Image/Enemy/King/[왕]_공격_05.png
-  artifactKey: Guid(98957faaaaf06ac4ca6653bbebd5ee89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_공격_05.png using Guid(98957faaaaf06ac4ca6653bbebd5ee89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93fc88c7c43d3b4425211e5596d1f0f2') in 0.013727 seconds
-  Import took 0.017827 seconds .
+  Time since last request: 0.000334 seconds.
+  path: Assets/Image/Enemy/The_first_general/[장군]_공격_03.png
+  artifactKey: Guid(c87523999d8526f4e9de8f1cb7d80a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/The_first_general/[장군]_공격_03.png using Guid(c87523999d8526f4e9de8f1cb7d80a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c7a48460bd99eb60ffceac4101947f8') in 0.016499 seconds
+  Import took 0.020608 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000322 seconds.
-  path: Assets/Image/Enemy/King/[왕]_공격_03.png
-  artifactKey: Guid(03677c2e49842ad4dba94e1fde5692cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_공격_03.png using Guid(03677c2e49842ad4dba94e1fde5692cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b5f390966ab733c55fff6a1a907516f') in 0.018738 seconds
-  Import took 0.022854 seconds .
+  path: Assets/Image/Enemy/The_first_general/[장군]_걷기_02.png
+  artifactKey: Guid(3f95beedfb2b6154b909992781fc488c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/The_first_general/[장군]_걷기_02.png using Guid(3f95beedfb2b6154b909992781fc488c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '359a3a8f5ec5c64047d143eda28bcd1a') in 0.015698 seconds
+  Import took 0.019756 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000328 seconds.
-  path: Assets/Image/Enemy/King/[왕]_공격_04.png
-  artifactKey: Guid(72d9ab305d01e7e40ac41ba69fc44c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_공격_04.png using Guid(72d9ab305d01e7e40ac41ba69fc44c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4764ed1cdf3c6787b9e101122ea354ff') in 0.014410 seconds
-  Import took 0.018621 seconds .
+  Time since last request: 0.000345 seconds.
+  path: Assets/Image/Enemy/The_first_general/[장군]_공격_04.png
+  artifactKey: Guid(06a8e2d622aad0a4487be410ab974771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/The_first_general/[장군]_공격_04.png using Guid(06a8e2d622aad0a4487be410ab974771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '555a2781539aa04088da26d7abcebc5b') in 0.017949 seconds
+  Import took 0.022133 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 23.061696 seconds.
+  Time since last request: 16.113676 seconds.
   path: Assets/Image/Enemy/King/[왕]_능력걷기_01.png
   artifactKey: Guid(5851a79acb39ab449a89b4cfd954e099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_능력걷기_01.png using Guid(5851a79acb39ab449a89b4cfd954e099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cc007509b003f4b47ef1735ce1ba746') in 0.014265 seconds
-  Import took 0.018955 seconds .
+Start importing Assets/Image/Enemy/King/[왕]_능력걷기_01.png using Guid(5851a79acb39ab449a89b4cfd954e099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7361518706e6a5c5358c48b7e8e19546') in 0.015751 seconds
+  Import took 0.020110 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000338 seconds.
+  Time since last request: 0.026814 seconds.
+  path: Assets/Image/Enemy/King/[왕]_능력걷기_01.png
+  artifactKey: Guid(5851a79acb39ab449a89b4cfd954e099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_능력걷기_01.png using Guid(5851a79acb39ab449a89b4cfd954e099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7361518706e6a5c5358c48b7e8e19546') in 0.036353 seconds
+  Import took 0.040705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
   path: Assets/Image/Enemy/King/[왕]_능력걷기_02.png
   artifactKey: Guid(1e77f2b3600ab264a89074f2d84f028f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_능력걷기_02.png using Guid(1e77f2b3600ab264a89074f2d84f028f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e160894648e492f35d9db13564cd2b') in 0.020630 seconds
-  Import took 0.024813 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/Image/Enemy/King/[왕]_능력걷기_03.png
-  artifactKey: Guid(a2e7dc65f8af3784a9db16bac3d98333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_능력걷기_03.png using Guid(a2e7dc65f8af3784a9db16bac3d98333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fefa7772318a4fb76af508af01a6ce15') in 0.016188 seconds
-  Import took 0.020161 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/Image/Enemy/King/[왕]_일반공격_02.png
-  artifactKey: Guid(9b7434da46a1ef34f99d62cacec93294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_일반공격_02.png using Guid(9b7434da46a1ef34f99d62cacec93294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b299e79b01a69b64bf279c247896d4a') in 0.014984 seconds
-  Import took 0.019081 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/Image/Enemy/King/[왕]_일반공격_05.png
-  artifactKey: Guid(5bb36d655ab54fc4bbf6dc62c529c14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_일반공격_05.png using Guid(5bb36d655ab54fc4bbf6dc62c529c14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ded8c860302217849fc391446c83ade') in 0.013591 seconds
-  Import took 0.017912 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000358 seconds.
-  path: Assets/Image/Enemy/King/[왕]_일반공격_03.png
-  artifactKey: Guid(f2be95dda226f0d41b6b8262f13a66e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_일반공격_03.png using Guid(f2be95dda226f0d41b6b8262f13a66e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6db0682e3bee200542807dccbb467c56') in 0.016060 seconds
-  Import took 0.020283 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000331 seconds.
-  path: Assets/Image/Enemy/King/[왕]_일반공격_04.png
-  artifactKey: Guid(6b1817331d4ec4b4bacf2d72223a22bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_일반공격_04.png using Guid(6b1817331d4ec4b4bacf2d72223a22bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2671f59bc73d5be0c8d0f3c086e75498') in 0.014235 seconds
-  Import took 0.018381 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000314 seconds.
-  path: Assets/Image/Enemy/King/[왕]_능력걷기_04.png
-  artifactKey: Guid(c6bd3a922af7af14090472e997ad4177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_능력걷기_04.png using Guid(c6bd3a922af7af14090472e997ad4177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05d38136319187e6caac1e6a554d74a1') in 0.017030 seconds
-  Import took 0.021235 seconds .
+Start importing Assets/Image/Enemy/King/[왕]_능력걷기_02.png using Guid(1e77f2b3600ab264a89074f2d84f028f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7744d256698be5aa845c3148555e1f08') in 0.015779 seconds
+  Import took 0.020089 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000364 seconds.
+  path: Assets/Image/Enemy/King/[왕]_능력걷기_03.png
+  artifactKey: Guid(a2e7dc65f8af3784a9db16bac3d98333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_능력걷기_03.png using Guid(a2e7dc65f8af3784a9db16bac3d98333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '504721c6863c2e7645af33ea9c71e723') in 0.023592 seconds
+  Import took 0.028174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/Image/Enemy/King/[왕]_능력걷기_02.png
+  artifactKey: Guid(1e77f2b3600ab264a89074f2d84f028f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_능력걷기_02.png using Guid(1e77f2b3600ab264a89074f2d84f028f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7744d256698be5aa845c3148555e1f08') in 0.021289 seconds
+  Import took 0.025579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/Image/Enemy/King/[왕]_능력걷기_04.png
+  artifactKey: Guid(c6bd3a922af7af14090472e997ad4177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_능력걷기_04.png using Guid(c6bd3a922af7af14090472e997ad4177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eaf8814b2cb26104ff3fb560ff985ef') in 0.017193 seconds
+  Import took 0.021450 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Image/Enemy/King/[왕]_능력걷기_03.png
+  artifactKey: Guid(a2e7dc65f8af3784a9db16bac3d98333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_능력걷기_03.png using Guid(a2e7dc65f8af3784a9db16bac3d98333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '504721c6863c2e7645af33ea9c71e723') in 0.016761 seconds
+  Import took 0.020929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014487 seconds.
+  path: Assets/Image/Enemy/King/[왕]_능력걷기_04.png
+  artifactKey: Guid(c6bd3a922af7af14090472e997ad4177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_능력걷기_04.png using Guid(c6bd3a922af7af14090472e997ad4177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eaf8814b2cb26104ff3fb560ff985ef') in 0.019693 seconds
+  Import took 0.023835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.050452 seconds.
   path: Assets/Image/Enemy/King/[왕]_일반공격_01.png
   artifactKey: Guid(f8cf1b9993e5baa43b6b90d0db8eb5bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_일반공격_01.png using Guid(f8cf1b9993e5baa43b6b90d0db8eb5bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e49d6a0e2a038eb97879623e59d6708') in 0.014888 seconds
-  Import took 0.019097 seconds .
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_01.png using Guid(f8cf1b9993e5baa43b6b90d0db8eb5bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f918368255acced3303257aa87f5965') in 0.014086 seconds
+  Import took 0.018406 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.774886 seconds.
-  path: Assets/Image/Enemy/King/[왕]_일반공격_06.png
-  artifactKey: Guid(140357e87c0b9744d96d8a3a597480e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_일반공격_06.png using Guid(140357e87c0b9744d96d8a3a597480e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cf8de3dcf1fbda8d2ae56d766555a45') in 0.013496 seconds
-  Import took 0.017750 seconds .
+  Time since last request: 0.025846 seconds.
+  path: Assets/Image/Enemy/King/[왕]_일반공격_01.png
+  artifactKey: Guid(f8cf1b9993e5baa43b6b90d0db8eb5bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_01.png using Guid(f8cf1b9993e5baa43b6b90d0db8eb5bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f918368255acced3303257aa87f5965') in 0.028759 seconds
+  Import took 0.033060 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000347 seconds.
-  path: Assets/Image/Enemy/King/[왕]_일반공격_07.png
-  artifactKey: Guid(59d6288b76400664ca0eab5278179dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_일반공격_07.png using Guid(59d6288b76400664ca0eab5278179dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aa37059de381ad7e9a4d653aea87880') in 0.014239 seconds
-  Import took 0.018160 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.248736 seconds.
+  Time since last request: 0.000295 seconds.
   path: Assets/Image/Enemy/King/[왕]_일반공격_08.png
   artifactKey: Guid(6fb312fb0f4e1ac49b1e191b4bfe876c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_일반공격_08.png using Guid(6fb312fb0f4e1ac49b1e191b4bfe876c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cf9b2a77e31e1740874dfa4b0d6598f') in 0.014407 seconds
-  Import took 0.018588 seconds .
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_08.png using Guid(6fb312fb0f4e1ac49b1e191b4bfe876c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f3c28def786ee641930d99f64d56cb3') in 0.015461 seconds
+  Import took 0.019627 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000356 seconds.
+  Time since last request: 0.000324 seconds.
+  path: Assets/Image/Enemy/King/[왕]_일반공격_06.png
+  artifactKey: Guid(140357e87c0b9744d96d8a3a597480e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_06.png using Guid(140357e87c0b9744d96d8a3a597480e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf4e7c28f7a13e9ed67ac30f38a7bd11') in 0.015345 seconds
+  Import took 0.019504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/Image/Enemy/King/[왕]_일반공격_02.png
+  artifactKey: Guid(9b7434da46a1ef34f99d62cacec93294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_02.png using Guid(9b7434da46a1ef34f99d62cacec93294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4915227804fc817307afada64bffc477') in 0.014936 seconds
+  Import took 0.018979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Image/Enemy/King/[왕]_일반공격_05.png
+  artifactKey: Guid(5bb36d655ab54fc4bbf6dc62c529c14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_05.png using Guid(5bb36d655ab54fc4bbf6dc62c529c14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1fb6696241ee7f2999451c574569fa0') in 0.016431 seconds
+  Import took 0.020386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
   path: Assets/Image/Enemy/King/[왕]_일반공격_09.png
   artifactKey: Guid(f92aed97b2f2cf841885f87d77c2c6e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_일반공격_09.png using Guid(f92aed97b2f2cf841885f87d77c2c6e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a44a1980010c4d6d911ef5f6f15c4549') in 0.013805 seconds
-  Import took 0.017768 seconds .
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_09.png using Guid(f92aed97b2f2cf841885f87d77c2c6e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '474286c6a5cce99da40f64966d18ec0d') in 0.018176 seconds
+  Import took 0.022263 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.033692 seconds.
-  path: Assets/Image/Enemy/King/[왕]_일반공격_09.png
-  artifactKey: Guid(f92aed97b2f2cf841885f87d77c2c6e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_일반공격_09.png using Guid(f92aed97b2f2cf841885f87d77c2c6e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a44a1980010c4d6d911ef5f6f15c4549') in 0.016863 seconds
-  Import took 0.021284 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.749440 seconds.
+  Time since last request: 0.000327 seconds.
   path: Assets/Image/Enemy/King/[왕]_일반공격_10.png
   artifactKey: Guid(38af0883aed7f9c4bb890436f2349111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Image/Enemy/King/[왕]_일반공격_10.png using Guid(38af0883aed7f9c4bb890436f2349111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24de4e270df0a3777b586b9a37b1234c') in 0.015308 seconds
-  Import took 0.019505 seconds .
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_10.png using Guid(38af0883aed7f9c4bb890436f2349111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fab221cb6d15d94c95c3e1f6d25bfa30') in 0.014963 seconds
+  Import took 0.018957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Image/Enemy/King/[왕]_일반공격_03.png
+  artifactKey: Guid(f2be95dda226f0d41b6b8262f13a66e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_03.png using Guid(f2be95dda226f0d41b6b8262f13a66e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87ebc5c2e997d74cc64eacf27fcec8ba') in 0.015376 seconds
+  Import took 0.019501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000397 seconds.
+  path: Assets/Image/Enemy/King/[왕]_일반공격_04.png
+  artifactKey: Guid(6b1817331d4ec4b4bacf2d72223a22bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_04.png using Guid(6b1817331d4ec4b4bacf2d72223a22bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d1660c64c2103a825fb9090c4496bf5') in 0.013965 seconds
+  Import took 0.018389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Image/Enemy/King/[왕]_일반공격_07.png
+  artifactKey: Guid(59d6288b76400664ca0eab5278179dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_07.png using Guid(59d6288b76400664ca0eab5278179dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44dc995d7472826a5e7dc980d0d060d5') in 0.017845 seconds
+  Import took 0.021836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004838 seconds.
+  path: Assets/Image/Enemy/King/[왕]_일반공격_04.png
+  artifactKey: Guid(6b1817331d4ec4b4bacf2d72223a22bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_04.png using Guid(6b1817331d4ec4b4bacf2d72223a22bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d1660c64c2103a825fb9090c4496bf5') in 0.019726 seconds
+  Import took 0.023845 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001410 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001ACF27C9020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF603C8A0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF554E860 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF5698810 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF553F800 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDBEE020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF50C3030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF538D690 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDBEE020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF553F800 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF29B0040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF235A020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF554E860 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF22A29F0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF4A70050 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF555A5B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2620530 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF4A70050 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEE346AE0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF370C020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF3001010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF554E860 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDDC1010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF22A29F0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF39F4E30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF54DCA20 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDFF47C0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2675020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF55E7530 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF5698810 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF61DED10 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2EB8020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF554E860 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2E9A030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.203 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1949 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.0 MB.
+System memory in use after: 97.1 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2440.
+Total: 2.442000 ms (FindLiveObjects: 0.212400 ms CreateObjectMapping: 0.098400 ms MarkObjects: 2.112400 ms  DeleteObjects: 0.017500 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

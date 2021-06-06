@@ -74,7 +74,7 @@ public class UserInterface : MonoBehaviour
 		GameManager.instance.isGameover = true;
 		MenuUI.SetActive(false);
 		gameOverUI.SetActive(true);
-		backImage.SetActive(true);
+		backImage.SetActive(false);
 		anim.SetBool("isGameover", true);
 	}
 

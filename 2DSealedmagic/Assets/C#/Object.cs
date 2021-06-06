@@ -102,8 +102,8 @@ public class Object : MonoBehaviour
 		{
 			yield return new WaitForSeconds(2f);
 			GameObject arrow = Instantiate(gameObj, transform.position, Quaternion.identity);
-			if (Dir == "Right") arrow.transform.localScale = new Vector3(1, 1, 1);
-			else if (Dir == "Left") arrow.transform.localScale = new Vector3(-1, 1, 1);
+			if (Dir == "Right") arrow.transform.localScale = new Vector3(2, 2, 2);
+			else if (Dir == "Left") arrow.transform.localScale = new Vector3(-2, 2, 2);
 
 			if (arrow != null)
 				Destroy(arrow, 2f);
