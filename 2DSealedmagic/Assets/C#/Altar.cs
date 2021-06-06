@@ -79,6 +79,17 @@ public class Altar : MonoBehaviour
 
 	IEnumerator GoNextLevel()
 	{
+		GameManager.instance.plMaxHP = player.maxHealth;
+		GameManager.instance.plCurHP = player.curHealth;
+		GameManager.instance.plMaxMP = player.maxMana;
+		GameManager.instance.plCurMP = player.curMana;
+
+		for (int i = 0; i <= 3; i++)
+		{
+			GameManager.instance.magicCheck[i] = PlayerLongAttack.instance.StageCheck[i];
+		}
+		GameManager.instance.increasedAtk = PlayerLongAttack.instance.UpAtk;
+		GameManager.instance.Stagenum++;
 		yield return new WaitForSeconds(sceneLoadTime);
 		SceneManager.LoadScene(nextScene);
 	}

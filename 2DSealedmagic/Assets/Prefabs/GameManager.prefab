@@ -72,6 +72,10 @@ MonoBehaviour:
   isGameover: 0
   isGameClear: 0
   ColoredMonsterFX: {fileID: 4834885678300956499, guid: 82e33374d16012c4cb2b5acc23021381, type: 3}
+  PlayerPrefab: {fileID: 177332986038848269, guid: f561545267874f84aa2c98e72c506b1c, type: 3}
+  PlayerSpawnPos: {x: 0, y: 0}
+  playerMaxHP: 1000
+  playerMaxMP: 500
 --- !u!114 &7431351086390328219
 MonoBehaviour:
   m_ObjectHideFlags: 0
