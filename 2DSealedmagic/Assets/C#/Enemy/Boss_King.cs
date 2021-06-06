@@ -61,7 +61,7 @@ public class Boss_King : BossMonster
 
 		anim.SetBool("isAttack", true);
 
-		yield return new WaitForSeconds(0.2f);
+		yield return new WaitForSeconds(0.5f);
 
 		GameObject atkArea = Instantiate(atkZone, newAtkPos, Quaternion.identity);
 		var area = atkArea.GetComponent<AttackArea>();
@@ -76,7 +76,7 @@ public class Boss_King : BossMonster
 		yield return new WaitForSeconds(0.1f);
 		Destroy(atkArea);
 
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(1f);
 		Destroy(atkFX_S);
 		Destroy(atkFX_P);
 

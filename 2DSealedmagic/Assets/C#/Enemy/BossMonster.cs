@@ -13,11 +13,13 @@ using UnityEngine;
 	보스 몬스터 기본 행동 스크립트
 	공격은 자식 오브젝트에서 넣자........
 	자식오브젝트에서 적당한 공간에 isPlayerInAtkRange = false를 해줘야한다...
-	atkZone은 콜라이더 말고 Scale로 범위를 설정하기 바란다....
 */
 
 public class BossMonster : MonoBehaviour
 {
+	[Tooltip("지형 감지할 레이캐스트의 높이")]
+	[SerializeField] float raycastHeight;
+
 	[Header("능력치")]
 	[Tooltip("공격 피해량")]
 	[SerializeField] protected float atkDamage;
@@ -35,6 +37,8 @@ public class BossMonster : MonoBehaviour
 	[Header("범위 및 이펙트")]
 	[Tooltip("플레이어 인식 범위 설정")]
 	[SerializeField] Vector2 recognizePlayerZone;
+	[Tooltip("플레이어 공격 인식 범위 설정")]
+	[SerializeField] Vector2 recognizeAtkZone;
 	[Tooltip("공격 범위 설정")]
 	[SerializeField] protected GameObject atkZone;
 	[Tooltip("공격 범위가 생길 지점")]
@@ -62,7 +66,6 @@ public class BossMonster : MonoBehaviour
 	protected Rigidbody2D rigid;
 	protected SpriteRenderer spRenderer;
 	PlayerObject traceTarget;
-	Vector3 atkZoneVec;
 
 	protected bool isAtk = false;
 	//protected bool isAtkCooldown = false;
@@ -82,7 +85,6 @@ public class BossMonster : MonoBehaviour
 		anim = gameObject.GetComponentInChildren<Animator>();
 		rigid = GetComponent<Rigidbody2D>();
 		spRenderer = GetComponent<SpriteRenderer>();
-		atkZoneVec = new Vector3(atkZone.transform.localScale.x, atkZone.transform.localScale.y, 0f);
 
 		StartCoroutine(SearchPlayer());
 	}
@@ -109,9 +111,9 @@ public class BossMonster : MonoBehaviour
 			spLayer = LayerMask.GetMask("Spikes");
 
 			Vector2 front = new Vector2(transform.position.x + moveDirection, transform.position.y);
-			RaycastHit2D rayPlatform = Physics2D.Raycast(front, Vector2.down, 1f, plfLayer.value);
-			RaycastHit2D raySpikes = Physics2D.Raycast(front, Vector2.down, 1f, spLayer.value);
-			Debug.DrawRay(front, Vector2.down, Color.red);
+			RaycastHit2D rayPlatform = Physics2D.Raycast(front, Vector2.down , raycastHeight, plfLayer.value);
+			RaycastHit2D raySpikes = Physics2D.Raycast(front, Vector2.down, raycastHeight, spLayer.value);
+			Debug.DrawRay(front, Vector2.down * raycastHeight, Color.red);
 
 			if (moveDirection == 1) atkDirection = 1;
 			else if (moveDirection == -1) atkDirection = -1;
@@ -123,7 +125,6 @@ public class BossMonster : MonoBehaviour
 			else if (isTracing && !isAtk)
 			{
 				Vector2 plPos = traceTarget.transform.position;
-
 				if (plPos.x < transform.position.x)
 				{
 					moveDirection = -1;
@@ -142,12 +143,11 @@ public class BossMonster : MonoBehaviour
 	{
 		if (moveDirection != 0 && !isDead && !onStunned)
 		{
-			spRenderer.flipX = moveDirection == -1 ? true : false;
+			spRenderer.flipX = moveDirection == 1 ? true : false;
 			anim.SetBool("isWalk", true);
 		}
 		else if (moveDirection == 0 || onStunned)
 			anim.SetBool("isWalk", false);
-
 
 		if (!isDead && !isAtk && !isPlayerInAtkRange && !onStunned)
 		{
@@ -187,7 +187,7 @@ public class BossMonster : MonoBehaviour
 	protected void CheckInAtkRange()
 	{
 		Vector3 newAtkPos = new Vector3(atkDirection * (atkPos.x + additionalRange) + transform.position.x, atkPos.y + transform.position.y, transform.position.z);
-		Collider2D[] PlayerChk = Physics2D.OverlapBoxAll(newAtkPos, atkZoneVec, 0, plCheck);
+		Collider2D[] PlayerChk = Physics2D.OverlapBoxAll(newAtkPos, recognizeAtkZone, 0, plCheck);
 		if (PlayerChk.Length == 1)
 		{
 			isPlayerInAtkRange = true;
@@ -207,20 +207,24 @@ public class BossMonster : MonoBehaviour
 
 	public void onAttack(float damage)
 	{
-		GameObject AttackText = Instantiate(AttackDamageText);// 데미지 이미지 출력
-		AttackText.transform.position = transform.position + hudPos;// 데미지 위치
-		AttackText.GetComponent<DmgText>().damage = damage;// 데미지 값 받기
-
-		curLife -= damage;
-		StartCoroutine("onDamaged");
-
-		if (curLife <= 0 && !isDead)
+		if (!isDead)
 		{
-			isDead = true;
-			anim.SetBool("isWalk", false);
-			anim.SetBool("isAttack", false);
+			GameObject AttackText = Instantiate(AttackDamageText);// 데미지 이미지 출력
+			AttackText.transform.position = transform.position + hudPos;// 데미지 위치
+			AttackText.GetComponent<DmgText>().damage = damage;// 데미지 값 받기
 
-			StartCoroutine("Die");
+			curLife -= damage;
+			StartCoroutine("onDamaged");
+
+			if (curLife <= 0 && !isDead)
+			{
+				isDead = true;
+				anim.SetBool("isWalk", false);
+				anim.SetBool("isAttack", false);
+				gameObject.tag = "Untagged";
+
+				StartCoroutine("Die");
+			}
 		}
 	}
 
@@ -242,6 +246,7 @@ public class BossMonster : MonoBehaviour
 			yield return new WaitForSeconds(0.05f);
 			if (i <= 0.05f)
 			{
+				UserInterface.instance.GameClear();
 				Destroy(gameObject);
 			}
 		}
@@ -330,6 +335,6 @@ public class BossMonster : MonoBehaviour
 
 		Vector3 newAtkPos = new Vector3(atkDirection * (atkPos.x + additionalRange) + transform.position.x, atkPos.y + transform.position.y, transform.position.z);
 		Gizmos.color = new Color(0f, 1f, 1f);
-		Gizmos.DrawWireCube(newAtkPos, atkZoneVec);
+		Gizmos.DrawWireCube(newAtkPos, recognizeAtkZone);
 	}
 }

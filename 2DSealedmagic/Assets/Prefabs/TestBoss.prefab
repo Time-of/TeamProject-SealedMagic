@@ -138,6 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 778ff62c65b8ebb42899e23ba05832d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  raycastHeight: 2
   atkDamage: 250
   atkDelay: 3
   moveSpeed: 3

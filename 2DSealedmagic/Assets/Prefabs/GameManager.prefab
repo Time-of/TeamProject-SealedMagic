@@ -50,6 +50,7 @@ MonoBehaviour:
   MenuUI: {fileID: 0}
   backImage: {fileID: 0}
   gameOverUI: {fileID: 0}
+  gameClearUI: {fileID: 0}
   UICanvas: {fileID: 0}
   message: {fileID: 0}
   message2: {fileID: 0}
@@ -69,6 +70,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   killedColoredMonster: 3
   isGameover: 0
+  isGameClear: 0
   ColoredMonsterFX: {fileID: 4834885678300956499, guid: 82e33374d16012c4cb2b5acc23021381, type: 3}
 --- !u!114 &7431351086390328219
 MonoBehaviour:
@@ -88,7 +90,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   Skill_Area:
-  - {fileID: 1454343650587498639, guid: 1fe6f5a559bb8824c819a2f42970254f, type: 3}
+  - {fileID: 1454343650587498639, guid: 12d23a4f264c476468e33c10fcf63156, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   FX_Particle:
@@ -100,6 +102,6 @@ MonoBehaviour:
   - 30
   - 0
   range:
-  - 2
+  - 4.5
   - 0
   - 0

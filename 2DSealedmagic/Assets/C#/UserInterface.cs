@@ -24,7 +24,9 @@ public class UserInterface : MonoBehaviour
 	[SerializeField] GameObject backImage;
 	[Tooltip("게임오버 UI")]
 	[SerializeField] GameObject gameOverUI;
-	[Tooltip("UI Canvas")]
+	[Tooltip("게임클리어 UI")]
+	[SerializeField] GameObject gameClearUI;
+	[Tooltip("UI 캔버스 오브젝트")]
 	[SerializeField] GameObject UICanvas;
 	public Text message;
 	public Text message2;
@@ -47,7 +49,7 @@ public class UserInterface : MonoBehaviour
 	{
 		healthBar.fillAmount = player.curHealth / player.maxHealth;
 		manaBar.fillAmount = player.curMana / player.maxMana;
-		if (Input.GetButtonDown("Cancel"))
+		if (Input.GetButtonDown("Cancel") && !GameManager.instance.isGameover && !GameManager.instance.isGameClear)
 		{
 			if (MenuUI.activeSelf)
 			{
@@ -58,13 +60,6 @@ public class UserInterface : MonoBehaviour
 			{
 				MenuUI.SetActive(true);
 				backImage.SetActive(true);
-			}
-		}
-		if (GameManager.instance.isGameover)
-		{
-			if (Input.GetKeyDown(KeyCode.R))
-			{
-				SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 			}
 		}
 
@@ -83,6 +78,15 @@ public class UserInterface : MonoBehaviour
 		anim.SetBool("isGameover", true);
 	}
 
+	public void GameClear()
+	{
+		GameManager.instance.isGameClear = true;
+		MenuUI.SetActive(false);
+		gameClearUI.SetActive(true);
+		backImage.SetActive(true);
+		anim.SetBool("isGameClear", true);
+	}
+
 	private void Init_HP()
 	{
 		Hp = player.curHealth;
@@ -96,6 +100,10 @@ public class UserInterface : MonoBehaviour
 
 	public void ExitGame()
 	{
+#if UNITY_EDITOR
+		UnityEditor.EditorApplication.isPlaying = false;
+#endif
+
 		Application.Quit();
 	}
 

@@ -122,7 +122,7 @@ Transform:
   m_GameObject: {fileID: 6220943189152822965}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8.7268, y: 8.6896, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children:
   - {fileID: 6220943188805973646}
   - {fileID: 6220943189115715685}
@@ -235,13 +235,14 @@ MonoBehaviour:
   moveSpeed: 3
   life: 1000
   isColoredMonster: 0
+  raycastHeight: 3
   hasSkill: 1
   has2ndSkill: 1
   skillIndex: 0
   skill2Index: 1
   normalAttackDamage: 30
   normalAttackCooldown: 1
-  normalAttackRange: 1.3
+  normalAttackRange: 2.5
   monsterAttackArea: {fileID: 1454343650587498639, guid: 1fe6f5a559bb8824c819a2f42970254f, type: 3}
   normalAtkFX: {fileID: 1454343650587498639, guid: 0dcf51dc91c356c48858c8605cf02894, type: 3}
   AttackDamageText: {fileID: 8695559562536868643, guid: ec90fe6e0a576254493bc12fd3624d34, type: 3}
@@ -276,6 +277,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0046156105, y: 0.0030902282}
-  m_Size: {x: 0.11307715, y: 0.30451158}
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.25, y: 0.31}
   m_Direction: 0
