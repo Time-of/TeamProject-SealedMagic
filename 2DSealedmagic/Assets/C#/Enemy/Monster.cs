@@ -19,6 +19,8 @@ public class Monster : MonoBehaviour
 	public float life;
 	[Tooltip("제단을 해제하기 위한 몬스터인지?")]
 	[SerializeField] bool isColoredMonster;
+	[Tooltip("지형을 감지할 높이. 몬스터의 키 정도로 입력")]
+	[SerializeField] float raycastHeight;
 
 	[Header("스킬")]
 	[Tooltip("몬스터가 스킬을 가지고 있는가?")]
@@ -49,8 +51,8 @@ public class Monster : MonoBehaviour
 	public GameObject AttackDamageText;
 	[Tooltip("몬스터가 받은 데미지 위치")]
 	public Transform hudPos;
-	[Tooltip("넉백당하는 힘")]
-	public float power = 1f;
+	// 넉백방하는 '추가' 힘
+	[HideInInspector] public float power = 1f;
 
 	Animator monsterAnim;
 	Rigidbody2D rigid;
@@ -62,15 +64,15 @@ public class Monster : MonoBehaviour
 	bool isPlayerInAttackRange = false;
 
 	bool isDead = false;
-	float moveDir = 1;
+	float moveDir = 0;
 	float changedSpeed = 1;
 	float atkDir;
 	float delay = 0f;
 
 	bool canAttack = true;
 	bool isAttacking = false;
-	public bool canSkill_1 = false; // 현재 스킬 사용 가능한지 여부
-	public bool canSkill_2 = false;
+	[HideInInspector] public bool canSkill_1 = false; // 현재 스킬 사용 가능한지 여부
+	[HideInInspector] public bool canSkill_2 = false;
 
 	bool onStunned = false;
 	bool onProtected = false;
@@ -120,9 +122,9 @@ public class Monster : MonoBehaviour
 			plLayer = LayerMask.GetMask("Player");
 
 			Vector2 front = new Vector2(rigid.position.x + moveDir, rigid.position.y);
-			RaycastHit2D rayPlatform = Physics2D.Raycast(front, Vector2.down, 1f, plform.value);
-			RaycastHit2D raySpikes = Physics2D.Raycast(front, Vector2.down, 1f, spLayer.value);
-			Debug.DrawRay(front, Vector2.down, Color.red);
+			RaycastHit2D rayPlatform = Physics2D.Raycast(front, Vector2.down, raycastHeight, plform.value);
+			RaycastHit2D raySpikes = Physics2D.Raycast(front, Vector2.down, raycastHeight, spLayer.value);
+			Debug.DrawRay(front, Vector2.down * raycastHeight, Color.red);
 
 			if (moveDir == 1) atkDir = 1;
 			else if (moveDir == -1) atkDir = -1;
@@ -162,7 +164,7 @@ public class Monster : MonoBehaviour
 	{
 		if (moveDir != 0 && !isDead && !onStunned)
 		{
-			spRenderer.flipX = moveDir == -1 ? true : false;
+			spRenderer.flipX = moveDir == 1 ? true : false;
 			monsterAnim.SetBool("isWalk", true);
 		}
 		else if (moveDir == 0 || onStunned)
@@ -293,33 +295,37 @@ public class Monster : MonoBehaviour
 	// 공격을 받음
 	public void onAttack(float damage)
 	{
-		GameObject AttackText = Instantiate(AttackDamageText);// 데미지 이미지 출력
-		AttackText.transform.position = hudPos.position;// 데미지 위치
-		AttackText.GetComponent<DmgText>().damage = damage;// 데미지 값 받기
-
-		if (!onProtected)
+		if (!isDead)
 		{
-			life -= damage;
-			StartCoroutine("onDamaged");
-		}
-		else
-		{
-			AttackText.GetComponent<DmgText>().damage = 0;
-			onProtected = false;
-		}
+			GameObject AttackText = Instantiate(AttackDamageText);// 데미지 이미지 출력
+			AttackText.transform.position = hudPos.position;// 데미지 위치
+			AttackText.GetComponent<DmgText>().damage = damage;// 데미지 값 받기
 
-		if (life <= 0 && !isDead)
-		{
-			isDead = true;
-			monsterAnim.SetBool("isWalk", false);
-			monsterAnim.SetBool("isAttack", false);
-
-			if (isColoredMonster)
+			if (!onProtected)
 			{
-				GameManager.instance.killedColoredMonster += 1;
+				life -= damage;
+				StartCoroutine("onDamaged");
+			}
+			else
+			{
+				AttackText.GetComponent<DmgText>().damage = 0;
+				onProtected = false;
 			}
 
-			StartCoroutine("Die");
+			if (life <= 0 && !isDead)
+			{
+				isDead = true;
+				monsterAnim.SetBool("isWalk", false);
+				monsterAnim.SetBool("isAttack", false);
+				gameObject.tag = "Untagged";
+
+				if (isColoredMonster)
+				{
+					GameManager.instance.killedColoredMonster += 1;
+				}
+
+				StartCoroutine("Die");
+			}
 		}
 	}
 
@@ -329,9 +335,9 @@ public class Monster : MonoBehaviour
 		while (i >= 0f)
 		{
 			spRenderer.color = new Color(1, 1, 1, i);
-			i -= 0.1f;
-			yield return new WaitForSeconds(0.1f);
-			if (i <= 0.1f)
+			i -= 0.05f;
+			yield return new WaitForSeconds(0.05f);
+			if (i <= 0.05f)
 			{
 				Destroy(gameObject);
 			}
@@ -341,9 +347,8 @@ public class Monster : MonoBehaviour
 	// 피해를 입음 표시
 	IEnumerator onDamaged()
 	{
-
 		spRenderer.color = new Color(1, 1, 1, 0.6f);
-		rigid.AddForce(Vector2.up * (1.4f * power), ForceMode2D.Impulse);
+		rigid.AddForce(Vector2.up * (1.8f * power), ForceMode2D.Impulse);
 
 		yield return new WaitForSeconds(0.5f);
 		spRenderer.color = new Color(1, 1, 1, 1);
@@ -430,7 +435,9 @@ public class Monster : MonoBehaviour
 	// 일반 공격
 	IEnumerator normalAttack()
 	{
-		Vector2 front = new Vector2((spRenderer.flipX ? -1 : 1) * (normalAttackRange / 2 * 1.3f) + transform.position.x, transform.position.y);
+		Vector2 front = new Vector2((spRenderer.flipX ? 1 : -1) * (normalAttackRange / 2 * 1f) + transform.position.x, transform.position.y);
+
+		yield return new WaitForSeconds(1f);
 
 		GameObject atkArea = Instantiate(monsterAttackArea, front, Quaternion.identity);
 		var area = atkArea.GetComponent<AttackArea>();

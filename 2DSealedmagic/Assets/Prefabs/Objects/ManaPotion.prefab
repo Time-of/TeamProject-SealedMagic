@@ -100,9 +100,10 @@ MonoBehaviour:
   Direction: 
   gameObj: {fileID: 0}
   amount: 50
-  speed: 0
+  speed: 1
   HP: 0
   index: 0
+  isFloating: 0
 --- !u!61 &8359575517651844651
 BoxCollider2D:
   m_ObjectHideFlags: 0

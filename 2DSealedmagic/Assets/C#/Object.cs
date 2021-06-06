@@ -45,7 +45,7 @@ public class Object : MonoBehaviour
 	[SerializeField] int index;
 
 	bool onTrigger = false;
-	bool isFloating = false;
+	public bool isFloating = false;
 
 	Animator anim;
 	SpriteRenderer spRenderer;
@@ -83,6 +83,18 @@ public class Object : MonoBehaviour
 			transform.position = currentPos + new Vector2(0, PosY);
 		}
 	}
+
+	/*IEnumerator Floater()
+	{
+		Vector2 pos = transform.position;
+		while (true)
+		{
+			time += Time.deltaTime * speed;
+			PosY = Mathf.Sin(time) * 0.3f; // (* ±Ê¿Ã;)
+			transform.position = pos + new Vector2(0, PosY);
+			yield return new WaitForSeconds(0.1f);
+		}
+	}*/
 
 	IEnumerator ArrowDispenser(string Dir)
 	{
