@@ -49,13 +49,17 @@ public class AttackArea : MonoBehaviour
 					{
 						mob.modifySpeed(speedModify, duration);
 					}
-					if (AttackType == "Fire")
+					else if (AttackType == "Fire")
 					{
 						mob.startDotDamage(dotDamage, duration);
 					}
-					if (AttackType == "Stun")
+					else if (AttackType == "Stun")
 					{
 						mob.startStun(duration);
+					}
+					else if (AttackType == "Earth")
+					{
+						mob.power = 2.5f;
 					}
 
 					Destroy(gameObject);

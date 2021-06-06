@@ -256,7 +256,7 @@ MonoBehaviour:
   has2ndSkill: 1
   skillIndex: 0
   skill2Index: 1
-  normalAttackDamage: 300
+  normalAttackDamage: 150
   normalAttackCooldown: 1.6
   normalAttackRange: 3.4
   monsterAttackArea: {fileID: 1454343650587498639, guid: 691cb5f66ec4fe54a915bddf8027df7d, type: 3}

@@ -14,10 +14,12 @@ using UnityEngine.SceneManagement;
 public class Altar : MonoBehaviour
 {
 	PlayerObject player;
-	Animator alteranim;
 
 	//[Tooltip("정신집중 완료시 등장할 이펙트 프리팹")]
 	//public GameObject EndEffect;
+
+	[Tooltip("집중 시 등장할 이펙트 프리팹")]
+	[SerializeField] GameObject concentrateFX;
 
 	[Tooltip("다음 씬으로 넘어가는 지연시간")]
 	[SerializeField] float sceneLoadTime = 1f;
@@ -32,12 +34,9 @@ public class Altar : MonoBehaviour
 
 	float delay = 0f;
 
-	FadeIn Out;
-
 	void Start()
 	{
 		player = FindObjectOfType<PlayerObject>();
-		alteranim = GetComponent<Animator>();
 	}
 	void Update()
 	{
@@ -46,7 +45,7 @@ public class Altar : MonoBehaviour
 	}
 	void Interact()
 	{
-		alteranim.SetBool("isInteract", true);
+		concentrateFX.SetActive(true);
 		delay += Time.deltaTime;
 
 		// 플레이어 위치가 변하면 정신집중 해제
@@ -54,14 +53,14 @@ public class Altar : MonoBehaviour
 		{
 			delay = 0f;
 			isInteracting = false;
-			alteranim.SetBool("isInteract", false);
+			concentrateFX.SetActive(false);
 		}
 
 		if (delay >= CompleteTime)
 		{
 			delay = 0f;
-			alteranim.SetBool("isInteract", false);
 			isInteracting = false;
+			concentrateFX.SetActive(false);
 			Debug.Log("정신 집중 성공!");
 			//GameObject Eff = Instantiate(EndEffect, transform);
 			//Destroy(Eff, 2f);

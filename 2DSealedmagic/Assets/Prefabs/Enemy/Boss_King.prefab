@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raycastHeight: 3
-  atkDamage: 250
+  atkDamage: 180
   atkDelay: 1.5
   moveSpeed: 4
   maxLife: 2000
@@ -157,8 +157,8 @@ MonoBehaviour:
   hudPos: {x: 0, y: 0.075, z: 0}
   abilityCooldown: 80
   abilityDuration: 40
-  abilityIncreaseDamage: 150
-  abilityIncreaseRange: 0.7
+  abilityIncreaseDamage: 50
+  abilityIncreaseRange: 2
 --- !u!70 &2383816142545727625
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

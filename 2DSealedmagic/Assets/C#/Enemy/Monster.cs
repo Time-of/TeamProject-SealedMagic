@@ -188,7 +188,7 @@ public class Monster : MonoBehaviour
 		{
 			delay += Time.deltaTime;
 
-			if (delay >= 1f)
+			if (delay >= 0.3f)
 			{
 				delay = 0f;
 				StartCoroutine("SkillAttack");
@@ -407,7 +407,7 @@ public class Monster : MonoBehaviour
 			{
 				isAttacking = true;
 
-				yield return new WaitForSeconds(0.1f);
+				yield return new WaitForSeconds(0.01f);
 				StartCoroutine("normalAttack");
 
 				StartCoroutine("CoolingAttack");
@@ -436,8 +436,6 @@ public class Monster : MonoBehaviour
 	IEnumerator normalAttack()
 	{
 		Vector2 front = new Vector2((spRenderer.flipX ? 1 : -1) * (normalAttackRange / 2 * 1f) + transform.position.x, transform.position.y);
-
-		yield return new WaitForSeconds(1f);
 
 		GameObject atkArea = Instantiate(monsterAttackArea, front, Quaternion.identity);
 		var area = atkArea.GetComponent<AttackArea>();
