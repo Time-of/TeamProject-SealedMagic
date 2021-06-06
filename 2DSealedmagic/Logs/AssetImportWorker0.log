@@ -1,83 +1,557 @@
 Using pre-set license
 Built from '2020.2/release' branch; Version is '2020.2.2f1 (068178b99f32) revision 426360'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.985; Version 2009; 64bit' Language: 'ko' Physical Memory: 8147 MB
+OS: 'Windows 10 Pro; OS build 19041.985; Version 2004; 64bit' Language: 'ko' Physical Memory: 32699 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-D:\2020.2.2f1\Editor\Unity.exe
+F:\Unity 3D\unnn\2020.2.2f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/Unity game/TeamProject-SealedMagic (1)/2DSealedmagic
+F:/!github-desktop/TeamProject-SealedMagic/2DSealedmagic
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-4388
-Successfully changed project path to: D:/Unity game/TeamProject-SealedMagic (1)/2DSealedmagic
-D:/Unity game/TeamProject-SealedMagic (1)/2DSealedmagic
+58858
+Successfully changed project path to: F:/!github-desktop/TeamProject-SealedMagic/2DSealedmagic
+F:/!github-desktop/TeamProject-SealedMagic/2DSealedmagic
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 50.65 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 62.10 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.2f1 (068178b99f32)
-[Subsystems] Discovering subsystems at path D:/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Unity game/TeamProject-SealedMagic (1)/2DSealedmagic/Assets
+[Subsystems] Discovering subsystems at path F:/Unity 3D/unnn/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/!github-desktop/TeamProject-SealedMagic/2DSealedmagic/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c82)
+    Renderer: NVIDIA GeForce RTX 2070 (ID=0x1f02)
     Vendor:   
-    VRAM:     4018 MB
-    Driver:   27.21.14.5671
+    VRAM:     8031 MB
+    Driver:   27.21.14.6647
 Initialize mono
-Mono path[0] = 'D:/2020.2.2f1/Editor/Data/Managed'
-Mono path[1] = 'D:/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'D:/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56372
+Mono path[0] = 'F:/Unity 3D/unnn/2020.2.2f1/Editor/Data/Managed'
+Mono path[1] = 'F:/Unity 3D/unnn/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'F:/Unity 3D/unnn/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56728
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001299 seconds.
+Register platform support module: F:/Unity 3D/unnn/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001643 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 39.20 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 64.62 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.740 seconds
+- Completed reload, in  2.336 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001490 seconds.
+Registered in 0.001372 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001ACF2241030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AB4299ACE0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2AA4030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEE26B240 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF3AB3060 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2FE5430 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF3AB3060 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2492E30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2436230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2436230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF281D020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF284AE30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2AA4030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF284AE30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF24A2600 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2436230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDE48220 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF24A2600 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2492E30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF370C020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2C26010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2AA4030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF370C020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2962620 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF370C020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF3836030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDE48220 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2775020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF238FA30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDD8B720 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDD24A50 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF24A2600 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDE7D2C0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF238FA30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 39.70 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 63.41 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.943 seconds
+- Completed reload, in  1.375 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1974 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 94.8 MB.
-System memory in use after: 94.9 MB.
+System memory in use before: 94.9 MB.
+System memory in use after: 95.0 MB.
 
 Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2424.
-Total: 2.818700 ms (FindLiveObjects: 0.475400 ms CreateObjectMapping: 0.164700 ms MarkObjects: 2.076900 ms  DeleteObjects: 0.100300 ms)
+Total: 2.676900 ms (FindLiveObjects: 0.284700 ms CreateObjectMapping: 0.145200 ms MarkObjects: 2.161500 ms  DeleteObjects: 0.084200 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/Stage1.unity
-  artifactKey: Guid(aaed13ac9f31f7145a318445e6af2e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Stage1.unity using Guid(aaed13ac9f31f7145a318445e6af2e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa3acd954cf1b8012ccfd635beb50361') in 0.032495 seconds
-  Import took 0.037404 seconds .
+  path: Assets/Animation/Enemy/King/Boss_King.controller
+  artifactKey: Guid(b912e234e5929aa42bfb66e54b232086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Enemy/King/Boss_King.controller using Guid(b912e234e5929aa42bfb66e54b232086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dcf639c2875db9f59624aedfff0c6dd') in 0.040298 seconds
+  Import took 0.045212 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001409 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001ACF2C93020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2EBA4B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDAACD20 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF4280020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2B35BD0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF5A9D010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDE702B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDE882D0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDBEE020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2B35BD0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2241030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEE3548A0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2CC7230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2B35BD0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDE882D0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF5A9D010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEE335710 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDE882D0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF4B6CC60 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF370C020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF3001010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2CC7230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDDC1010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDE702B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDDC1010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF3836030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDE00BD0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2775020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2211620 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF5AA5020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF3BB5070 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDE882D0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2CC7230 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2B35BD0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.730 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1949 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.7 MB.
+System memory in use after: 93.8 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2427.
+Total: 2.405600 ms (FindLiveObjects: 0.210500 ms CreateObjectMapping: 0.097300 ms MarkObjects: 2.079000 ms  DeleteObjects: 0.017300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.961929 seconds.
+  path: Assets/Image/Enemy/The_first_general/[장군]_걷기_01.png
+  artifactKey: Guid(91e73ade0223b7a4cb01b6ecc9d0c25b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/The_first_general/[장군]_걷기_01.png using Guid(91e73ade0223b7a4cb01b6ecc9d0c25b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e46da14260b27ff7481af7897be41c1d') in 0.110238 seconds
+  Import took 0.114562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/Image/Enemy/The_first_general/[장군]_걷기_03.png
+  artifactKey: Guid(4ea97cacaab1bf945b763ac86d6bb21c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/The_first_general/[장군]_걷기_03.png using Guid(4ea97cacaab1bf945b763ac86d6bb21c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb8df48068464b1324253ab241693f82') in 0.014589 seconds
+  Import took 0.018487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/Image/Enemy/The_first_general/[장군]_걷기_04.png
+  artifactKey: Guid(1f6544738eb201240bb65df1e2fcae0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/The_first_general/[장군]_걷기_04.png using Guid(1f6544738eb201240bb65df1e2fcae0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eb51b0a5f7b9b68b20468e6e0052574') in 0.014733 seconds
+  Import took 0.018733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/Image/Enemy/The_first_general/[장군]_공격_02.png
+  artifactKey: Guid(0297b57b7ad9422428c91447c72cd418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/The_first_general/[장군]_공격_02.png using Guid(0297b57b7ad9422428c91447c72cd418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e70eda1e3d847b149b773d1f0db74348') in 0.026043 seconds
+  Import took 0.030197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/Image/Enemy/The_first_general/[장군]_공격_01.png
+  artifactKey: Guid(d7c334e723e8b6e46b42b4d204a3fdd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/The_first_general/[장군]_공격_01.png using Guid(d7c334e723e8b6e46b42b4d204a3fdd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '767589137a4d984bb94553e1cc825c2e') in 0.017145 seconds
+  Import took 0.021240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Image/Enemy/The_first_general/[장군]_공격_03.png
+  artifactKey: Guid(c87523999d8526f4e9de8f1cb7d80a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/The_first_general/[장군]_공격_03.png using Guid(c87523999d8526f4e9de8f1cb7d80a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c7a48460bd99eb60ffceac4101947f8') in 0.016499 seconds
+  Import took 0.020608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Image/Enemy/The_first_general/[장군]_걷기_02.png
+  artifactKey: Guid(3f95beedfb2b6154b909992781fc488c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/The_first_general/[장군]_걷기_02.png using Guid(3f95beedfb2b6154b909992781fc488c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '359a3a8f5ec5c64047d143eda28bcd1a') in 0.015698 seconds
+  Import took 0.019756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/Image/Enemy/The_first_general/[장군]_공격_04.png
+  artifactKey: Guid(06a8e2d622aad0a4487be410ab974771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/The_first_general/[장군]_공격_04.png using Guid(06a8e2d622aad0a4487be410ab974771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '555a2781539aa04088da26d7abcebc5b') in 0.017949 seconds
+  Import took 0.022133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.113676 seconds.
+  path: Assets/Image/Enemy/King/[왕]_능력걷기_01.png
+  artifactKey: Guid(5851a79acb39ab449a89b4cfd954e099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_능력걷기_01.png using Guid(5851a79acb39ab449a89b4cfd954e099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7361518706e6a5c5358c48b7e8e19546') in 0.015751 seconds
+  Import took 0.020110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026814 seconds.
+  path: Assets/Image/Enemy/King/[왕]_능력걷기_01.png
+  artifactKey: Guid(5851a79acb39ab449a89b4cfd954e099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_능력걷기_01.png using Guid(5851a79acb39ab449a89b4cfd954e099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7361518706e6a5c5358c48b7e8e19546') in 0.036353 seconds
+  Import took 0.040705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/Image/Enemy/King/[왕]_능력걷기_02.png
+  artifactKey: Guid(1e77f2b3600ab264a89074f2d84f028f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_능력걷기_02.png using Guid(1e77f2b3600ab264a89074f2d84f028f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7744d256698be5aa845c3148555e1f08') in 0.015779 seconds
+  Import took 0.020089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000364 seconds.
+  path: Assets/Image/Enemy/King/[왕]_능력걷기_03.png
+  artifactKey: Guid(a2e7dc65f8af3784a9db16bac3d98333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_능력걷기_03.png using Guid(a2e7dc65f8af3784a9db16bac3d98333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '504721c6863c2e7645af33ea9c71e723') in 0.023592 seconds
+  Import took 0.028174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/Image/Enemy/King/[왕]_능력걷기_02.png
+  artifactKey: Guid(1e77f2b3600ab264a89074f2d84f028f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_능력걷기_02.png using Guid(1e77f2b3600ab264a89074f2d84f028f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7744d256698be5aa845c3148555e1f08') in 0.021289 seconds
+  Import took 0.025579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/Image/Enemy/King/[왕]_능력걷기_04.png
+  artifactKey: Guid(c6bd3a922af7af14090472e997ad4177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_능력걷기_04.png using Guid(c6bd3a922af7af14090472e997ad4177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eaf8814b2cb26104ff3fb560ff985ef') in 0.017193 seconds
+  Import took 0.021450 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Image/Enemy/King/[왕]_능력걷기_03.png
+  artifactKey: Guid(a2e7dc65f8af3784a9db16bac3d98333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_능력걷기_03.png using Guid(a2e7dc65f8af3784a9db16bac3d98333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '504721c6863c2e7645af33ea9c71e723') in 0.016761 seconds
+  Import took 0.020929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014487 seconds.
+  path: Assets/Image/Enemy/King/[왕]_능력걷기_04.png
+  artifactKey: Guid(c6bd3a922af7af14090472e997ad4177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_능력걷기_04.png using Guid(c6bd3a922af7af14090472e997ad4177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eaf8814b2cb26104ff3fb560ff985ef') in 0.019693 seconds
+  Import took 0.023835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.050452 seconds.
+  path: Assets/Image/Enemy/King/[왕]_일반공격_01.png
+  artifactKey: Guid(f8cf1b9993e5baa43b6b90d0db8eb5bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_01.png using Guid(f8cf1b9993e5baa43b6b90d0db8eb5bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f918368255acced3303257aa87f5965') in 0.014086 seconds
+  Import took 0.018406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.025846 seconds.
+  path: Assets/Image/Enemy/King/[왕]_일반공격_01.png
+  artifactKey: Guid(f8cf1b9993e5baa43b6b90d0db8eb5bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_01.png using Guid(f8cf1b9993e5baa43b6b90d0db8eb5bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f918368255acced3303257aa87f5965') in 0.028759 seconds
+  Import took 0.033060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Image/Enemy/King/[왕]_일반공격_08.png
+  artifactKey: Guid(6fb312fb0f4e1ac49b1e191b4bfe876c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_08.png using Guid(6fb312fb0f4e1ac49b1e191b4bfe876c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f3c28def786ee641930d99f64d56cb3') in 0.015461 seconds
+  Import took 0.019627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/Image/Enemy/King/[왕]_일반공격_06.png
+  artifactKey: Guid(140357e87c0b9744d96d8a3a597480e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_06.png using Guid(140357e87c0b9744d96d8a3a597480e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf4e7c28f7a13e9ed67ac30f38a7bd11') in 0.015345 seconds
+  Import took 0.019504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/Image/Enemy/King/[왕]_일반공격_02.png
+  artifactKey: Guid(9b7434da46a1ef34f99d62cacec93294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_02.png using Guid(9b7434da46a1ef34f99d62cacec93294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4915227804fc817307afada64bffc477') in 0.014936 seconds
+  Import took 0.018979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Image/Enemy/King/[왕]_일반공격_05.png
+  artifactKey: Guid(5bb36d655ab54fc4bbf6dc62c529c14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_05.png using Guid(5bb36d655ab54fc4bbf6dc62c529c14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1fb6696241ee7f2999451c574569fa0') in 0.016431 seconds
+  Import took 0.020386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Image/Enemy/King/[왕]_일반공격_09.png
+  artifactKey: Guid(f92aed97b2f2cf841885f87d77c2c6e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_09.png using Guid(f92aed97b2f2cf841885f87d77c2c6e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '474286c6a5cce99da40f64966d18ec0d') in 0.018176 seconds
+  Import took 0.022263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/Image/Enemy/King/[왕]_일반공격_10.png
+  artifactKey: Guid(38af0883aed7f9c4bb890436f2349111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_10.png using Guid(38af0883aed7f9c4bb890436f2349111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fab221cb6d15d94c95c3e1f6d25bfa30') in 0.014963 seconds
+  Import took 0.018957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Image/Enemy/King/[왕]_일반공격_03.png
+  artifactKey: Guid(f2be95dda226f0d41b6b8262f13a66e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_03.png using Guid(f2be95dda226f0d41b6b8262f13a66e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87ebc5c2e997d74cc64eacf27fcec8ba') in 0.015376 seconds
+  Import took 0.019501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000397 seconds.
+  path: Assets/Image/Enemy/King/[왕]_일반공격_04.png
+  artifactKey: Guid(6b1817331d4ec4b4bacf2d72223a22bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_04.png using Guid(6b1817331d4ec4b4bacf2d72223a22bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d1660c64c2103a825fb9090c4496bf5') in 0.013965 seconds
+  Import took 0.018389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Image/Enemy/King/[왕]_일반공격_07.png
+  artifactKey: Guid(59d6288b76400664ca0eab5278179dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_07.png using Guid(59d6288b76400664ca0eab5278179dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44dc995d7472826a5e7dc980d0d060d5') in 0.017845 seconds
+  Import took 0.021836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004838 seconds.
+  path: Assets/Image/Enemy/King/[왕]_일반공격_04.png
+  artifactKey: Guid(6b1817331d4ec4b4bacf2d72223a22bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Enemy/King/[왕]_일반공격_04.png using Guid(6b1817331d4ec4b4bacf2d72223a22bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d1660c64c2103a825fb9090c4496bf5') in 0.019726 seconds
+  Import took 0.023845 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001410 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001ACF27C9020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF603C8A0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF554E860 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF5698810 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF553F800 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDBEE020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF50C3030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF538D690 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDBEE020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF553F800 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF29B0040 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF235A020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF554E860 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF22A29F0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF4A70050 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF555A5B0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2620530 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF4A70050 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEE346AE0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF370C020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF3001010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF554E860 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDDC1010 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF22A29F0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF39F4E30 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF54DCA20 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACEDFF47C0 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2675020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF55E7530 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF5698810 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF61DED10 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2EB8020 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF554E860 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ACF2E9A030 doesn't match image F:\!github-desktop\TeamProject-SealedMagic\2DSealedmagic\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.203 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1949 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.0 MB.
+System memory in use after: 97.1 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2440.
+Total: 2.442000 ms (FindLiveObjects: 0.212400 ms CreateObjectMapping: 0.098400 ms MarkObjects: 2.112400 ms  DeleteObjects: 0.017500 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
