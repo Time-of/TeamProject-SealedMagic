@@ -30,6 +30,7 @@ public class PlayerObject : MonoBehaviour
     public static Vector3 Altarpos;
     [Tooltip("공격시 이동 활성화/비활성/ 죽음을때도 활용")]
     public bool bCanMove = true;
+    public bool NoDamege = false;
 
     public AudioClip audioWalk;
     public AudioClip audioJumpUp;
@@ -45,7 +46,7 @@ public class PlayerObject : MonoBehaviour
     private void Start()
     {
         InvokeRepeating("NatureMana", 1, 1);// 자연 마나 재생
-
+        DontDestroyOnLoad(gameObject);
     }
     void Awake()
     {
@@ -79,8 +80,8 @@ public class PlayerObject : MonoBehaviour
                 // Left and right Move
                 float h = Input.GetAxisRaw("Horizontal");
                 rigid.AddForce(Vector2.right * h, ForceMode2D.Impulse);
-                //audioSource.clip = audioWalk;
-                //audioSource.Play();
+                audioSource.clip = audioWalk;
+                audioSource.Play();
             }
         }
         else
@@ -211,15 +212,7 @@ public class PlayerObject : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
-        {
-            OnDamage(10);// 데미지 받아와야 하는데 아직 못함
-            if (curHealth > 0)
-            {
-                OnDamaged(collision.transform.position);
-            }
-        }
-        else if (collision.gameObject.tag == "Spikes")
+        if (collision.gameObject.tag == "Spikes" && NoDamege == false)
         {
             OnDamage(100);
             if (curHealth > 0)
@@ -229,15 +222,32 @@ public class PlayerObject : MonoBehaviour
         }
     }
 
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy" && NoDamege == false)
+        {
+            OnDamage(10);// 데미지 받아와야 하는데 아직 못함
+            if (curHealth > 0)
+            {
+                OnDamaged(collision.transform.position);
+            }
+
+        }
+    }
+
     public void OnDamage(float damage)
     {
+        if (NoDamege == true)
+        {
+            damage = 0;
+        }
         GameObject AttackText = Instantiate(AttackDamageText);// 데미지 이미지 출력
         AttackText.transform.position = hudPos.position;// 데미지 위치
         AttackText.GetComponent<DmgText>().damage = damage;// 데미지 값 받기
-
+       
         //Damage
         curHealth -= damage;
-        if (curHealth >= 0)
+        if (curHealth >= 0 && NoDamege == false)
         {
             OnDamaged(transform.position); // 21.05.26 추가
         }
@@ -251,7 +261,7 @@ public class PlayerObject : MonoBehaviour
         rigid.AddForce(new Vector2(dirc, 1) * 3, ForceMode2D.Impulse);
 
         //Change Layer (Immortal Active)
-        gameObject.layer = 8;
+        //gameObject.layer = 8;
 
         // Damaged motion coloer
         StartCoroutine("Damotion");
@@ -259,7 +269,9 @@ public class PlayerObject : MonoBehaviour
         //Animation
         anim.SetTrigger("isDamaged");
 
-        Invoke("OffDamaged", 2);// 무적 시간
+        NoDamege = true;
+        StartCoroutine("OffDamaged");
+        //Invoke("OffDamaged", 2);// 무적 시간
 
     }
 
@@ -278,10 +290,11 @@ public class PlayerObject : MonoBehaviour
     }
 
     // 데미지를 입고 무적
-    void OffDamaged()
+    IEnumerator OffDamaged()
     {
-        gameObject.layer = 9;
+        yield return new WaitForSeconds(2f);
         spriteRenderer.color = new Color(1, 1, 1, 1);
+        NoDamege = false;
     }
 
     // 자연 마나 생성
@@ -302,6 +315,7 @@ public class PlayerObject : MonoBehaviour
         }
         else if (curHealth <= 0)// 죽었을때
         {
+            gameObject.layer = 9;
             // 못 움직이게 고정
             bCanMove = false;
             // 체력 0

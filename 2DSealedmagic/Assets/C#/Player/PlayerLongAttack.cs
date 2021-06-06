@@ -149,8 +149,6 @@ public class PlayerLongAttack : MonoBehaviour
 						PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
 						playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
 						SillIcon[2] = true;
-						Monster monster = FindObjectOfType<Monster>();
-						monster.power = 2.5f;
 						player.curMana -= 50;
 						ccurTime[3] = classicTime[3];
 						binCk = false;
@@ -253,6 +251,7 @@ public class PlayerLongAttack : MonoBehaviour
 			if (area != null)
 			{
 				area.damage = 70 + UpAtk;
+				area.AttackType = "Earth";
 				area.isEnemyAttack = false;
 			}
 			break;

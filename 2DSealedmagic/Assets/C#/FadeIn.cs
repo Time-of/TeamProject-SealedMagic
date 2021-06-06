@@ -6,17 +6,20 @@ using UnityEngine.UI;
 public class FadeIn : MonoBehaviour
 {
     private Image image;
+
+    Altar altar;
     
     private void Awake()
     {
         image = GetComponent<Image>();
+        altar = FindObjectOfType<Altar>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Fadein();
-       
+        Fadeout();
     }
 
     void Fadein()
@@ -30,16 +33,19 @@ public class FadeIn : MonoBehaviour
 
         image.color = color;
     }
-    /*
+    
     public void Fadeout()
     {
-        Color color = image.color;
+        if (altar.clear == true) {
 
-        if (color.a < 1)
-        {
-            color.a += Time.deltaTime;
+            Color color = image.color;
+
+            if (color.a < 1)
+            {
+                color.a += Time.deltaTime;
+            }
+
+            image.color = color;
         }
-
-        image.color = color;
-    }*/
+    }
 }
