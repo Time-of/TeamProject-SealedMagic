@@ -244,7 +244,7 @@ public class PlayerLongAttack : MonoBehaviour
 		foreach (Collider2D i in hit)
 		{
 			GameObject GroundAtk = Instantiate(impactEffect[3], i.transform.position, Quaternion.identity);
-			Instantiate(impactEffect[4], Vector3.up * 1.6f + i.transform.position, Quaternion.identity);
+			Instantiate(impactEffect[4], Vector3.up * 1.4f + i.transform.position, Quaternion.identity);
 			binCk = true;
 			AttackArea area = GroundAtk.GetComponent<AttackArea>();
 

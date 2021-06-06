@@ -19,7 +19,7 @@ public class FadeIn : MonoBehaviour
     void Update()
     {
         Fadein();
-        Fadeout();
+        //Fadeout();
     }
 
     void Fadein()
@@ -33,7 +33,7 @@ public class FadeIn : MonoBehaviour
 
         image.color = color;
     }
-    
+    /*
     public void Fadeout()
     {
         if (altar.clear == true) {
@@ -47,5 +47,5 @@ public class FadeIn : MonoBehaviour
 
             image.color = color;
         }
-    }
+    }*/
 }

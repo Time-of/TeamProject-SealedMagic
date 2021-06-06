@@ -46,7 +46,6 @@ public class PlayerObject : MonoBehaviour
     private void Start()
     {
         InvokeRepeating("NatureMana", 1, 1);// 자연 마나 재생
-        DontDestroyOnLoad(gameObject);
     }
     void Awake()
     {
@@ -163,7 +162,7 @@ public class PlayerObject : MonoBehaviour
                 audioSource.Play();
                 if (jumpcount == 1)// double Jump
                 {
-                    rigid.velocity = new Vector2(rigid.velocity.x, jumpPower * 0.75f);
+                    rigid.velocity = new Vector2(rigid.velocity.x, jumpPower * 0.9f);
                 }
                 rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
                 anim.SetBool("isRun", false);// 달리다가 점프 시 꺼짐.
