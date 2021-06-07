@@ -277,7 +277,7 @@ MonoBehaviour:
   SFX_Attack: {fileID: 8300000, guid: e0459bb068c384e45bb9c82a48038ff8, type: 3}
   SFX_Skill_1: {fileID: 8300000, guid: 93cb67e717ef13545a61a5ab89955d69, type: 3}
   SFX_Skill_2: {fileID: 0}
-  SFX_Death: {fileID: 8300000, guid: ff54f603355614245865b8f196106fa4, type: 3}
+  SFX_Death: {fileID: 8300000, guid: acc27f8b65d42f94b860cebd7ccdcd27, type: 3}
   power: 1
   audioSource: {fileID: 5077870991264575462}
   traceTarget: {fileID: 0}
