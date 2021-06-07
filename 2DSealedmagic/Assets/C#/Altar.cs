@@ -62,8 +62,6 @@ public class Altar : MonoBehaviour
 			isInteracting = false;
 			concentrateFX.SetActive(false);
 			Debug.Log("정신 집중 성공!");
-			//GameObject Eff = Instantiate(EndEffect, transform);
-			//Destroy(Eff, 2f);
 
 			GameManager.instance.killedColoredMonster = 0;
 
