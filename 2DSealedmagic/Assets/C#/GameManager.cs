@@ -48,19 +48,23 @@ public class GameManager : MonoBehaviour
 		plCurHP = 1000;
 		plMaxMP = 500;
 		plCurMP = 500;
-
-		//SpawnPlayer();
 	}
 
 	void Start()
 	{
-		SceneManager.LoadScene("Stage1");
 		player = FindObjectOfType<PlayerObject>();
 		GetPlayerInfo();
 	}
 
 	void Update()
 	{
+		if (UserInterface.instance.isMainScreen && Input.anyKey)
+		{
+			UserInterface.instance.DisableMainScreen();
+			UserInterface.instance.isMainScreen = false;
+			SceneManager.LoadScene("Stage1");
+		}
+
 		if (Input.GetKeyDown(KeyCode.R))
 		{
 			if (isGameover)
@@ -73,6 +77,8 @@ public class GameManager : MonoBehaviour
 			else if (isGameClear)
 			{
 				InitPlayer();
+				UserInterface.instance.InitGameclearBool();
+				isGameClear = false;
 				SceneManager.LoadScene("Stage1");
 			}
 		}

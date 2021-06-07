@@ -43,19 +43,18 @@ public class MonsterSkill : MonoBehaviour
 
 	IEnumerator Skill(int index, int atkDir, int skNum)
 	{
-		int ArrayNum = skNum - 1;
+		DeactiveSkill(skNum);
+
 		if (index == 0)
 		{
-			DeactiveSkill(skNum);
+			Vector2 Pos = new Vector2(atkDir * skInfo.range[index] + transform.position.x, transform.position.y);
 
-			Vector2 Pos = new Vector2(atkDir * skInfo.range[ArrayNum] + transform.position.x, transform.position.y);
-
-			GameObject atkSp = Instantiate(skInfo.FX_Sprite[ArrayNum], Pos + new Vector2(0, 2f), Quaternion.identity);
+			GameObject atkSp = Instantiate(skInfo.FX_Sprite[index], Pos + new Vector2(0, 2f), Quaternion.identity);
 			yield return new WaitForSeconds(1.1f);
 
 			atkSp.transform.localPosition = Pos;
-			GameObject atkArea = Instantiate(skInfo.Skill_Area[ArrayNum], Pos, Quaternion.identity);
-			GameObject atkFX = Instantiate(skInfo.FX_Particle[ArrayNum], Pos, Quaternion.identity);
+			GameObject atkArea = Instantiate(skInfo.Skill_Area[index], Pos, Quaternion.identity);
+			GameObject atkFX = Instantiate(skInfo.FX_Particle[index], Pos, Quaternion.identity);
 			var area = atkArea.GetComponent<AttackArea>();
 
 			if (area != null)
@@ -71,24 +70,14 @@ public class MonsterSkill : MonoBehaviour
 			Destroy(atkSp);
 			Destroy(atkFX);
 
-			StartCoroutine(Cooldown(skInfo.cooldown[ArrayNum], skNum));
+			StartCoroutine(Cooldown(skInfo.cooldown[index], skNum));
 		}
 		else if (index == 1)
 		{
-			DeactiveSkill(skNum);
-
 			GetComponent<Monster>().OnProtected = true;
-			GameObject atkFX = Instantiate(skInfo.FX_Particle[ArrayNum], transform.position, Quaternion.identity);
+			GameObject atkFX = Instantiate(skInfo.FX_Particle[index], transform.position, Quaternion.identity);
 			Destroy(atkFX, 1f);
-			StartCoroutine(Cooldown(skInfo.cooldown[ArrayNum], skNum));
-		}
-		else if (index == 2)
-		{
-			DeactiveSkill(skNum);
-
-			// 아직 미구현
-
-			StartCoroutine(Cooldown(skInfo.cooldown[ArrayNum], skNum));
+			StartCoroutine(Cooldown(skInfo.cooldown[index], skNum));
 		}
 	}
 
