@@ -36,8 +36,15 @@ public class PlayerLongAttack : MonoBehaviour
 
 	public static PlayerLongAttack instance;
 
+	[SerializeField] AudioClip audioAtk;
+	[SerializeField] AudioClip audioFAtk;
+	[SerializeField] AudioClip audioIAtk;
+	[SerializeField] AudioClip audioGAtk;
+	[SerializeField] AudioClip audioTAtk;
+
 	Animator anim;
 	PlayerObject player;
+	AudioSource audioSource;
 
 
 	// 공격들을 다 따로 놓은 이유는 쿨타임들을 각자 다르게 하려고 함.
@@ -46,6 +53,7 @@ public class PlayerLongAttack : MonoBehaviour
 	{
 		anim = GetComponent<Animator>();
 		player = FindObjectOfType<PlayerObject>();
+		audioSource = GetComponent<AudioSource>();
 		instance = this;
 	}
    
@@ -79,6 +87,7 @@ public class PlayerLongAttack : MonoBehaviour
 				PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
 				playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
 				Shoot();
+				PlayerAtkSound("Atk");
 				ccurTime[0] = classicTime[0];
 			}
 		}
@@ -99,6 +108,7 @@ public class PlayerLongAttack : MonoBehaviour
 					PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
 					playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
 					FireShoot();
+					PlayerAtkSound("Fire");
 					SillIcon[0] = true;
 					player.curMana -= 50;
 					ccurTime[1] = classicTime[1];
@@ -123,6 +133,7 @@ public class PlayerLongAttack : MonoBehaviour
 					PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
 					playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
 					IceShoot();
+					PlayerAtkSound("Ice");
 					SillIcon[1] = true;
 					player.curMana -= 30;
 					ccurTime[2] = classicTime[2];
@@ -148,6 +159,7 @@ public class PlayerLongAttack : MonoBehaviour
 						anim.SetTrigger("isSkill");
 						PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
 						playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
+						PlayerAtkSound("Ground");
 						SillIcon[2] = true;
 						player.curMana -= 50;
 						ccurTime[3] = classicTime[3];
@@ -177,6 +189,7 @@ public class PlayerLongAttack : MonoBehaviour
 						anim.SetTrigger("isSkill");
 						PlayerObject playerMovement = FindObjectOfType<PlayerObject>();
 						playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
+						PlayerAtkSound("Thunder");
 						SillIcon[3] = true;
 						player.curMana -= 40;
 						ccurTime[4] = classicTime[4];
@@ -244,7 +257,7 @@ public class PlayerLongAttack : MonoBehaviour
 		foreach (Collider2D i in hit)
 		{
 			GameObject GroundAtk = Instantiate(impactEffect[3], i.transform.position, Quaternion.identity);
-			Instantiate(impactEffect[4], Vector3.up * 1.4f + i.transform.position, Quaternion.identity);
+			Instantiate(impactEffect[4], Vector3.up * 1.2f + i.transform.position, Quaternion.identity);
 			binCk = true;
 			AttackArea area = GroundAtk.GetComponent<AttackArea>();
 
@@ -295,5 +308,37 @@ public class PlayerLongAttack : MonoBehaviour
 		Gizmos.DrawWireCube(transform.position + new Vector3(7.5f * moveDic, 0, 0), size);
 		Gizmos.color = Color.blue;
 		Gizmos.DrawWireCube(transform.position + new Vector3(7.5f * moveDic, 3.5f, 0), size2);
+	}
+
+	void PlayerAtkSound(string action)
+	{
+		switch (action)
+		{
+			case "Atk":
+				audioSource.clip = audioAtk;
+				audioSource.PlayOneShot(audioAtk);
+				break;
+			case "Fire":
+				audioSource.clip = audioFAtk;
+				audioSource.PlayOneShot(audioFAtk);
+				break;
+			case "Ice":
+				audioSource.clip = audioIAtk;
+				audioSource.PlayOneShot(audioIAtk);
+				break;
+			case "Ground":
+				audioSource.clip = audioGAtk;
+				audioSource.PlayOneShot(audioGAtk);
+				break;
+			case "Thunder":
+				audioSource.clip = audioTAtk;
+				audioSource.PlayOneShot(audioTAtk);
+				break;
+			default:
+				Debug.Log("ERROR: 해당 사운드 값 없음");
+				break;
+		}
+		
+
 	}
 }

@@ -13,11 +13,15 @@ public class Icons : MonoBehaviour
 	[SerializeField] public float[] coolTime;
 	[Tooltip("스킬 아이콘 쿨타임 값")]
 	[SerializeField] private float[] currentCoolTime; //남은 쿨타임을 추적 할 변수
+	[Tooltip("스킬 해제")]
+	public GameObject[] Skillit; 
 
 	private bool canUseSkill = true; //스킬을 사용할 수 있는지 확인하는 변수
 	PlayerLongAttack player;
 
 	public static Icons instance;
+
+	
 
 	void Start()
 	{
@@ -52,6 +56,20 @@ public class Icons : MonoBehaviour
 			else if (player.SillIcon[3] == true)
 			{
 				TSkill();
+			}
+
+			if (PlayerLongAttack.instance.StageCheck[0] == true)
+			{
+				Skillit[0].SetActive(false);
+			}else if (PlayerLongAttack.instance.StageCheck[1] == true)
+			{
+				Skillit[1].SetActive(false);
+			}else if (PlayerLongAttack.instance.StageCheck[2] == true)
+			{
+				Skillit[2].SetActive(false);
+			}else if (PlayerLongAttack.instance.StageCheck[3] == true)
+			{
+				Skillit[3].SetActive(false);
 			}
 		}
 

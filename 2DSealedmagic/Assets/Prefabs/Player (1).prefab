@@ -180,6 +180,7 @@ MonoBehaviour:
   hudPos: {fileID: 177332986515156776}
   bCanMove: 1
   NoDamege: 0
+  DownSound: 0
   audioWalk: {fileID: 8300000, guid: d6ba2f947dbca3d40b5addc44081ac35, type: 3}
   audioJumpUp: {fileID: 8300000, guid: 0a3e479b3e4170f4ca5fb511830bc2ad, type: 3}
   audioJumpDown: {fileID: 8300000, guid: fa38f39609dc8f744a8a9430cd0891c1, type: 3}
@@ -226,6 +227,11 @@ MonoBehaviour:
   size: {x: 13, y: 1}
   size2: {x: 13, y: 10}
   moveDic: 1
+  audioAtk: {fileID: 8300000, guid: 3569ccd5b9e635e4287eb9fcfca2b08e, type: 3}
+  audioFAtk: {fileID: 8300000, guid: 00aa8b4cea482e645a4852a4681376e8, type: 3}
+  audioIAtk: {fileID: 8300000, guid: ffe54ada4e1917a41bab6b72126765ef, type: 3}
+  audioGAtk: {fileID: 8300000, guid: 37f4a6e8693f8724e8e1e188f5cee6fb, type: 3}
+  audioTAtk: {fileID: 8300000, guid: e3a97be934f7d234d8124406a1f8904b, type: 3}
 --- !u!95 &177332986038848268
 Animator:
   serializedVersion: 3
@@ -257,7 +263,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 3285601663299729718, guid: fc76cd66cf3bd4a4b8508521e1252431, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0
+  m_Volume: 0.26
   m_Pitch: 1
   Loop: 0
   Mute: 0

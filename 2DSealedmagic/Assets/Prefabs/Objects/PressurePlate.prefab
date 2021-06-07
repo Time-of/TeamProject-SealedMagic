@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 328678516555902740}
   - component: {fileID: 1382085236}
   - component: {fileID: 4931619808741571392}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: PressurePlate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 328678517165146472}
   - component: {fileID: 328678517165146478}
   - component: {fileID: 328678517165146473}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: TriggerZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}

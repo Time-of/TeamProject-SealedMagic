@@ -30,12 +30,15 @@ public class PlayerObject : MonoBehaviour
     public static Vector3 Altarpos;
     [Tooltip("공격시 이동 활성화/비활성/ 죽음을때도 활용")]
     public bool bCanMove = true;
+    [Tooltip("무적일때 노 데미지")]
     public bool NoDamege = false;
+    [Tooltip("착지 할때 사운드")]
+    public bool DownSound = false;
 
-    public AudioClip audioWalk;
-    public AudioClip audioJumpUp;
-    public AudioClip audioJumpDown;
-    public AudioClip audiofocus;
+    [SerializeField] AudioClip audioWalk;
+    [SerializeField] AudioClip audioJumpUp;
+    [SerializeField] AudioClip audioJumpDown;
+    [SerializeField] AudioClip audiofocus;
 
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
@@ -79,11 +82,10 @@ public class PlayerObject : MonoBehaviour
         {
             if (!Input.GetButtonDown("Attack"))
             {
+                //PlayerSound("Walk");
                 // Left and right Move
                 float h = Input.GetAxisRaw("Horizontal");
                 rigid.AddForce(Vector2.right * h, ForceMode2D.Impulse);
-                audioSource.clip = audioWalk;
-                audioSource.Play();
             }
         }
         else
@@ -94,10 +96,12 @@ public class PlayerObject : MonoBehaviour
         if (rigid.velocity.x > maxSpeed)// right max Speed
         {
             rigid.velocity = new Vector2(maxSpeed, rigid.velocity.y);
+            
         }
         else if (rigid.velocity.x < maxSpeed * (-1))// left max Speed
         {
             rigid.velocity = new Vector2(maxSpeed * (-1), rigid.velocity.y);
+            
         }
 
         if (Input.GetAxisRaw("Horizontal") != 0)
@@ -161,8 +165,6 @@ public class PlayerObject : MonoBehaviour
             // Jump
             if (Input.GetButtonDown("Jump") && jumpcount > 0) // spease
             {
-                audioSource.clip = audioJumpUp;
-                audioSource.Play();
                 if (jumpcount == 1)// double Jump
                 {
                     rigid.velocity = new Vector2(rigid.velocity.x, jumpPower * 0.9f);
@@ -170,6 +172,8 @@ public class PlayerObject : MonoBehaviour
                 rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
                 anim.SetBool("isRun", false);// 달리다가 점프 시 꺼짐.
                 anim.SetBool("Jumpingdown", false);// 다시 점프를 했을떄, 내려가는 모션이 사라진다.
+                PlayerSound("JumpUp");
+                DownSound = true;
                 anim.SetBool("Jumping", true);// jump image
                 jumpcount--;
             }
@@ -180,6 +184,7 @@ public class PlayerObject : MonoBehaviour
         {
             rigid.velocity = new Vector2(rigid.velocity.x, jumpPower * 0.8f);
         }
+        
     }
 
     // 점프 중 이미지 와 바닥 체크 밑 카운터 초기화
@@ -190,23 +195,27 @@ public class PlayerObject : MonoBehaviour
         {
             anim.SetBool("Jumping", false);// jump UP image
             anim.SetBool("Jumpingdown", true);// jump Down image
-            
+
 
             Vector2 frontVec = new Vector2(rigid.position.x + rigid.velocity.x * 0.03f, rigid.position.y);
             Debug.DrawRay(frontVec, Vector3.down, new Color(1, 0, 0));
 
             RaycastHit2D rayHit = Physics2D.Raycast(frontVec, Vector3.down, 2f, LayerMask.GetMask("Platform"));
 
-
+            
             if (rayHit.collider != null)
             {
                 if (rayHit.distance < 1.8f)
                 {
+                    if(DownSound == true)
+                    {
+                        PlayerSound("JumpDown");
+                        DownSound = false;
+                    }
                     anim.SetBool("Jumpingdown", false);// jump image
-                    audioSource.clip = audioJumpDown;
-                    audioSource.Play();
                     jumpcount = 2;
                 }
+                
             }
         }
     }
@@ -222,6 +231,7 @@ public class PlayerObject : MonoBehaviour
                 OnDamaged(collision.transform.position);
             }
         }
+        
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -243,10 +253,13 @@ public class PlayerObject : MonoBehaviour
         {
             damage = 0;
         }
-        GameObject AttackText = Instantiate(AttackDamageText);// 데미지 이미지 출력
-        AttackText.transform.position = hudPos.position;// 데미지 위치
-        AttackText.GetComponent<DmgText>().damage = damage;// 데미지 값 받기
-       
+        else
+        {
+            GameObject AttackText = Instantiate(AttackDamageText);// 데미지 이미지 출력
+            AttackText.transform.position = hudPos.position;// 데미지 위치
+            AttackText.GetComponent<DmgText>().damage = damage;// 데미지 값 받기
+        }
+
         //Damage
         curHealth -= damage;
         if (curHealth >= 0 && NoDamege == false)
@@ -340,24 +353,6 @@ public class PlayerObject : MonoBehaviour
             curMana = 0;
         }
     }
-    /*
-    //죽었을떄
-    public void isDie()
-    {
-        // 원상 복귀
-        transform.eulerAngles = new Vector3(0, 0, 0); // Die Impect
-        // 시작지점으로
-        transform.position = new Vector3(-7.5f, 0.65f, 0);
-        // 다시 움직일수 있게
-        bCanMove = true;
-        // 피 풀피
-        curHealth = maxHealth;
-        // 마나 풀마나
-        curMana = maxMana;
-        // 투명화 초기화
-        spriteRenderer.color = new Color(1, 1, 1, 1);
-
-    }*/
 
     /*
     작성: 20181220 이성수(P)
@@ -373,9 +368,8 @@ public class PlayerObject : MonoBehaviour
         {
             obj.isInteracting = true;
             Altarpos = transform.position;
+            PlayerSound("Focus");
             Debug.Log("정신 집중!");
-            audioSource.clip = audiofocus;
-            audioSource.Play();
         }
     }
     void OnTriggerEnter2D(Collider2D collision)
@@ -390,23 +384,33 @@ public class PlayerObject : MonoBehaviour
     {
         obj = null;
     }
-    /*
+    
     void PlayerSound(string action)
     {
         switch (action)
         {
             case "Walk":
                 audioSource.clip = audioWalk;
+                audioSource.PlayOneShot(audioWalk);
                 break;
             case "JumpUp":
                 audioSource.clip = audioJumpUp;
+                audioSource.PlayOneShot(audioJumpUp);
                 break;
             case "JumpDown":
                 audioSource.clip = audioJumpDown;
+                audioSource.PlayOneShot(audioJumpDown);
                 break;
             case "Focus":
                 audioSource.clip = audiofocus;
+                audioSource.PlayOneShot(audiofocus);
+                break;
+            default:
+                Debug.Log("ERROR: 해당 사운드 값 없음");
                 break;
         }
-    }*/
+       
+            
+
+    }
 }

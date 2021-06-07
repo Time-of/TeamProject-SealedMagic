@@ -45,7 +45,7 @@ public class Object : MonoBehaviour
 	[Tooltip("오브젝트 체력 (SealedStone)")]
 	[SerializeField] float HP;
 	[Tooltip("인덱스 번호")]
-	[SerializeField] int index;
+	public int index;
 
 	bool onTrigger = false;
 	public bool isFloating = false;
