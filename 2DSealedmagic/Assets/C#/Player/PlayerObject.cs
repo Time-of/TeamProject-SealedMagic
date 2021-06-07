@@ -46,6 +46,9 @@ public class PlayerObject : MonoBehaviour
     private void Start()
     {
         InvokeRepeating("NatureMana", 1, 1);// 자연 마나 재생
+        GameManager.instance.FindAndGetInfo();
+        UserInterface.instance.FindPlayer();
+        Icons.instance.FindPlayer();
     }
     void Awake()
     {
