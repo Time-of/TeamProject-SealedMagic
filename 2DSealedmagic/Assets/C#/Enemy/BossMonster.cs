@@ -48,6 +48,16 @@ public class BossMonster : MonoBehaviour
 	[Tooltip("공격 이펙트: 파티클")]
 	[SerializeField] protected GameObject atkFX_Particle;
 
+	[Header("사운드")]
+	[Tooltip("공격 사운드")]
+	[SerializeField] AudioClip SFX_Attack;
+	[Tooltip("스킬1 사운드")]
+	[SerializeField] AudioClip SFX_Skill_1;
+	[Tooltip("스킬2 사운드")]
+	[SerializeField] AudioClip SFX_Skill_2;
+	[Tooltip("사망 사운드")]
+	[SerializeField] AudioClip SFX_Death;
+
 	[Header("플레이어를 선택할 것")]
 	public LayerMask plCheck;
 
@@ -66,6 +76,7 @@ public class BossMonster : MonoBehaviour
 	protected Rigidbody2D rigid;
 	protected SpriteRenderer spRenderer;
 	PlayerObject traceTarget;
+	AudioSource audioSource;
 
 	protected bool isAtk = false;
 	//protected bool isAtkCooldown = false;
@@ -85,6 +96,7 @@ public class BossMonster : MonoBehaviour
 		anim = gameObject.GetComponentInChildren<Animator>();
 		rigid = GetComponent<Rigidbody2D>();
 		spRenderer = GetComponent<SpriteRenderer>();
+		audioSource = GetComponent<AudioSource>();
 
 		StartCoroutine(SearchPlayer());
 	}
@@ -239,6 +251,7 @@ public class BossMonster : MonoBehaviour
 	IEnumerator Die()
 	{
 		float i = 1f;
+		Sound("Death");
 		while (i >= 0f)
 		{
 			spRenderer.color = new Color(1, 1, 1, i);
@@ -326,6 +339,31 @@ public class BossMonster : MonoBehaviour
 				onStunned = false;
 			}
 		}
+	}
+
+	protected void Sound(string activity)
+	{
+		switch (activity)
+		{
+			case "Attack":
+				audioSource.clip = SFX_Attack;
+				break;
+			case "Skill1":
+				audioSource.clip = SFX_Skill_1;
+				break;
+			case "Skill2":
+				audioSource.clip = SFX_Skill_2;
+				break;
+			case "Death":
+				audioSource.clip = SFX_Death;
+				break;
+			default:
+				Debug.Log("ERROR: 해당 사운드 값 없음");
+				break;
+		}
+
+		if (audioSource != null)
+			audioSource.Play();
 	}
 
 	void OnDrawGizmos()

@@ -51,6 +51,7 @@ public class Boss_King : BossMonster
 	{
 		onAbility = true;
 		anim.SetBool("onAbility", true);
+		Sound("Skill1");
 		StartCoroutine(duringAbility(abilityDuration));
 	}
 
@@ -60,6 +61,7 @@ public class Boss_King : BossMonster
 		Vector3 newAtkPos = new Vector3(atkDirection * (atkPos.x + additionalRange) + transform.position.x, atkPos.y + transform.position.y, transform.position.z);
 
 		anim.SetBool("isAttack", true);
+		Sound("Attack");
 
 		yield return new WaitForSeconds(0.5f);
 

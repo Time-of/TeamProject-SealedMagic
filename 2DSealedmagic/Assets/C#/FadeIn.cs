@@ -33,8 +33,8 @@ public class FadeIn : MonoBehaviour
 
         image.color = color;
     }
-    /*
-    public void Fadeout()
+    
+    /*public void Fadeout()
     {
         if (altar.clear == true) {
 

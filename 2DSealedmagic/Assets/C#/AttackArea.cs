@@ -43,23 +43,29 @@ public class AttackArea : MonoBehaviour
 
 				if (mob != null)
 				{
-					mob.onAttack(damage);
-
 					if (AttackType == "Ice")
 					{
+						mob.onAttack(damage);
 						mob.modifySpeed(speedModify, duration);
 					}
 					else if (AttackType == "Fire")
 					{
+						mob.onAttack(damage);
 						mob.startDotDamage(dotDamage, duration);
 					}
 					else if (AttackType == "Stun")
 					{
+						mob.onAttack(damage);
 						mob.startStun(duration);
 					}
 					else if (AttackType == "Earth")
 					{
-						mob.power = 2.5f;
+						mob.power = 15f;
+						mob.onAttack(damage);
+					}
+					else
+					{
+						mob.onAttack(damage);
 					}
 
 					Destroy(gameObject);
