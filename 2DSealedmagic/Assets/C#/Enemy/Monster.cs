@@ -51,12 +51,24 @@ public class Monster : MonoBehaviour
 	public GameObject AttackDamageText;
 	[Tooltip("몬스터가 받은 데미지 위치")]
 	public Transform hudPos;
-	// 넉백방하는 '추가' 힘
+
+	[Header("사운드")]
+	[Tooltip("공격 사운드")]
+	[SerializeField] AudioClip SFX_Attack;
+	[Tooltip("스킬1 사운드")]
+	[SerializeField] AudioClip SFX_Skill_1;
+	[Tooltip("스킬2 사운드")]
+	[SerializeField] AudioClip SFX_Skill_2;
+	[Tooltip("사망 사운드")]
+	[SerializeField] AudioClip SFX_Death;
+
+	// 넉백당하는 '추가' 힘
 	[HideInInspector] public float power = 1f;
 
 	Animator monsterAnim;
 	Rigidbody2D rigid;
 	SpriteRenderer spRenderer;
+	[SerializeField] AudioSource audioSource;
 
 	[HideInInspector] public GameObject traceTarget;
 	[HideInInspector] public bool isTracing = false;
@@ -332,6 +344,7 @@ public class Monster : MonoBehaviour
 	IEnumerator Die()
 	{
 		float i = 1f;
+		Sound("Death");
 		while (i >= 0f)
 		{
 			spRenderer.color = new Color(1, 1, 1, i);
@@ -348,7 +361,7 @@ public class Monster : MonoBehaviour
 	IEnumerator onDamaged()
 	{
 		spRenderer.color = new Color(1, 1, 1, 0.6f);
-		rigid.AddForce(Vector2.up * (1.8f * power), ForceMode2D.Impulse);
+		rigid.AddForce(Vector2.up * (4f + power), ForceMode2D.Impulse);
 
 		yield return new WaitForSeconds(0.5f);
 		spRenderer.color = new Color(1, 1, 1, 1);
@@ -368,14 +381,14 @@ public class Monster : MonoBehaviour
 			if (canSkill_1 && !canSkill_2)
 			{
 				canSkill_1 = false;
-
+				Sound("Skill1");
 				sk.UseSkill(skillIndex, (int)atkDir, 1);
 			}
 			// 2번 스킬 사용
 			else if (!canSkill_1 && canSkill_2)
 			{
 				canSkill_2 = false;
-
+				Sound("Skill2");
 				sk.UseSkill(skill2Index, (int)atkDir, 2);
 			}
 			else
@@ -386,10 +399,12 @@ public class Monster : MonoBehaviour
 				{
 					case 1:
 						canSkill_1 = false;
+						Sound("Skill1");
 						sk.UseSkill(skillIndex, (int)atkDir, 1);
 						break;
 					case 2:
 						canSkill_2 = false;
+						Sound("Skill2");
 						sk.UseSkill(skill2Index, (int)atkDir, 2);
 						break;
 					default:
@@ -448,6 +463,8 @@ public class Monster : MonoBehaviour
 		GameObject atkFX = Instantiate(normalAtkFX, front, Quaternion.identity);
 		monsterAnim.SetBool("isAttack", true);
 
+		Sound("Attack");
+
 		// 공격 판정은 0.1초만 존재
 		yield return new WaitForSeconds(0.1f);
 		Destroy(atkArea);
@@ -459,88 +476,28 @@ public class Monster : MonoBehaviour
 		isAttacking = false;
 	}
 
-	/*
-	void isDamaged()
+	void Sound(string activity)
 	{
-		spRenderer.color = new Color(1, 1, 1, 0.6f);
-		rigid.AddForce(Vector2.up * 1.4f, ForceMode2D.Impulse);
-		Invoke("DamagedToNormal", 0.5f);
-	}
-
-	void DamagedToNormal()
-	{
-		spRenderer.color = new Color(1, 1, 1, 1);
-	}
-
-	void CooldownSkill()
-	{
-		canSkill = false;
-		skCool -= Time.deltaTime;
-
-		if (skCool <= 0f)
+		switch (activity)
 		{
-			Debug.Log("스킬 쿨 끝!");
-			canSkill = true;
-			skCool = skillCooldown;
-			//coolingSkill = false;
+			case "Attack":
+				audioSource.clip = SFX_Attack;
+				break;
+			case "Skill1":
+				audioSource.clip = SFX_Skill_1;
+				break;
+			case "Skill2":
+				audioSource.clip = SFX_Skill_2;
+				break;
+			case "Death":
+				audioSource.clip = SFX_Death;
+				break;
+			default:
+				Debug.Log("ERROR: 해당 사운드 값 없음");
+				break;
 		}
+
+		if (audioSource != null)
+			audioSource.Play();
 	}
-
-	void CooldownNormalAttack()
-	{
-		canAttack = false;
-		atkCool -= Time.deltaTime;
-
-		if (atkCool <= 0f)
-		{
-			Debug.Log("일반공격 쿨 끝!");
-			canAttack = true;
-			atkCool = normalAttackCooldown;
-			//coolingAtk = false;
-		}
-	}
-
-	void UseSkill()
-	{
-		if (canUseSkill && canSkill)
-		{
-			isAttacking = true;
-			// MonsterSkill.Skill(0);
-			Debug.Log("스킬 사용!");
-
-			//skCool = skillCooldown;
-			//coolingSkill = true;
-		}
-		else if (!canUseSkill || !canSkill)
-		{
-			if (canAttack)
-			{
-				isAttacking = true;
-				Invoke("NormalAttack", 0.1f);
-				Debug.Log("일반공격 사용!");
-
-				//atkCool = normalAttackCooldown;
-				//coolingAtk = true;
-			}
-		}
-	}
-	
-	void NormalAttack()
-	{
-		Vector2 front = new Vector2((spRenderer.flipX ? -1 : 1) * (normalAttackRange/2) + rigid.position.x, rigid.position.y);
-
-		GameObject atkArea = Instantiate(monsterAttackArea, front, Quaternion.Euler(0,0,0));
-		Destroy(atkArea, 0.5f);
-		
-		monsterAnim.SetBool("isAttack", true);
-		Invoke("EndAttack", 0.5f);
-	}
-
-
-	void EndAttack()
-	{
-		monsterAnim.SetBool("isAttack", false);
-		isAttacking = false;
-	}
-	*/
 }

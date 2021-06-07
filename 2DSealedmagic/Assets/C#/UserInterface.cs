@@ -24,6 +24,8 @@ public class UserInterface : MonoBehaviour
 	[SerializeField] GameObject backImage;
 	[Tooltip("게임오버 UI")]
 	[SerializeField] GameObject gameOverUI;
+	[Tooltip("게임오버 백 이미지")]
+	[SerializeField] GameObject gameOverBackImage;
 	[Tooltip("게임클리어 UI")]
 	[SerializeField] GameObject gameClearUI;
 	[Tooltip("UI 캔버스 오브젝트")]
@@ -83,8 +85,16 @@ public class UserInterface : MonoBehaviour
 		GameManager.instance.isGameover = true;
 		MenuUI.SetActive(false);
 		gameOverUI.SetActive(true);
+		gameOverBackImage.SetActive(true);
 		backImage.SetActive(false);
 		anim.SetBool("isGameover", true);
+	}
+
+	public void InitGameoverBool()
+	{
+		gameOverUI.SetActive(false);
+		gameOverBackImage.SetActive(false);
+		anim.SetBool("isGameover", false);
 	}
 
 	public void GameClear()

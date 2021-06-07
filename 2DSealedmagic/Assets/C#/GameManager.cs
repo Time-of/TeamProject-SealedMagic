@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
 
 	public static GameManager instance;
 
+	[SerializeField] AudioClip SFX_Potion;
+	[SerializeField] AudioClip SFX_Plate;
 	[SerializeField] public int Stagenum = 0;
 
 	//[SerializeField] GameObject PlayerPrefab;
@@ -35,11 +37,13 @@ public class GameManager : MonoBehaviour
 	[HideInInspector] public float increasedAtk;
 
 	PlayerObject player;
+	AudioSource audioSource;
 
 	void Awake()
 	{
 		instance = this;
 		DontDestroyOnLoad(gameObject);
+		audioSource = GetComponent<AudioSource>();
 		plMaxHP = 1000;
 		plCurHP = 1000;
 		plMaxMP = 500;
@@ -62,6 +66,8 @@ public class GameManager : MonoBehaviour
 			if (isGameover)
 			{
 				InitPlayer();
+				UserInterface.instance.InitGameoverBool();
+				isGameover = false;
 				SceneManager.LoadScene("Stage1");
 			}
 			else if (isGameClear)
@@ -78,9 +84,20 @@ public class GameManager : MonoBehaviour
 		GetPlayerInfo();
 	}
 
-	void SpawnPlayer()
+	public void Sound(string activity)
 	{
-		//Instantiate(PlayerPrefab, PlayerSpawnPos[Stagenum], Quaternion.identity);
+		switch (activity)
+		{
+			case "Potion":
+				audioSource.clip = SFX_Potion;
+				break;
+			case "Plate":
+				audioSource.clip = SFX_Plate;
+				break;
+		}
+
+		if (audioSource != null)
+			audioSource.Play();
 	}
 
 	void GetPlayerInfo()

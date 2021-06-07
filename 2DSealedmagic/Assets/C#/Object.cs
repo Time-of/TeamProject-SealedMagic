@@ -25,6 +25,9 @@ PotionHP/PotionMP: gameObj(FX), amount, speed
 문: Door
 봉인석: SealedStone
 물약: PotionHP, PotionMP
+
+사운드는 ArrowDispenser에 넣을 것
+(포션, 발판은 게임매니저)
 */
 
 public class Object : MonoBehaviour
@@ -49,6 +52,7 @@ public class Object : MonoBehaviour
 
 	Animator anim;
 	SpriteRenderer spRenderer;
+	AudioSource audioSource;
 
 	Vector2 currentPos;
 
@@ -64,10 +68,15 @@ public class Object : MonoBehaviour
 	void Start()
 	{
 		if (ObjectType == "ArrowDispenser")
+		{
+			audioSource = GetComponent<AudioSource>();
 			StartCoroutine(ArrowDispenser(Direction));
-		if (ObjectType == "Arrow")
+		}
+		else if (ObjectType == "Arrow")
+		{
 			StartCoroutine(Arrow());
-		if (ObjectType == "PotionHP" || ObjectType == "PotionMP")
+		}
+		else if (ObjectType == "PotionHP" || ObjectType == "PotionMP")
 		{
 			currentPos = transform.position;
 			isFloating = true;
@@ -84,18 +93,6 @@ public class Object : MonoBehaviour
 		}
 	}
 
-	/*IEnumerator Floater()
-	{
-		Vector2 pos = transform.position;
-		while (true)
-		{
-			time += Time.deltaTime * speed;
-			PosY = Mathf.Sin(time) * 0.3f; // (* 길이;)
-			transform.position = pos + new Vector2(0, PosY);
-			yield return new WaitForSeconds(0.1f);
-		}
-	}*/
-
 	IEnumerator ArrowDispenser(string Dir)
 	{
 		while (true)
@@ -104,6 +101,8 @@ public class Object : MonoBehaviour
 			GameObject arrow = Instantiate(gameObj, transform.position, Quaternion.identity);
 			if (Dir == "Right") arrow.transform.localScale = new Vector3(2, 2, 2);
 			else if (Dir == "Left") arrow.transform.localScale = new Vector3(-2, 2, 2);
+
+			Sound();
 
 			if (arrow != null)
 				Destroy(arrow, 2f);
@@ -147,6 +146,12 @@ public class Object : MonoBehaviour
 		spRenderer.color = new Color(1, 1, 1, 1);
 	}
 
+	void Sound()
+	{
+		if (audioSource != null)
+			audioSource.Play();
+	}
+
 	void OnTriggerEnter2D(Collider2D collision)
 	{
 		PlayerObject player = collision.GetComponent<PlayerObject>();
@@ -154,6 +159,7 @@ public class Object : MonoBehaviour
 		{
 			onTrigger = true;
 			anim.SetBool("isDoor", true);
+			GameManager.instance.Sound("Plate");
 			gameObj.SetActive(false);
 		}
 
@@ -193,6 +199,7 @@ public class Object : MonoBehaviour
 				//GameObject Pfx = Instantiate(gameObj, pl.transform);
 				//Destroy(Pfx, 1f);
 
+				GameManager.instance.Sound("Potion");
 				Destroy(gameObject);
 			}
 		}
