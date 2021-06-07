@@ -335,9 +335,9 @@ public class Monster : MonoBehaviour
 		while (i >= 0f)
 		{
 			spRenderer.color = new Color(1, 1, 1, i);
-			i -= 0.05f;
-			yield return new WaitForSeconds(0.05f);
-			if (i <= 0.05f)
+			i -= 0.2f;
+			yield return new WaitForSeconds(0.2f);
+			if (i <= 0.1f)
 			{
 				Destroy(gameObject);
 			}

@@ -9,7 +9,7 @@ public class MainCamera : MonoBehaviour
 
     void Start()
     {
-        
+        target = FindObjectOfType<PlayerObject>().GetComponent<Transform>();
     }
 
     // Update is called once per frame

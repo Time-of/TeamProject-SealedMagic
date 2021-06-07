@@ -40,33 +40,42 @@ public class UserInterface : MonoBehaviour
 
 	void Start()
 	{
-		player = FindObjectOfType<PlayerObject>();
 		anim = UICanvas.GetComponent<Animator>();
 		instance = this;
 	}
 
+	public void FindPlayer()
+	{
+		player = FindObjectOfType<PlayerObject>();
+	}
+
 	void Update()
 	{
-		healthBar.fillAmount = player.curHealth / player.maxHealth;
-		manaBar.fillAmount = player.curMana / player.maxMana;
-		if (Input.GetButtonDown("Cancel") && !GameManager.instance.isGameover && !GameManager.instance.isGameClear)
+		if (player != null)
 		{
-			if (MenuUI.activeSelf)
-			{
-				MenuUI.SetActive(false);
-				backImage.SetActive(false);
-			}
-			else
-			{
-				MenuUI.SetActive(true);
-				backImage.SetActive(true);
-			}
-		}
+			healthBar.fillAmount = player.curHealth / player.maxHealth;
+			manaBar.fillAmount = player.curMana / player.maxMana;
 
-		Init_HP();
-		Init_MANA();
-		message.text = (Hp).ToString();
-		message2.text = (Mana).ToString();
+
+			if (Input.GetButtonDown("Cancel") && !GameManager.instance.isGameover && !GameManager.instance.isGameClear)
+			{
+				if (MenuUI.activeSelf)
+				{
+					MenuUI.SetActive(false);
+					backImage.SetActive(false);
+				}
+				else
+				{
+					MenuUI.SetActive(true);
+					backImage.SetActive(true);
+				}
+			}
+
+			Init_HP();
+			Init_MANA();
+			message.text = (Hp).ToString();
+			message2.text = (Mana).ToString();
+		}
 	}
 
 	public void GameOver()
