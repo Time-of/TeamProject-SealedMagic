@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e021ec301f5850b4b8311d1cf0b7e18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDebug: 1
 --- !u!114 &7431351086390328214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,10 +71,12 @@ MonoBehaviour:
   gameClearUI: {fileID: 0}
   mainScreen: {fileID: 0}
   UICanvas: {fileID: 0}
+  LightMonster: {fileID: 0}
+  LightMonKill: {fileID: 0}
   message: {fileID: 0}
   message2: {fileID: 0}
-  Hp: 0
-  Mana: 0
+  Hp: 1000
+  Mana: 500
   isMainScreen: 1
 --- !u!114 &7431351086390328216
 MonoBehaviour:
@@ -102,6 +105,7 @@ MonoBehaviour:
   plCurMP: 0
   magicCheck: 00000000
   increasedAtk: 0
+  increasedNormalAtk: 0
 --- !u!114 &7431351086390328219
 MonoBehaviour:
   m_ObjectHideFlags: 0

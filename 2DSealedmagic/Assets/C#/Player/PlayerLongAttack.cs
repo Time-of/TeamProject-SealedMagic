@@ -100,7 +100,7 @@ public class PlayerLongAttack : MonoBehaviour
 	}
 	void FireAttack()
 	{
-		if (StageCheck[0])
+		if (StageCheck[0] && player.curMana >= 100)
 		{
 			if (ccurTime[1] <= 0)// 불 공격
 			{
@@ -125,7 +125,7 @@ public class PlayerLongAttack : MonoBehaviour
 	}
 	void IceAttack()
 	{
-		if (StageCheck[1])
+		if (StageCheck[1] && player.curMana >= 80)
 		{
 			if (ccurTime[2] <= 0) // 얼음 공격
 			{
@@ -149,7 +149,7 @@ public class PlayerLongAttack : MonoBehaviour
 	}
 	void GroundAttack()
 	{
-		if (StageCheck[2])
+		if (StageCheck[2] && player.curMana >= 100)
 		{
 			if (ccurTime[3] <= 0) // 땅 공격
 			{
@@ -179,7 +179,7 @@ public class PlayerLongAttack : MonoBehaviour
 	}
 	void ThunderAttack()
 	{
-		if (StageCheck[3])
+		if (StageCheck[3] && player.curMana >= 90)
 		{
 			if (ccurTime[4] <= 0) // 번개 공격
 			{

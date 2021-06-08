@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
 	[HideInInspector] public float increasedAtk;
 	[HideInInspector] public float increasedNormalAtk;
 
+
 	PlayerObject player;
 	AudioSource audioSource;
 
@@ -74,6 +75,8 @@ public class GameManager : MonoBehaviour
 				InitPlayer();
 				UserInterface.instance.InitGameoverBool();
 				isGameover = false;
+				InitPlayerInfo();
+
 				SceneManager.LoadScene("Stage1");
 			}
 			else if (isGameClear)

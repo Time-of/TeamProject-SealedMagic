@@ -36,6 +36,11 @@ public class UserInterface : MonoBehaviour
 	[SerializeField] GameObject mainScreen;
 	[Tooltip("UI Äµ¹ö½º ¿ÀºêÁ§Æ®")]
 	[SerializeField] GameObject UICanvas;
+	[Tooltip("¸Ê¿¡ ºû³ª´Â ¸ó½ºÅÍ °¹¼ö")]
+	[SerializeField] Text LightMonster;
+	[Tooltip("¸Ê¿¡ ºû³ª´Â ¸ó½ºÅÍ °¹¼ö")]
+	[SerializeField] Text LightMonKill;
+
 	public Text message;
 	public Text message2;
 	public float Hp;
@@ -45,10 +50,16 @@ public class UserInterface : MonoBehaviour
 
 	Animator anim;
 	PlayerObject player;
+	GameManager game;
 
 	public static UserInterface instance;
 
-	void Start()
+    void Awake()
+    {
+		
+    }
+
+    void Start()
 	{
 		anim = UICanvas.GetComponent<Animator>();
 		instance = this;
@@ -57,6 +68,7 @@ public class UserInterface : MonoBehaviour
 	public void FindPlayer()
 	{
 		player = FindObjectOfType<PlayerObject>();
+		game = FindObjectOfType<GameManager>();
 	}
 
 	void Update()
@@ -89,6 +101,7 @@ public class UserInterface : MonoBehaviour
 			Init_MANA();
 			message.text = (Hp).ToString();
 			message2.text = (Mana).ToString();
+			LightMonKill.text = "  / " + GameManager.instance.killedColoredMonster.ToString();
 		}
 	}
 
@@ -185,4 +198,5 @@ public class UserInterface : MonoBehaviour
 			}
 		}
 	}
+
 }
