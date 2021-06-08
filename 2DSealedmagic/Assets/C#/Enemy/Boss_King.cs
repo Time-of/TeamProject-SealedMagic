@@ -63,7 +63,7 @@ public class Boss_King : BossMonster
 		anim.SetBool("isAttack", true);
 		Sound("Attack");
 
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(0.2f);
 
 		GameObject atkArea = Instantiate(atkZone, newAtkPos, Quaternion.identity);
 		var area = atkArea.GetComponent<AttackArea>();

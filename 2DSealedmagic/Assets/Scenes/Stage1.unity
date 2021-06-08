@@ -152,7 +152,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -800860698245286604, guid: fc76cd66cf3bd4a4b8508521e1252431, type: 2}
   m_audioClip: {fileID: 8300000, guid: 238a139033f8ba240b04dcd1443f714c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.02
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -567,6 +567,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2734543817741293602, guid: 096ac0a3b6098c449b9df726a51e76ad, type: 3}
+      propertyPath: isColoredMonster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2734543817741293614, guid: 096ac0a3b6098c449b9df726a51e76ad, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -783,6 +787,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719153, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: isColoredMonster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719166, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
@@ -10041,6 +10049,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1021070659, guid: f561545267874f84aa2c98e72c506b1c, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 177332986038848269, guid: f561545267874f84aa2c98e72c506b1c, type: 3}
       propertyPath: m_Name
       value: Player (1)
@@ -10370,6 +10382,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719153, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: isColoredMonster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719166, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}

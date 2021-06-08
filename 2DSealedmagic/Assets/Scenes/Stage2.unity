@@ -340,8 +340,16 @@ PrefabInstance:
       value: Enemy_Soldier (5)
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: life
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: isColoredMonster
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: normalAttackDamage
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719166, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: m_RootOrder
@@ -539,6 +547,14 @@ PrefabInstance:
     - target: {fileID: 91129535749719153, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: m_Name
       value: Enemy_Soldier (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: life
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: normalAttackDamage
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719166, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: m_RootOrder
@@ -865,8 +881,16 @@ PrefabInstance:
       value: Enemy_Soldier (10)
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: life
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: isColoredMonster
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: normalAttackDamage
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719166, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: m_RootOrder
@@ -1076,8 +1100,16 @@ PrefabInstance:
       value: Enemy_Soldier (6)
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: life
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: isColoredMonster
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: normalAttackDamage
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719166, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: m_RootOrder
@@ -1347,8 +1379,16 @@ PrefabInstance:
       value: Enemy_Soldier (8)
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: life
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: isColoredMonster
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: normalAttackDamage
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719166, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: m_RootOrder
@@ -7770,8 +7810,16 @@ PrefabInstance:
       value: Enemy_Soldier (7)
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: life
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: isColoredMonster
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: normalAttackDamage
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719166, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: m_RootOrder
@@ -8214,8 +8262,16 @@ PrefabInstance:
       value: Enemy_Soldier
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: life
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: isColoredMonster
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: normalAttackDamage
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719166, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: m_RootOrder
@@ -17245,8 +17301,16 @@ PrefabInstance:
       value: Enemy_Soldier (9)
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: life
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: isColoredMonster
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: normalAttackDamage
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719166, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: m_RootOrder
@@ -17309,6 +17373,14 @@ PrefabInstance:
     - target: {fileID: 91129535749719153, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: m_Name
       value: Enemy_Soldier (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: life
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: normalAttackDamage
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719166, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: m_RootOrder
@@ -17373,8 +17445,16 @@ PrefabInstance:
       value: Enemy_Soldier (4)
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: life
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: isColoredMonster
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: normalAttackDamage
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719166, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: m_RootOrder
@@ -17907,6 +17987,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Soldier (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: life
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
+      propertyPath: normalAttackDamage
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 91129535749719166, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -18205,7 +18293,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -800860698245286604, guid: fc76cd66cf3bd4a4b8508521e1252431, type: 2}
   m_audioClip: {fileID: 8300000, guid: d6b74eaf4b4c9d440848b8c07d1df812, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.02
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0

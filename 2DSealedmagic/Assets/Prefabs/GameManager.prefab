@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7431351086390328217}
+  - component: {fileID: 7246818737603407213}
   - component: {fileID: 7431351086390328214}
   - component: {fileID: 7431351086390328216}
   - component: {fileID: 7431351086390328219}
@@ -34,6 +35,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7246818737603407213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7431351086390328215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e021ec301f5850b4b8311d1cf0b7e18a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7431351086390328214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49,15 +62,19 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   manaBar: {fileID: 0}
   MenuUI: {fileID: 0}
+  OptionUI: {fileID: 0}
+  ExitUI: {fileID: 0}
   backImage: {fileID: 0}
   gameOverUI: {fileID: 0}
   gameOverBackImage: {fileID: 0}
   gameClearUI: {fileID: 0}
+  mainScreen: {fileID: 0}
   UICanvas: {fileID: 0}
   message: {fileID: 0}
   message2: {fileID: 0}
   Hp: 0
   Mana: 0
+  isMainScreen: 1
 --- !u!114 &7431351086390328216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,7 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51b097df3a570de418efcf6bcd860224, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killedColoredMonster: 3
+  killedColoredMonster: 0
   isGameover: 0
   isGameClear: 0
   ColoredMonsterFX: {fileID: 4834885678300956499, guid: 82e33374d16012c4cb2b5acc23021381, type: 3}

@@ -19,6 +19,11 @@ public class SoundManager : MonoBehaviour
 	[SerializeField] Slider sfxSlider;
 	[SerializeField] Slider masterSlider;
 
+	void Start()
+	{
+		masterMixer.SetFloat("Master", -20f);
+	}
+
 	public void BGMControl()
 	{
 		float value = bgmSlider.value;

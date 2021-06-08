@@ -182,13 +182,13 @@ public class BossMonster : MonoBehaviour
 
 	IEnumerator SearchInAtkRange()
 	{
-		while (!isDead && !onStunned)
+		while (!isDead)
 		{
-			if (!isPlayerInAtkRange)
+			if (!isPlayerInAtkRange && !onStunned)
 			{
 				CheckInAtkRange();
 			}
-			if (isPlayerInAtkRange)
+			if (isPlayerInAtkRange && !onStunned)
 			{
 				TryAttack();
 			}
@@ -259,7 +259,7 @@ public class BossMonster : MonoBehaviour
 			yield return new WaitForSeconds(0.05f);
 			if (i <= 0.05f)
 			{
-				UserInterface.instance.GameClear();
+				GameClear.instance.BossDead();
 				Destroy(gameObject);
 			}
 		}
