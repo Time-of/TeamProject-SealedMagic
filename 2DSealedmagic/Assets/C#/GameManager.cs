@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
 	[HideInInspector] public float plCurMP;
 	[HideInInspector] public bool[] magicCheck = new bool[4];
 	[HideInInspector] public float increasedAtk;
+	[HideInInspector] public float increasedAtk2;
 
 	PlayerObject player;
 	AudioSource audioSource;
@@ -120,6 +121,7 @@ public class GameManager : MonoBehaviour
 				PlayerLongAttack.instance.StageCheck[i] = magicCheck[i];
 			}
 			PlayerLongAttack.instance.UpAtk = increasedAtk;
+			PlayerLongAttack.instance.Atk = increasedAtk2;
 		}
 	}
 
@@ -137,6 +139,7 @@ public class GameManager : MonoBehaviour
 				PlayerLongAttack.instance.StageCheck[i] = false;
 			}
 			PlayerLongAttack.instance.UpAtk = 0f;
+			PlayerLongAttack.instance.Atk = 0f;
 		}
 	}
 }

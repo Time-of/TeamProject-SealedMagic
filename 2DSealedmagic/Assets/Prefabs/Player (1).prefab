@@ -215,21 +215,22 @@ MonoBehaviour:
   SillIcon: 00000000
   StageCheck: 00000000
   classicTime:
-  - 0.2
+  - 0.5
   - 7
   - 5
   - 15
   - 20
   UpAtk: 0
+  Atk: 0
   InLayer:
     serializedVersion: 2
     m_Bits: 128
   size: {x: 13, y: 1}
   size2: {x: 13, y: 10}
   moveDic: 1
-  audioAtk: {fileID: 8300000, guid: 3569ccd5b9e635e4287eb9fcfca2b08e, type: 3}
+  audioAtk: {fileID: 8300000, guid: 28ad91a6e55d1e445bebdb330d865025, type: 3}
   audioFAtk: {fileID: 8300000, guid: 00aa8b4cea482e645a4852a4681376e8, type: 3}
-  audioIAtk: {fileID: 8300000, guid: ffe54ada4e1917a41bab6b72126765ef, type: 3}
+  audioIAtk: {fileID: 8300000, guid: 83f046e5041f3504ca61243645fc6b98, type: 3}
   audioGAtk: {fileID: 8300000, guid: 37f4a6e8693f8724e8e1e188f5cee6fb, type: 3}
   audioTAtk: {fileID: 8300000, guid: e3a97be934f7d234d8124406a1f8904b, type: 3}
 --- !u!95 &177332986038848268

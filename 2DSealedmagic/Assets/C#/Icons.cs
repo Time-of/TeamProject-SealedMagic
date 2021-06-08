@@ -57,20 +57,7 @@ public class Icons : MonoBehaviour
 			{
 				TSkill();
 			}
-
-			if (PlayerLongAttack.instance.StageCheck[0] == true)
-			{
-				Skillit[0].SetActive(false);
-			}else if (PlayerLongAttack.instance.StageCheck[1] == true)
-			{
-				Skillit[1].SetActive(false);
-			}else if (PlayerLongAttack.instance.StageCheck[2] == true)
-			{
-				Skillit[2].SetActive(false);
-			}else if (PlayerLongAttack.instance.StageCheck[3] == true)
-			{
-				Skillit[3].SetActive(false);
-			}
+			SkillIcon();
 		}
 
 	}
@@ -272,5 +259,44 @@ public class Icons : MonoBehaviour
 		}
 
 		yield break;
+	}
+
+	void SkillIcon()
+    {
+		if (PlayerLongAttack.instance.StageCheck[0] == true)
+		{
+			Skillit[0].SetActive(false);
+		}
+		else
+		{
+			Skillit[0].SetActive(true);
+		}
+
+		if (PlayerLongAttack.instance.StageCheck[1] == true)
+		{
+			Skillit[1].SetActive(false);
+		}
+		else
+		{
+			Skillit[1].SetActive(true);
+		}
+
+		if (PlayerLongAttack.instance.StageCheck[2] == true)
+		{
+			Skillit[2].SetActive(false);
+		}
+		else
+		{
+			Skillit[2].SetActive(true);
+		}
+
+		if (PlayerLongAttack.instance.StageCheck[3] == true)
+		{
+			Skillit[3].SetActive(false);
+		}
+		else
+		{
+			Skillit[3].SetActive(true);
+		}
 	}
 }

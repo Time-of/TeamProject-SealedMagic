@@ -22,8 +22,10 @@ public class PlayerLongAttack : MonoBehaviour
 	[SerializeField] private float[] classicTime;
 	[Tooltip("공격을 했을때 작동을 안했을땐 이미지나 마나가 실행 안되게 만듬")]
 	private bool binCk = false;
-	[Tooltip("제단에서 올려준 공격력")]
+	[Tooltip("제단에서 올려준 스킬공격력")]
 	public float UpAtk = 0f;
+	[Tooltip("제단에서 올련주 기본공격력")]
+	public float Atk = 0f;
 
 	[Tooltip("Layer 체크")]
 	public LayerMask InLayer;
@@ -110,7 +112,7 @@ public class PlayerLongAttack : MonoBehaviour
 					FireShoot();
 					PlayerAtkSound("Fire");
 					SillIcon[0] = true;
-					player.curMana -= 50;
+					player.curMana -= 100;
 					ccurTime[1] = classicTime[1];
 				}
 			}
@@ -135,7 +137,7 @@ public class PlayerLongAttack : MonoBehaviour
 					IceShoot();
 					PlayerAtkSound("Ice");
 					SillIcon[1] = true;
-					player.curMana -= 30;
+					player.curMana -= 80;
 					ccurTime[2] = classicTime[2];
 				}
 			}
@@ -161,7 +163,7 @@ public class PlayerLongAttack : MonoBehaviour
 						playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
 						PlayerAtkSound("Ground");
 						SillIcon[2] = true;
-						player.curMana -= 50;
+						player.curMana -= 100;
 						ccurTime[3] = classicTime[3];
 						binCk = false;
 					}
@@ -191,7 +193,7 @@ public class PlayerLongAttack : MonoBehaviour
 						playerMovement.bCanMove = false; // 캐릭터 이동 비활성화
 						PlayerAtkSound("Thunder");
 						SillIcon[3] = true;
-						player.curMana -= 40;
+						player.curMana -= 90;
 						ccurTime[4] = classicTime[4];
 						binCk = false;
 					}
@@ -212,15 +214,15 @@ public class PlayerLongAttack : MonoBehaviour
 		Bullet Pos = GetComponent<Bullet>();
 		GameObject ShootAtk = Instantiate(impactEffect[0], firePoint.position, firePoint.rotation);
 		AttackArea area = ShootAtk.GetComponent<AttackArea>();
-
 		if (area != null)
 		{
-			area.damage = 20 + UpAtk;
+			area.damage = 20 + Atk;
 			area.isEnemyAttack = false;
 		}
 	}
+    
 
-	void FireShoot()
+    void FireShoot()
 	{
 		GameObject FireAtk = Instantiate(impactEffect[1], firePoint.position, firePoint.rotation);
 		AttackArea area = FireAtk.GetComponent<AttackArea>();
@@ -341,4 +343,5 @@ public class PlayerLongAttack : MonoBehaviour
 		
 
 	}
+
 }

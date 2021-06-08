@@ -357,11 +357,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719166, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 52.06379
+      value: 35.79
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719166, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9081315
+      value: -0.66
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719166, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -663,6 +663,10 @@ PrefabInstance:
       value: Enemy_First_General
       objectReference: {fileID: 0}
     - target: {fileID: 6918470821093868991, guid: f6e4f800e2179824c956e98d264f6cd9, type: 3}
+      propertyPath: moveSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918470821093868991, guid: f6e4f800e2179824c956e98d264f6cd9, type: 3}
       propertyPath: isColoredMonster
       value: 1
       objectReference: {fileID: 0}
@@ -819,6 +823,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1577182276}
     m_Modifications:
+    - target: {fileID: 1509074953421397497, guid: bb7e7fece6d08494497d5f3b767907a3, type: 3}
+      propertyPath: amount
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 9207481064057118658, guid: bb7e7fece6d08494497d5f3b767907a3, type: 3}
       propertyPath: m_Name
       value: ManaPotion
@@ -1101,7 +1109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: life
-      value: 300
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: isColoredMonster
@@ -1109,7 +1117,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: normalAttackDamage
-      value: 100
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719166, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: m_RootOrder
@@ -7433,6 +7441,26 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 46, y: 12, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 20
+      m_TileSpriteIndex: 20
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 47, y: 12, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 0
@@ -7471,11 +7499,11 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 687baec8f43e23842a05c26dc3cdf479, type: 2}
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 3f8c02f12ee1c0c4da807848f18d6e2b, type: 2}
-  - m_RefCount: 2
+  - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: bd588ec209699c04aa7aefd6063c02a0, type: 2}
   - m_RefCount: 86
     m_Data: {fileID: 11400000, guid: 7680cdf45ee2aca4589b736671de1c10, type: 2}
-  - m_RefCount: 3
+  - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: caa79f1273786d44ea550f09c14d686f, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 0
@@ -7514,14 +7542,14 @@ Tilemap:
     m_Data: {fileID: 21300102, guid: 261212b977f594d5dbc48631a5c1295c, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 21300134, guid: 261212b977f594d5dbc48631a5c1295c, type: 3}
-  - m_RefCount: 2
+  - m_RefCount: 3
     m_Data: {fileID: 21300104, guid: 261212b977f594d5dbc48631a5c1295c, type: 3}
   - m_RefCount: 86
     m_Data: {fileID: 21300132, guid: 261212b977f594d5dbc48631a5c1295c, type: 3}
-  - m_RefCount: 3
+  - m_RefCount: 4
     m_Data: {fileID: 21300100, guid: 261212b977f594d5dbc48631a5c1295c, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 582
+  - m_RefCount: 584
     m_Data:
       e00: 1
       e01: 0
@@ -7540,7 +7568,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 582
+  - m_RefCount: 584
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -8263,7 +8291,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: life
-      value: 300
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: isColoredMonster
@@ -8271,7 +8299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: normalAttackDamage
-      value: 100
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719166, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: m_RootOrder
@@ -17450,7 +17478,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: isColoredMonster
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 91129535749719154, guid: 9e4855af297acf84db5e65bd66574bc2, type: 3}
       propertyPath: normalAttackDamage
@@ -17514,6 +17542,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1577182276}
     m_Modifications:
+    - target: {fileID: 1509074953421397497, guid: bb7e7fece6d08494497d5f3b767907a3, type: 3}
+      propertyPath: amount
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 9207481064057118658, guid: bb7e7fece6d08494497d5f3b767907a3, type: 3}
       propertyPath: m_Name
       value: ManaPotion (2)
@@ -17646,6 +17678,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1577182276}
     m_Modifications:
+    - target: {fileID: 1509074953421397497, guid: bb7e7fece6d08494497d5f3b767907a3, type: 3}
+      propertyPath: amount
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 9207481064057118658, guid: bb7e7fece6d08494497d5f3b767907a3, type: 3}
       propertyPath: m_Name
       value: ManaPotion (1)
