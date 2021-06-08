@@ -88,7 +88,7 @@ public class Altar : MonoBehaviour
 			GameManager.instance.magicCheck[i] = PlayerLongAttack.instance.StageCheck[i];
 		}
 		GameManager.instance.increasedAtk = PlayerLongAttack.instance.UpAtk;
-		GameManager.instance.increasedAtk2 = PlayerLongAttack.instance.Atk;
+		GameManager.instance.increasedNormalAtk = PlayerLongAttack.instance.Atk;
 		GameManager.instance.Stagenum++;
 		yield return new WaitForSeconds(sceneLoadTime);
 		SceneManager.LoadScene(nextScene);

@@ -41,16 +41,17 @@ public class test : MonoBehaviour
 			}
 			else if (Input.GetKeyDown(KeyCode.B))
 			{
-				GameManager.instance.plMaxHP = 100000;
-				GameManager.instance.plCurHP = 100000;
-				GameManager.instance.plMaxMP = 100000;
-				GameManager.instance.plCurMP = 100000;
+				GameManager.instance.plMaxHP += 10000;
+				GameManager.instance.plCurHP += 10000;
+				GameManager.instance.plMaxMP += 10000;
+				GameManager.instance.plCurMP += 10000;
 
 				GameManager.instance.FindAndGetInfo();
 			}
 			else if (Input.GetKeyDown(KeyCode.N))
 			{
 				GameManager.instance.increasedAtk += 1000;
+				GameManager.instance.increasedNormalAtk += 200;
 				GameManager.instance.FindAndGetInfo();
 			}
 			else if (Input.GetKeyDown(KeyCode.M))

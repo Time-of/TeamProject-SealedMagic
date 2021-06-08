@@ -368,6 +368,7 @@ public class PlayerObject : MonoBehaviour
         {
             obj.isInteracting = true;
             Altarpos = transform.position;
+            rigid.velocity = Vector2.zero;
             PlayerSound("Focus");
             Debug.Log("정신 집중!");
         }

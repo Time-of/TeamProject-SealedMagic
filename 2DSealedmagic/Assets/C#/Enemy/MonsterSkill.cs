@@ -50,7 +50,7 @@ public class MonsterSkill : MonoBehaviour
 			Vector2 Pos = new Vector2(atkDir * skInfo.range[index] + transform.position.x, transform.position.y);
 
 			GameObject atkSp = Instantiate(skInfo.FX_Sprite[index], Pos + new Vector2(0, 2f), Quaternion.identity);
-			yield return new WaitForSeconds(1.1f);
+			yield return new WaitForSeconds(0.1f);
 
 			atkSp.transform.localPosition = Pos;
 			GameObject atkArea = Instantiate(skInfo.Skill_Area[index], Pos, Quaternion.identity);

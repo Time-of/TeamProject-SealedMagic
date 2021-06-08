@@ -200,13 +200,12 @@ public class Monster : MonoBehaviour
 		{
 			delay += Time.deltaTime;
 
-			if (delay >= 0.3f)
+			if (delay >= 0.1f)
 			{
 				delay = 0f;
 				StartCoroutine("SkillAttack");
 			}
 		}
-
 	}
 
 	// 이동속도 변경 상태 시작

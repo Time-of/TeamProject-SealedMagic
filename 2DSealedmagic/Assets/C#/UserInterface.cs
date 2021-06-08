@@ -92,6 +92,11 @@ public class UserInterface : MonoBehaviour
 		}
 	}
 
+	public void EnableMainScreen()
+	{
+		mainScreen.SetActive(true);
+	}
+
 	public void DisableMainScreen()
 	{
 		mainScreen.SetActive(false);

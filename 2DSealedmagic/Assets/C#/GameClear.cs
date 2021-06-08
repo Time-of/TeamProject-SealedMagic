@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+작성: 20181220 이성수 (P)
+설명: 게임 클리어 오브젝트, 조건 활성화 후 콜라이더가 닿으면 엔딩화면 감상
+*/
+
 public class GameClear : MonoBehaviour
 {
 	SpriteRenderer spRenderer;

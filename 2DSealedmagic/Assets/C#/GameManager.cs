@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
 	[HideInInspector] public float plCurMP;
 	[HideInInspector] public bool[] magicCheck = new bool[4];
 	[HideInInspector] public float increasedAtk;
-	[HideInInspector] public float increasedAtk2;
+	[HideInInspector] public float increasedNormalAtk;
 
 	PlayerObject player;
 	AudioSource audioSource;
@@ -49,6 +49,7 @@ public class GameManager : MonoBehaviour
 		plCurHP = 1000;
 		plMaxMP = 500;
 		plCurMP = 500;
+		SceneManager.LoadScene("MainScreen");
 	}
 
 	void Start()
@@ -80,7 +81,12 @@ public class GameManager : MonoBehaviour
 				InitPlayer();
 				UserInterface.instance.InitGameclearBool();
 				isGameClear = false;
-				SceneManager.LoadScene("Stage1");
+				UserInterface.instance.isMainScreen = true;
+				UserInterface.instance.EnableMainScreen();
+
+				InitPlayerInfo();
+
+				SceneManager.LoadScene("MainScreen");
 			}
 		}
 	}
@@ -121,8 +127,23 @@ public class GameManager : MonoBehaviour
 				PlayerLongAttack.instance.StageCheck[i] = magicCheck[i];
 			}
 			PlayerLongAttack.instance.UpAtk = increasedAtk;
-			PlayerLongAttack.instance.Atk = increasedAtk2;
+			PlayerLongAttack.instance.Atk = increasedNormalAtk;
 		}
+	}
+
+	void InitPlayerInfo()
+	{
+		plMaxHP = playerMaxHP;
+		plCurHP = playerMaxHP;
+		plMaxMP = playerMaxMP;
+		plCurMP = playerMaxMP;
+
+		for (int i = 0; i <= 3; i++)
+		{
+			magicCheck[i] = false;
+		}
+		increasedAtk = 0f;
+		increasedNormalAtk = 0f;
 	}
 
 	void InitPlayer()

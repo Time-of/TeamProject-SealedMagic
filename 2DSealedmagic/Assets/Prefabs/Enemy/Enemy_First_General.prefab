@@ -262,7 +262,7 @@ MonoBehaviour:
   moveSpeed: 4
   life: 900
   isColoredMonster: 0
-  raycastHeight: 2.5
+  raycastHeight: 3.5
   hasSkill: 1
   has2ndSkill: 1
   skillIndex: 0
