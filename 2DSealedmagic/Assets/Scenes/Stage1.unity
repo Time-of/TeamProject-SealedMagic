@@ -9988,6 +9988,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 177332986038848275, guid: f561545267874f84aa2c98e72c506b1c, type: 3}
+      propertyPath: StageCheck.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 177332986038848275, guid: f561545267874f84aa2c98e72c506b1c, type: 3}
+      propertyPath: StageCheck.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 177332986038848275, guid: f561545267874f84aa2c98e72c506b1c, type: 3}
+      propertyPath: StageCheck.Array.data[2]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 177332986038848275, guid: f561545267874f84aa2c98e72c506b1c, type: 3}
+      propertyPath: StageCheck.Array.data[3]
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 177332986038848278, guid: f561545267874f84aa2c98e72c506b1c, type: 3}
       propertyPath: m_RootOrder
       value: 0

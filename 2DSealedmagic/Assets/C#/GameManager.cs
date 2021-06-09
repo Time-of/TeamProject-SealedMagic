@@ -158,6 +158,7 @@ public class GameManager : MonoBehaviour
 			player.curHealth = playerMaxHP;
 			player.maxMana = playerMaxMP;
 			player.curMana = playerMaxMP;
+			killedColoredMonster = 0;
 
 			for (int i = 0; i <= 3; i++)
 			{
