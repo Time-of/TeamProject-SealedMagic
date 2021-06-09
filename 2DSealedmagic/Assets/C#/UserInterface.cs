@@ -122,6 +122,8 @@ public class UserInterface : MonoBehaviour
 		gameOverUI.SetActive(true);
 		gameOverBackImage.SetActive(true);
 		backImage.SetActive(false);
+		SoundManager.instance.SoundOff();
+
 		anim.SetBool("isGameover", true);
 	}
 

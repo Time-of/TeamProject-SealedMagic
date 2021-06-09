@@ -19,9 +19,28 @@ public class SoundManager : MonoBehaviour
 	[SerializeField] Slider sfxSlider;
 	[SerializeField] Slider masterSlider;
 
+	public static SoundManager instance;
+
+	float soundSize = -20f;
+
+	void Awake()
+	{
+		instance = this;
+	}
+
 	void Start()
 	{
-		masterMixer.SetFloat("Master", -20f);
+		masterMixer.SetFloat("Master", soundSize);
+	}
+
+	public void SoundOn()
+	{
+		masterMixer.SetFloat("Master", soundSize);
+	}
+
+	public void SoundOff()
+	{
+		masterMixer.SetFloat("Master", -80f);
 	}
 
 	public void BGMControl()
@@ -56,6 +75,7 @@ public class SoundManager : MonoBehaviour
 		if (value == -40f) masterMixer.SetFloat("Master", -80f);
 		else
 		{
+			soundSize = value;
 			masterMixer.SetFloat("Master", value);
 		}
 	}
