@@ -22,6 +22,7 @@ public class test : MonoBehaviour
 	[Header("B: 플레이어가 매우 튼튼해짐")]
 	[Header("N: 플레이어가 매우 쎄짐")]
 	[Header("M: 플레이어 모든 마법 해금")]
+
 	[SerializeField] bool isDebug;
 	void Update()
 	{

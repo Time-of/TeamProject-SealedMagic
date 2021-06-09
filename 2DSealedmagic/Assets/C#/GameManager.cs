@@ -75,6 +75,7 @@ public class GameManager : MonoBehaviour
 				InitPlayer();
 				UserInterface.instance.InitGameoverBool();
 				isGameover = false;
+
 				InitPlayerInfo();
 
 				SceneManager.LoadScene("Stage1");
