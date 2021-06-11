@@ -34,6 +34,7 @@ public class PlayerObject : MonoBehaviour
     public bool NoDamege = false;
     [Tooltip("착지 할때 사운드")]
     public bool DownSound = false;
+    public LayerMask JumpCheck;
 
     [SerializeField] AudioClip audioWalk;
     [SerializeField] AudioClip audioJumpUp;
@@ -200,7 +201,7 @@ public class PlayerObject : MonoBehaviour
             Vector2 frontVec = new Vector2(rigid.position.x + rigid.velocity.x * 0.03f, rigid.position.y);
             Debug.DrawRay(frontVec, Vector3.down, new Color(1, 0, 0));
 
-            RaycastHit2D rayHit = Physics2D.Raycast(frontVec, Vector3.down, 2f, LayerMask.GetMask("Platform"));
+            RaycastHit2D rayHit = Physics2D.Raycast(frontVec, Vector3.down, 2f, JumpCheck);
 
             
             if (rayHit.collider != null)
@@ -220,20 +221,6 @@ public class PlayerObject : MonoBehaviour
         }
     }
 
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Spikes" && NoDamege == false)
-        {
-            OnDamage(100);
-            if (curHealth > 0)
-            {
-                OnDamaged(collision.transform.position);
-            }
-        }
-        
-    }
-
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy" && NoDamege == false)
@@ -244,6 +231,14 @@ public class PlayerObject : MonoBehaviour
                 OnDamaged(collision.transform.position);
             }
 
+        }
+        if (collision.gameObject.tag == "Spikes" && NoDamege == false)
+        {
+            OnDamage(100);
+            if (curHealth > 0)
+            {
+                OnDamaged(collision.transform.position);
+            }
         }
     }
 

@@ -181,6 +181,9 @@ MonoBehaviour:
   bCanMove: 1
   NoDamege: 0
   DownSound: 0
+  JumpCheck:
+    serializedVersion: 2
+    m_Bits: 1088
   audioWalk: {fileID: 8300000, guid: d6ba2f947dbca3d40b5addc44081ac35, type: 3}
   audioJumpUp: {fileID: 8300000, guid: 0a3e479b3e4170f4ca5fb511830bc2ad, type: 3}
   audioJumpDown: {fileID: 8300000, guid: fa38f39609dc8f744a8a9430cd0891c1, type: 3}

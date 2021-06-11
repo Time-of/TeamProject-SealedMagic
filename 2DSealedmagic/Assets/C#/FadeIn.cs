@@ -8,7 +8,7 @@ public class FadeIn : MonoBehaviour
     private Image image;
 
     Altar altar;
-    
+
     private void Awake()
     {
         image = GetComponent<Image>();
@@ -19,7 +19,7 @@ public class FadeIn : MonoBehaviour
     void Update()
     {
         Fadein();
-        //Fadeout();
+        StartCoroutine("Fadeouter");
     }
 
     void Fadein()
@@ -33,19 +33,19 @@ public class FadeIn : MonoBehaviour
 
         image.color = color;
     }
-    
-    /*public void Fadeout()
+
+    IEnumerator Fadeouter()
     {
-        if (altar.clear == true) {
 
-            Color color = image.color;
+        yield return new WaitForSeconds(2f);
+        Color color = image.color;
 
-            if (color.a < 1)
-            {
-                color.a += Time.deltaTime;
-            }
-
-            image.color = color;
+        if (color.a < 1)
+        {
+            color.a += Time.deltaTime;
         }
-    }*/
+
+        image.color = color;
+
+    }
 }

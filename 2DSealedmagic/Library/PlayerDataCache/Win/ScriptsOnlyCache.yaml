@@ -3,7 +3,6 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Altar
     - AttackArea
-    - BGS
     - Boss_King
     - Bullet
     - DmgText
@@ -34,14 +33,9 @@ ScriptsOnlyBuild:
     Unity.2D.PixelPerfect.dll:
     - UnityEngine.U2D.PixelPerfectCamera
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridBrushEditor
-    - UnityEditor.Tilemaps.GridPaintPaletteClipboard
-    - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
-    - UnityEditor.Tilemaps.PaintableSceneViewGrid
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -55,12 +49,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshPro
     - TMPro.TextMeshProUGUI
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -269,9 +257,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4684}
     - Class: 114
-      Script: {instanceID: 4822}
-    - Class: 114
-      Script: {instanceID: 5204}
+      Script: {instanceID: 5202}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -384,9 +370,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4684}
     - Class: 114
-      Script: {instanceID: 4822}
-    - Class: 114
-      Script: {instanceID: 5204}
+      Script: {instanceID: 5202}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -501,9 +485,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4684}
     - Class: 114
-      Script: {instanceID: 4822}
-    - Class: 114
-      Script: {instanceID: 5204}
+      Script: {instanceID: 5202}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -827,7 +809,7 @@ ScriptsOnlyBuild:
     className: CinemachineVirtualCamera
   - hash:
       serializedVersion: 2
-      Hash: b5ebc0d482784060721bd67224852a62
+      Hash: 9ed81726a01294d3aa4033a33f6515d1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerObject
@@ -965,7 +947,7 @@ ScriptsOnlyBuild:
     className: Cinemachine3rdPersonFollow
   - hash:
       serializedVersion: 2
-      Hash: 3a8805ff58b5e680ecaec854599e257e
+      Hash: d92d482626106f6c4c9c6957a6e14cd2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UserInterface
@@ -1397,12 +1379,6 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
-      Hash: ae56ce21d14c50f81f6e41f6f4b3d4a4
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BGS
-  - hash:
-      serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1492,4 +1468,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Stage1.unity
   - Assets/Scenes/Stage2.unity
   - Assets/Scenes/Stage3.unity
-  playerPath: F:/!github-desktop/Build/Abandoned.exe
+  playerPath: "C:/Users/stayr/OneDrive/\uBC14\uD0D5 \uD654\uBA74/Abandoed\uAC8C\uC784/Abandoned.exe"
